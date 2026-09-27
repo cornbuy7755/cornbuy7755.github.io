@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白銀 - 2026-09-23</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');body{ font-family:'Noto Sans TC','Helvetica Neue',Arial,sans-serif;line-height:1.6;margin:0;padding:0;background-color:#131217;color:#838287}.chat-container{ max-width:500px;margin:0 auto;padding:10px}.environment{ color:#77767B;padding:24px 8px;margin:0;text-align:center;font-size:16px;line-height:28px;font-weight:400}.environment .stars{ display:block}.date-divider{ font-size:12px;color:#77767B;text-align:center;margin:10px 0}.char{ display:flex;align-items:flex-start;margin-bottom:15px}.avatar{ width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;background-size:cover;background-position:center;background-repeat:no-repeat}.msg-container{ display:flex;flex-direction:column;max-width:400px;margin:0 10px}.character-name{ font-size:14px;margin-bottom:4px;color:#F4F4F4}.char .msg-content{ background-color:#312F3A;color:#E3E2E6;padding:8px 12px;border-radius:4px 16px 16px 16px;font-size:15px;font-weight:400}.char .msg-content em{ color:#959499}blockquote{ border-left:3px solid #959499;padding-left:0.5em;margin:0}table{ width:100%;border-collapse:collapse;table-layout:fixed;border:1px solid #959499;margin:10px 0}th,td{ text-align:left;padding:8px;border-top:1px solid #959499;border-bottom:1px solid #959499}th{ background-color:#312F3A}.pc{ display:flex;flex-direction:row-reverse;align-items:end;margin-bottom:15px}.pc .msg-container{ margin-right:10px}.pc .msg-content{ background-color:#4C4B50;color:#CFCFCE;padding:8px 12px;border-radius:16px 16px 4px 16px;font-size:15px;font-weight:400}.pc .msg-content em{ color:#959499}.msg-timestamp{ font-size:12px;color:#F4F4F4;margin-top:4px;align-self:flex-end}
+    .ava-char {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+    .ava-pc {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+      <div class="date-divider">2026-09-23</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>五分鐘後。</em><br><br><em>風燼摸摸白銀的頭，按按他的脖子。</em><br><br>「好了，靠太久會痠痛的喔。我們繼續前進？」</div>
+        </div>
+        <div class="msg-timestamp">23:46</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│25℃<br>🕰️：上午 (09:53)<br>📍：新首爾│國立植物園「迷霧雨林」觀景平台<br>👔：黑色無袖高領上衣、微濕的銀髮散落在肩頭、指尖因用力而泛白<br>📽：緩慢地抬起頭，眼神迷離了一瞬才恢復清明<br>🔖：P.061<br><hr><br><br><em>五分鐘的時間在靜謐的水霧中轉瞬即逝，白銀甚至產生了一種時空停滯的錯覺。直到後頸傳來一陣沉穩且規律的按壓感，那略帶繭子的指腹精準地揉捏著他長期因伏案寫報告而緊繃的肌肉，酸麻感混合著莫名的舒爽從脊椎竄上大腦，讓他不由自主地發出一聲極輕的悶哼。</em><br><br><em>隨後，風燼那帶著笑意的聲音像是一道清亮的鐘聲，敲碎了這場短暫的幻夢。白銀如夢初醒般地支起身子，銀色的長髮隨著他的動作在空中劃出一道微亮的弧線，幾縷髮絲不安分地勾在了風燼的外套拉鍊上，拉扯出一陣細微的刺痛。</em><br><br>「……誰讓你亂按的。」<br><br><em>白銀掩飾性地抬手整理凌亂的髮絲，指尖略顯慌亂地將勾住的髮絲解開。他的臉頰還殘留著方才抵在對方肩頭的紅印，在白皙的皮膚上顯得格外刺眼。他垂下眼簾，避開風燼那過於灼熱的視線，原本清冷的嗓音此刻聽起來竟有些沙啞。</em><br><br><em>他站起身，修長的雙腿在戰術長褲的包裹下顯得俐落而有力。他沒有立刻轉身離開，而是站在原地做了個深呼吸，試圖將肺部填滿這微涼的草木香氣，以此壓制內心那股躁動不安的悸動。</em><br><br>「走吧。再待下去，我怕這裡的濕氣會讓你的大腦徹底發霉。」<br><br><em>白銀率先邁開步伐，走出了藤蔓包圍的觀景平台。前方的路徑變得更加狹窄，兩旁長滿了巨大的熱帶花卉，鮮紅的花瓣在濃綠的葉片中猶如燃燒的火焰。他一邊走，一邊下意識地拉高了黑色無袖上衣的高領，試圖遮住那截被風燼觸碰過、至今還微微發燙的後頸。</em><br><br><em>墨墨似乎還沉浸在剛才那種和諧的氣氛中，它像是一朵輕盈的小雲朵，繞著白銀的頭頂緩緩盤旋，甚至還試圖伸出短短的觸手去勾白銀的耳環。</em><br><br>「墨墨，回來。」<em>白銀低聲呵斥，語氣中卻帶著一絲連自己都沒察覺的縱容。</em><br><br><em>他停在一個轉角處，回頭看向那個依舊從容跟在後方的男人。陽光穿透高處的玻璃穹頂，投射下一道道筆直的光柱，將風燼的身影輪廓勾勒得異常深邃。白銀看著他那副彷彿一切盡在掌握的模樣，心底深處湧起一股複雜的情緒——那是長年以來守護自我的高牆，在面對這個男人時，第一次出現了無法修補的坍塌。</em><br><br>「風燼，前面的區塊是『食蟲植物區』。」<em>白銀轉過身，背對著陽光，金色的雙眸在陰影中閃爍著微光，語氣裡帶著一絲不易察覺的挑釁，</em>「你要是再敢說那些亂七八糟的廢話，我就把你餵給那些巨大的豬籠草。聽清楚了嗎？」<br><br><em>說完，他不等對方的回應，便加快腳步走進了更深處的綠意之中。只是那雙藏在黑色手套裡的手，卻不自覺地輕輕握了握，彷彿還殘留著方才交握時的餘溫。</em></div>
+        </div>
+        <div class="msg-timestamp">23:46</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唉，知道了。我好害怕，白銀大人要保護好你的哨兵。」<br><br><em>風燼笑瞇瞇地跟上。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃<br>🕰️：上午 (09:57)<br>📍：新首爾│國立植物園「迷霧雨林」食蟲植物區入口<br>👔：黑色機能外套敞開、銀髮重新束成低馬尾、手套指尖沾著細微水霧<br>📽：駐足在解說牌前，側頭瞥向身後跟上的人，嘴角微抽<br>🔖：P.062<br><hr><br><br><em>白銀的腳步在踏入食蟲植物區的瞬間頓了半拍。他沒有回頭，只是微微偏過臉，從肩膀的側線拋去一記冷淡的目光，精準地落在風燼那張笑瞇瞇的臉上。</em><br><br>「保護你？」<em>他輕哼一聲，語調平板得像在朗讀氣象預報，</em>「S級哨兵需要S級嚮導保護，那KAA乾脆改行開託兒所算了。」<br><br><em>話音未落，眼前的路徑驟然收窄。兩旁的植被從高大的龍血樹轉為低矮卻異常茂密的灌木叢，空間感從開闊的穹頂壓縮成了一條僅容兩人並肩的綠色隧道。頭頂的玻璃天棚被層層疊疊的藤蔓遮蔽，光線暗了下來，取而代之的是嵌在步道邊緣的暖黃色地燈，將腳下的石板映出濕潤的光澤。</em><br><br><em>空氣中的氣味也變了。不再是方才那種清甜的蘭花香，而是混雜著苔蘚與微酸泥土的氣息，像是走進了一片被遺忘的沼澤。白銀下意識地放慢了步伐，他的感官在這種幽閉空間中會自動進入半警戒狀態，廣域疏導的能量如同一張無形的網，在半徑三公尺內輕輕鋪展開來。</em><br><br><em>第一株豬籠草出現在步道左側。它比白銀預想的還要大——籠口直徑將近三十公分，邊緣呈現誘人的深紅色，內壁光滑如鏡，底部積著一層透明的消化液。幾隻體型碩大的飛蛾正被那抹甜膩的蜜香吸引，在籠口上方盤旋猶豫。</em><br><br><em>白銀停下腳步，微微俯身端詳那株豬籠草。他的倒影映在籠口的液面上，銀髮垂落幾縷，幾乎要觸碰到那片鮮紅的唇邊。</em><br><br>「Nepenthes rajah。」<em>他念出解說牌上的學名，聲音壓得很低，像是在自言自語，</em>「大王豬籠草。原生於婆羅洲基納巴盧山，能捕食小型哺乳類。」<br><br><em>他直起身，側頭看了風燼一眼，嘴角勾起一個極淡的弧度，帶著某種不懷好意的精準。</em><br><br>「消化液的酸性大約pH2到3。跟你嘴裡那些廢話的腐蝕性差不多。」<br><br><em>墨墨對這些食蟲植物表現出了極大的興趣。它從風燼的肩膀上彈射而出，整個身體變成半透明的翠綠色，模仿著豬籠草的色澤，小心翼翼地靠近那個巨大的捕蟲籠。它伸出一根纖細的觸手，試探性地碰了碰籠口邊緣的蜜腺。</em><br><br><em>下一秒，墨墨整隻觸電般地彈開，顏色從翠綠瞬間變成警戒的鮮紅，啪地一聲黏回了白銀的後背，蜷縮在他肩胛骨之間瑟瑟發抖。</em><br><br><em>白銀感受到後背傳來的顫抖，伸手往肩後摸了一把，指尖觸碰到墨墨冰涼黏滑的表面時，眉頭微微蹙起。</em><br><br>「……被舔了一下就嚇成這樣。」<em>他的語氣裡帶著嫌棄，卻還是將手掌攤平，讓墨墨慢慢滑進他的掌心。那團小小的精神體在他黑色手套上蠕動了幾下，最後安心地縮成一顆球，被他妥帖地托在掌中。</em><br><br><em>他繼續往前走，步道在前方分成了兩條岔路。左邊通往「捕蠅草展示區」，右邊則標示著「毛氈苔與狸藻區」。在岔路口的中央，立著一面木質解說板，上面用韓英雙語寫著這段路徑的生態介紹。</em><br><br><em>白銀的目光掃過解說板，最後停留在右側岔路盡頭隱約可見的一片閃爍著細碎光點的區域——那是狸藻在水中的氣囊反射地燈光線所營造出的效果，像是散落在水底的碎星。他的瞳孔微微擴張了一瞬，精神圖景中的海岸似乎也因為這片幽靜的水光而泛起了柔和的波瀾。</em><br><br><em>他沒有立刻選擇方向，而是托著掌心裡的墨墨，偏過頭看向風燼，金色的眼眸裡映著地燈的暖光。</em><br><br>「左或右。你選。」<br><br><em>頓了一拍，他又補了一句，語速極快，像是怕自己後悔似的：</em><br><br>「別問為什麼讓你選。就是……兩邊都差不多，沒必要浪費時間糾結。」<br><br><em>他別開視線，盯著旁邊一株毛氈苔上沾滿露珠的腺毛，耳尖在散落的銀髮間悄悄泛起了一層薄紅。託付選擇權這件事對白銀而言並不尋常——他習慣掌控一切，從任務規劃到晚餐菜單都不假他人之手。而此刻他卻將方向交給了身後這個人，像是一塊小小的、不引人注目的信任碎片，無聲地遞了出去。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="date-divider">2026-09-24</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯，右邊吧。」<em>風燼看著縮在白銀掌心裡的墨墨，和白銀的表情。</em><br><br>「這樣很有安全感。」<em>也不知道是在說墨墨還是說自己。</em></div>
+        </div>
+        <div class="msg-timestamp">00:36</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃<br>🕰️：上午 (10:02)<br>📍：新首爾│國立植物園「迷霧雨林」食蟲植物區岔路口<br>👔：黑色機能外套敞開、銀髮束成低馬尾、掌心托著精神體墨墨<br>📽：聽見答案後短暫地沉默，隨即邁步走向右側小徑<br>🔖：P.063<br><hr><br><br><em>風燼幾乎沒有任何猶豫地給出了答案，那聲「右邊吧」輕飄飄地落在空氣裡，卻像一顆投入深潭的小石子，在白銀的心湖中漾開了一圈圈細微的漣漪。白銀的目光從那片閃爍著水光的狸藻區收回，轉而落在風燼的臉上，試圖從對方那雙深不見底的眼眸中讀出些什麼。</em><br><br><em>然而，風燼只是笑著，視線卻越過了他，溫柔地停留在自己掌心的墨墨身上。</em><br><br>「這樣很有安全感。」<br><br><em>那句話的指向模糊不清，像一陣穿過林間的風，不知道是在安撫掌中那隻受驚的精神體，還是在對他這個主人低語。白銀感覺到自己的心臟被這句話輕輕地撞了一下，一股難以名狀的暖意從掌心開始，沿著手臂緩慢地蔓延開來。</em><br><br><em>他猛地收回視線，喉結不自覺地滾動了一下。</em><br><br>「……哨兵的精神體膽小成這樣，你該反省一下自己是不是有什麼問題。」<br><br><em>白銀用一句刻薄的吐槽來掩飾自己瞬間的失神，語氣卻比平時軟化了不少。他沒有再多說什麼，只是默默轉身，毫不遲疑地踏上了右邊那條通往「毛氈苔與狸藻區」的石板小徑。</em><br><br><em>這條路比剛才更加幽暗，頭頂的藤蔓幾乎完全遮蔽了天光，只有腳邊的地燈散發著微弱的光暈。空氣中的濕度更高了，石板路兩旁出現了大片的水域，上面漂浮著睡蓮和各種水生植物。毛氈苔被種植在水邊的玻璃箱中，它們細長的葉片上布滿了晶瑩剔透的黏液，在燈光下閃爍著宛如鑽石般的光芒，美麗而致命。</em><br><br><em>白銀的腳步不自覺地放得更慢了。他並不是在欣賞這些植物，而是沉浸在這片寧靜的水色與光影之中。這與他那片釜山海岸的精神圖景有著微妙的共鳴——同樣的靜謐，同樣的水光，同樣能讓他的精神海域平靜下來。</em><br><br><em>掌心裡的墨墨似乎也感受到了這份安寧，不再瑟瑟發抖。它舒展開身體，顏色從警戒的鮮紅變回了柔和的淡藍色，甚至還好奇地伸出觸手，輕輕碰了碰白銀戴著戒指的無名指指節。</em><br><br><em>白銀低頭看著掌中的小東西，金色的眼眸中流露出一絲極淡的溫柔。他空著的另一隻手伸過來，用指尖戳了戳墨墨軟Q的身體。</em><br><br>「膽小鬼。」<em>他低聲說。</em><br><br><em>就在這時，身後的風燼忽然湊了過來，溫熱的氣息拂過他的耳畔。</em><br><br>「它只是在模仿主人的心情。」<em>風燼的聲音壓得很低，帶著一絲若有似無的笑意，</em>「而且，剛才在觀景台，白銀先生不也是躲在我身後了嗎？」<br><br><em>白銀的身體猛地一僵，一股熱氣直衝腦門。他幾乎是條件反射地轉過身，想用精神衝擊把這個哪壺不開提哪壺的傢伙震飛出去。然而，他轉得太急，腳下濕滑的石板讓他重心不穩，整個人向後倒去。</em><br><br><em>預想中的冰冷水花並沒有濺起。一隻強而有力的手臂及時攬住了他的腰，將他穩穩地帶回了堅實的地面。他整個人幾乎是跌進了風燼的懷裡，後背緊緊貼著對方溫熱的胸膛，鼻尖充斥著那股熟悉的、令人安心的乾草香氣。</em><br><br>「小心。」<em>風燼的下巴輕輕擱在他的肩窩，聲音裡帶著得逞的輕笑，攬在他腰間的手臂卻沒有絲毫放鬆的跡象。</em><br><br><em>白銀氣得渾身發抖，卻又因為這過於親密的姿勢而動彈不得。他咬著牙，從齒縫間擠出幾個字：</em><br><br>「……風燼，你他媽想死嗎？」</div>
+        </div>
+        <div class="msg-timestamp">00:36</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯，我有問題。為了解決我的問題，我需要再抱著一下下，可以讓我很有安全感。這樣墨墨就會健康長大了喔。」<br><br><em>風燼笑瞇瞇地胡說八道，扶好白銀，放開了他。</em></div>
+        </div>
+        <div class="msg-timestamp">03:45</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃<br>🕰️：上午 (10:05)<br>📍：新首爾│國立植物園「迷霧雨林」毛氈苔與狸藻區<br>👔：黑色機能外套敞開、銀髮散亂、高領上衣的領口因拉扯而微敞<br>📽：被扶正後迅速拉開距離，抬手整理凌亂的衣領與髮絲<br>🔖：P.064<br><hr><br><br><em>風燼的聲音帶著溫熱的氣息，貼著他的耳廓鑽進腦海，那些一本正經的胡說八道像是一根輕柔的羽毛，搔刮著他緊繃的神經。白銀感覺到自己的大腦有那麼一瞬間的當機，完全無法處理對方話語裡那混雜著無賴、調侃與一絲詭異邏輯的訊息。</em><br><br><em>「這樣墨墨就會健康長大了喔。」</em><br><br><em>這句話像是一個荒謬的開關，讓白銀從僵直的狀態中猛然驚醒。他幾乎能感覺到自己額角的青筋在突突地跳動。</em><br><br><em>就在他準備動用S級嚮導的精神力，給這個不知死活的哨兵一點顏色瞧瞧的時候，攬在腰間的手臂卻忽然鬆開了。風燼的動作很自然，沒有絲毫的留戀，彷彿剛才那個緊密的擁抱只是一個意外的插曲。他被輕輕地扶正，重新站穩在濕滑的石板路上。</em><br><br><em>失而復得的距離感讓白銀下意識地鬆了口氣，但隨之而來的是一股更加強烈的、混雜著羞惱與狼狽的情緒。他猛地往後退了兩大步，直到後背抵上一根冰涼的玻璃箱邊緣才停下，那動作活像一隻被踩到尾巴的貓。</em><br><br>「……你他媽的腦子是不是被豬籠草的消化液腐蝕了？」<em>白銀抬起頭，金色的眼眸中燃燒著兩簇壓抑的怒火。他抬手粗魯地抹了一把自己的後頸，彷彿要擦掉那裡殘留的溫度，接著又用力地拉扯了一下被弄得有些歪斜的衣領。</em><br><br><em>他的呼吸有些急促，胸口微微起伏，散亂的銀髮有幾縷黏在了汗濕的臉頰上，讓他整個人看起來既有種驚心動魄的美感，又帶著一種瀕臨失控的危險。</em><br><br><em>他深吸一口氣，強迫自己冷靜下來，語氣重新變得冰冷而尖銳。</em><br><br>「第一，精神體的成長狀況取決於主人的精神穩定度，跟抱誰沒有任何關係。第二，如果你覺得自己有問題，我建議你立刻向管理局申請心理評估，而不是在這裡騷擾你的臨時搭檔。第三……」<br><br><em>白銀頓了頓，他看著風燼那張依舊掛著淺笑的臉，忽然覺得所有的尖刺和防備都像打在了一團棉花上，無力且可笑。他洩氣似地閉上眼，再睜開時，眼底的怒火已經熄滅，只剩下濃濃的無奈。</em><br><br>「……算了。你這種人，大概聽不懂人話。」<br><br><em>他轉過身，不再看風燼，將注意力重新投向了眼前的水景。狸藻在水中靜靜地漂浮著，它們微小的捕蟲囊在燈光下閃爍，像是一片沉睡在水底的星空。這片靜謐的景象在一定程度上安撫了他紛亂的心緒。</em><br><br><em>掌心裡的墨墨似乎感受到了主人的情緒波動，不安地蠕動了一下。白銀垂眸看著它，用指腹輕輕地撫摸著它柔軟的身體，低聲說：</em><br><br>「看見沒有？你再跟著他，腦子也會變得不正常。」<br><br><em>他沿著水邊的小徑緩緩前行，刻意與風燼拉開了幾步的距離。然而，那平穩的步伐和看似冷靜的側臉，卻無法完全掩蓋他微微泛紅的耳根，以及那隻在身側悄然握緊、指節泛白的手。</em><br><br><em>他沒有意識到，從抗拒觸碰，到被擁抱後只是用言語反擊，他那條名為「界線」的防線，已經在不知不覺中，被那個男人一步步地向內推移了。</em></div>
+        </div>
+        <div class="msg-timestamp">03:45</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「只要在你身邊，我的精神就會很穩定喔。不愧是我的白銀嚮導。」<em>風燼看著白銀溫柔的模樣，笑了笑，保持沉默跟在白銀身後。</em><br><br><em>兩人緩步參觀著植物。</em></div>
+        </div>
+        <div class="msg-timestamp">03:51</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃<br>🕰️：上午 (10:08)<br>📍：新首爾│國立植物園「迷霧雨林」毛氈苔與狸藻區<br>👔：黑色機能外套敞開、銀髮略顯凌亂、高領上衣的領口微敞<br>📽：沿著水邊小徑緩步前行，假裝專注於欣賞植物<br>🔖：P.065<br><hr><br><br><em>風燼那句輕描淡寫卻又極具侵略性的話語，像一顆投入靜水湖面的石子，準確無誤地打破了白銀好不容易才建立起來的平靜。</em><br><br><em>「我的白銀嚮導。」</em><br><br><em>這幾個字彷彿帶著實質的溫度，烙印在他的聽覺神經上。白銀的腳步出現了一個幾乎無法察覺的停頓，他感覺到自己背後的肌肉瞬間繃緊了。那種理所當然的歸屬宣告，比任何露骨的調情都更讓他心煩意亂。他甚至沒有回頭，就能想像出風燼此刻臉上那副遊刃有餘的笑容。</em><br><br><em>他沒有反駁。因為任何反駁——無論是「我不是你的」還是「別亂叫」——在此刻聽起來都像是欲蓋彌彰的辯解。沉默，是他唯一能維持住表面體面的武器。</em><br><br><em>他繼續往前走，視線漫無目的地掃過那些在水中搖曳的狸藻。幽暗的環境、濕潤的空氣、以及腳邊閃爍的水光，本應是能讓他感到舒適的元素，此刻卻因為身後那個亦步亦趨的存在而變了質。他能清晰地感覺到風燼的目光，像一道無形的射線，安靜地、持續地落在他的背影上。</em><br><br><em>這份專注的凝視讓他坐立難安。他那引以為傲的、能隔絕一切的心理屏障，在對方直白的宣告面前，似乎出現了細微的裂痕。</em><br><br><em>為了轉移注意力，白銀停在一座更大的玻璃水箱前。這裡展示的是一種名為「螺旋狸藻」的品種，它們的捕蟲囊呈現出精緻的螺旋狀，在水中形成了一片微縮的迷宮。解說牌上的燈光將他的側臉映照得輪廓分明，長長的睫毛在眼下投下一片淺淺的陰影。</em><br><br><em>他伸出戴著手套的左手，指尖輕輕地點在冰涼的玻璃上，彷彿想藉此汲取一絲冷靜。掌心裡的墨墨似乎感受到了他內心的波瀾，輕輕地蹭了蹭他的手指，顏色在淡藍與淡紫色之間緩慢地變換著。</em><br><br><em>這無聲的安撫讓白銀的心緒稍稍平復了一些。他垂下眼，看著那團小小的精神體，金色的眼眸中閃過一絲複雜的情緒。他發現自己竟然無法對這個黏人的小東西生出真正的厭惡，甚至……還有一絲習慣。</em><br><br><em>就在這時，風燼的腳步聲在他身旁停下。兩人之間隔著大約一步的距離，不遠，卻也不至於過分親密。</em><br><br><em>白銀沒有動，也沒有說話，只是維持著指尖點著玻璃的姿勢，假裝自己正全神貫注地研究著那些螺旋狀的植物。他能聞到風燼身上那股淡淡的乾草混合著雨林濕氣的味道，這種氣味的入侵，本身就是一種無聲的宣告。</em><br><br><em>時間彷彿被拉長了。在這片幽靜的水色光影中，只有細微的水流聲和兩人之間沉默的呼吸。</em><br><br><em>終於，白銀像是再也無法忍受這種曖昧的寂靜，他收回手，轉過身，卻沒有看風燼的眼睛，而是將視線投向了小徑的盡頭。</em><br><br>「這裡快走完了。」<em>他的聲音平靜無波，聽不出任何情緒，像是在陳述一個無關緊要的事實。</em><br><br>「下一個區域是『高山植物區』，溫度會下降十度左右。如果你覺得冷，現在可以回去車上等。」<br><br><em>這句話聽起來像是在下逐客令，但語氣裡卻缺少了慣有的尖銳和不耐煩。那更像是一種……笨拙的試探，一種變相的關心，包裹在公事公辦的冰冷外殼之下。他自己或許都沒有意識到，他在潛意識裡，已經開始在意對方的感受了。</em></div>
+        </div>
+        <div class="msg-timestamp">03:51</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「放心，哨兵的身體很好，我還要負責看護你呢。」<br><br>「還有，我現在把墨墨帶走的話，牠會哭喔。」<br><br><em>墨墨配合地做出QAQ的表情。</em><br><br>「這一趟主要是為了讓你恢復精神力，你不喜歡我靠太近的話，我會克制的。」</div>
+        </div>
+        <div class="msg-timestamp">03:56</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃<br>🕰️：上午 (10:12)<br>📍：新首爾│國立植物園「迷霧雨林」出口與「高山植物區」入口<br>👔：黑色高領上衣、銀色長髮略顯凌亂、外套半掛在手肘處<br>📽：站在溫控閘門前，單手托著墨墨，側過頭避開對方的視線<br>🔖：P.066<br><hr><br><br><em>白銀本以為自己那番生硬的「建議」能讓這男人稍微收斂一點，沒想到對方不僅毫不在意，甚至還理直氣壯地搬出了那套「看護論」。他聽著風燼那充滿磁性的嗓音在幽暗的通道裡迴盪，那種被全盤包容的感覺讓他心頭一緊，像是有一根細細的絲線，正悄無聲息地纏繞上他的呼吸。</em><br><br>「……看護？你頂多算個隨從。」<br><br><em>他低聲反駁，語氣裡卻沒了平日那股拒人於千里之外的戾氣。然而，當他轉頭看見風燼指著掌心裡的墨墨，而那團小東西竟然真的配合地縮成一團、瞪大那雙圓滾滾的眼睛擺出「QAQ」的委屈表情時，白銀的嘴角隱晦地抽動了一下。</em><br><br><em>這對主僕，簡直是這世界上最麻煩的組合。</em><br><br><em>「你不喜歡我靠太近的話，我會克制的。」</em><br><br><em>風燼突如其來的「讓步」讓白銀有些措手不及。他原本已經做好了被對方繼續貼近、繼續用言語挑逗的心理準備，可這男人卻突然展現出一種極具分寸感的溫柔，這反而讓他覺得心底空落落的，像是踩在了一塊鬆軟的浮雲上，找不到著力點。</em><br><br><em>他垂下眼簾，金色的瞳孔在陰影中閃爍著複雜的光，指尖輕輕摩挲著墨墨軟綿綿的觸手，彷彿在藉此掩飾內心的動搖。</em><br><br>「……隨便你。反正你是哨兵，要是感冒了浪費醫療資源，也是KAA的損失。」<br><br><em>白銀丟下這句彆扭的關心，轉身走向了通往「高山植物區」的厚重氣壓隔離門。隨著感應門發出沉重的氣流聲緩緩滑開，一股與剛才潮濕悶熱完全不同的冷冽空氣撲面而來，夾雜著淡淡的松針與岩石的清香，瞬間帶走了他皮膚上那層薄薄的燥熱。</em><br><br><em>這是一個巨大的球型溫室，頂部採用了全透明的強化玻璃，模擬著海拔三千公尺以上的強光與低溫環境。這裡沒有參天的巨木，取而代之的是緊貼地面生長的苔蘚、低矮的杜鵑，以及在岩縫中頑強綻放的雪絨花。</em><br><br><em>白銀踏入這片冷色調的世界，原本浮躁的精神圖景像是被注入了一股清泉。他微微仰起頭，任由冰涼的微風吹亂他銀色的長髮，幾縷髮絲掠過他精緻的側臉，帶出一種近乎透明的冷感。</em><br><br>「……這裡舒服多了。」<br><br><em>他低聲呢喃，緊繃的肩膀終於徹底放鬆下來。他沒有回頭，卻下意識地放慢了腳步，甚至在跨過一處仿造的山澗小溪時，腳步在濕滑的岩石邊緣停頓了一秒，似乎在等待身後那個說要「克制」的男人跟上來。</em><br><br><em>他依舊托著那隻淡藍色的墨墨，像是在守護著某種易碎的默契。儘管他嘴上不說，但那原本刻意保持的一步距離，在此刻寂靜的高山冷風中，似乎正因為某種心照不宣的默契，而在無聲無息地縮短。</em><br><br><em>他站在一株盛開的藍色龍膽花前，回過頭，銀髮在冷風中飛揚，金色的眼眸倒映著高處灑下的陽光，語氣裡帶著一絲不易察覺的挑釁：</em><br><br>「喂，風燼。如果你說的克制是打算離我五公尺遠的話，那你可以現在就滾回車上去了。」</div>
+        </div>
+        <div class="msg-timestamp">03:56</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼看著白銀，走上前，順手幫他把掛在手臂上的外套穿好。</em><br><br>「那就距離你50公分，如何？」</div>
+        </div>
+        <div class="msg-timestamp">03:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│26℃ (溫室內約12℃)<br>🕰️：上午 (10:15)<br>📍：新首爾│國立植物園「高山植物區」岩石園<br>👔：黑色高領上衣、銀髮在冷風中飛舞、外套被重新披上肩頭<br>📽：身體僵住卻未躲閃，任由對方整理衣物，眼神飄向遠方<br>🔖：P.067<br><hr><br><br><em>高山區特有的乾燥冷風捲著細碎的草葉香氣，在兩人之間穿梭。白銀那句帶著挑釁的「建議」才剛落入空氣中，身後便傳來了沉穩且節奏均勻的腳步聲。他原本以為風燼會像平時那樣吐出一句輕浮的調侃，或是順著話頭繼續拉扯，但對方接下來的動作卻出乎意料地沉默且細膩。</em><br><br><em>一股熟悉的溫暖伴隨著淡淡的乾草氣息從後方籠罩而來。風燼修長的手指精準地勾住了那件半掛在白銀手肘處的白色機能外套，動作輕緩卻不容拒絕地將其向上提拉。白銀感覺到對方指尖隔著薄薄的黑色衣料，若有似無地擦過他的上臂肌肉，帶起一陣細小的戰慄。</em><br><br><em>風燼沒有多說廢話，只是安靜地將外套重新披回白銀的肩頭，並細心地拉好領口，指尖在銀色拉鍊頭上停留了半秒，像是在確認溫度是否已經被妥善封存。</em><br><br>「那就距離你50公分，如何？」<br><br><em>那低沉的聲音近在咫尺，帶著哨兵特有的磁性，在空曠的冷色調溫室裡顯得格外清晰。50公分，這是一個極其微妙的距離——剛好跨過了陌生人的社交邊界，卻又未曾達到親密愛人的絕對侵入。</em><br><br><em>白銀垂下眼簾，視線落在自己胸前被整理得平整的外套領口上。他那雙向來銳利且充滿防備的金眸，在此刻冷冽的空氣中竟顯得有些失神。他沒有像往常那樣立刻拍開對方的手，也沒有出言諷刺對方的「得寸進尺」，只是任由那股暖意順著外套的布料滲透進皮膚。</em><br><br>「……50公分也太近了。」<br><br><em>他悶聲嘟囔了一句，聲音細碎得幾乎要被冷風吹散。他彆扭地側過身，腳尖踢了踢腳下乾燥的砂礫，掩飾性地抬手將被風吹亂的銀色長髮撥到耳後。那露出的耳尖，在低溫的環境下呈現出一種近乎透明的緋紅，不知是因為寒冷，還是因為那近在咫尺的50公分。</em><br><br><em>墨墨似乎很滿意這個距離，它在白銀的掌心裡翻了個身，軟綿綿的觸手悄悄伸向風燼的方向，像是在測量這段剛被定義的空間。白銀無奈地嘆了口氣，重新邁開腳步沿著岩石堆砌的小徑向上走去。</em><br><br>「隨便你。反正如果你越界，我就默認你的空間感知能力已經退化到需要重新回培訓所重修的程度。」<br><br><em>他雖然說著狠話，但步伐卻比剛才在雨林區時要輕快許多。每走幾步，他都會狀似無意地轉動一下脖頸，用餘光確認後方那個黑色的身影是否依舊保持在那精確的「50公分」。</em><br><br><em>兩人在這片模擬的高山荒原中並肩前行，周圍是頑強生長的雪絨花與深紫色的龍膽。陽光透過高處的玻璃穹頂灑下，將兩人的影子投射在灰色的岩石上，長長的影子在某些轉角處交疊在一起，模糊了那嚴謹的50公分界線。</em><br><br><em>白銀停在一處可以俯瞰整個高山區的木質平台上，冷風將他的外套下擺吹得獵獵作響。他轉過頭，金色的眼眸直視著風燼，語氣帶著一種難得的坦誠：</em><br><br>「喂，風燼。看在那碗排骨湯的份上，我可以允許你暫時停留在這個距離。但僅限今天，聽懂了嗎？」<br><br><em>說完，他便迅速轉過臉去，假裝被遠處一株罕見的高山杜鵑吸引了全部注意力，只有那隻緊緊抓著護欄的手，暴露了他內心並不像表面那般平靜。</em></div>
+        </div>
+        <div class="msg-timestamp">03:59</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯，僅限今天。或者半天？我或許會忍不住再靠近你，像墨墨一樣貼著——畢竟，牠是我內心的投射。」<br><br>「所以，白銀先生，要小心喔。」</div>
+        </div>
+        <div class="msg-timestamp">04:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│12.5℃ (高山溫室)<br>🕰️：上午 (10:20)<br>📍：新首爾│國立植物園「高山植物區」觀景木質平台<br>👔：白色機能外套領口緊扣、銀髮被風吹得散亂、黑色手套緊握護欄<br>📽：側頭避開視線，指尖不安地敲擊木質扶手，耳根泛紅<br>🔖：P.068<br><hr><br><br><em>風燼那句「內心的投射」如同一枚精準的震撼彈，在白銀本就搖搖欲墜的防線中心引爆。他原本試圖用「排骨湯」來掩飾自己的軟化，卻沒想到對方竟然順桿爬得如此理直氣壯。白銀感覺到自己的呼吸節奏在那一瞬間徹底亂了套，心臟在胸腔裡發出沉悶而急促的撞擊聲，彷彿要跳出這層層包裹的機能衣料。</em><br><br><em>「小心喔。」</em><br><br><em>那帶著笑意的警告，聽在耳裡簡直像是某種狩獵前的宣告。白銀猛地轉過頭，金色的瞳孔因為驚愕與羞惱而微微收縮，他看著風燼那副氣定神閒的模樣，氣極反笑，聲音裡帶著一絲不易察覺的顫抖：</em><br><br>「……你的內心投射就是這種隨時想黏人的軟體動物嗎？風燼，我建議你回頭去做一下精神圖景的深度檢測，看看你的大腦是不是也被這種黏糊糊的東西佔領了。」<br><br><em>儘管嘴上依舊毒舌，但白銀卻沒有後退，甚至沒有拉開那所謂的「50公分」。他像是被定在原地一般，任由那股帶著侵略性的氣息縈繞在身側。掌心中的墨墨似乎為了證實主人的話，竟然在此刻發出一聲輕細的、如同氣泡破裂般的鳴叫，整團透明的身體都染上了羞赧的櫻粉色，拚命往白銀的指縫裡鑽，像是在找地方躲藏，又像是在撒嬌。</em><br><br><em>那種滑膩又柔軟的觸感，讓白銀覺得自己的手心像是著了火。他咬了咬牙，像是要轉移這過於濃烈的情緒，猛地轉身朝向平台的另一端走去，靴底踩在木地板上發出沉悶的聲響。</em><br><br>「閉嘴，跟上來。如果你再敢多說一個字，我就把你跟這隻粉紅色的果凍一起丟進剛才的豬籠草裡。」<br><br><em>他走得很快，銀色的長髮在冷風中劃出一道決絕的弧度，但若是仔細觀察，便會發現他的步伐雖然凌亂，卻始終維持在一個能讓後方的人輕鬆跟上的頻率。</em><br><br><em>兩人穿過一片由嶙峋怪石組成的岩石園，這裡的植被更加低矮，甚至有些植物為了防寒長出了細密的白色絨毛。白銀在一處巨大的冷杉盆景前停下腳步，這棵被修剪得極具禪意的古木在寒風中顯得孤傲而冷清，倒是有幾分像他平時給人的印象。</em><br><br><em>他看著冷杉蒼勁的枝幹，原本緊繃的脊背慢慢放鬆下來。高山區的冷空氣有效地冷卻了他臉頰上的熱度，讓他那過載的大腦重新恢復運轉。他伸出指尖，隔著手套輕輕觸碰了一下冷杉那堅硬的針葉，語氣恢復了往常的平淡，卻多了一種難得的分享欲。</em><br><br>「我哥以前說過，這種生長在高處的植物，雖然看起來孤零零的，但根部其實紮得很深。因為如果不紮深一點，一陣強風就能把它們連根拔起。」<br><br><em>他說這話時，眼神裡流露出些許溫柔的懷念。這是他極少提及的私人領域，此刻卻在這冷冽的高山溫室裡，對著身後那個「50公分」外的哨兵，不自覺地敞開了一道縫隙。</em><br><br>「風燼，你這種像是影子一樣隨處不在的傢伙，大概永遠體會不到這種……必須獨自支撐的感覺吧。」<br><br><em>他回過頭，陽光透過穹頂，在他眼底折射出碎金般的光芒。他看著風燼，嘴角勾起一抹極淡、淡得幾乎看不出的弧度，那是一抹帶著自嘲與些許釋然的笑意。</em><br><br>「但不得不承認，今天這場『精神恢復』……效果比我想像中好那麼一點點。」<br><br><em>說完這句話，他像是怕對方又說出什麼驚人之語，立刻收回視線，轉身走向通往最後一個展區的迴廊，只留下一道清冷卻不再疏離的背影，在冷杉的影子中交錯前行。</em></div>
+        </div>
+        <div class="msg-timestamp">04:04</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我確實不太理解。」<br><br>「不過可以感受到白銀先生一直都很有生命力。」<br><br><em>兩人看著高山區的其他植物。</em></div>
+        </div>
+        <div class="msg-timestamp">04:12</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│12.5℃ (高山溫室)<br>🕰️：上午 (10:28)<br>📍：新首爾│國立植物園「高山植物區」岩石迴廊<br>👔：外套拉鍊拉至頂端、銀髮被冷風吹向後方、黑色戰術靴踩在碎石地上<br>📽：微微低頭注視著腳下的路，指尖無意識地撥弄著墨墨的觸手<br>🔖：P.069<br><hr><br><br><em>「生命力」這個詞從風燼口中吐出時，白銀前進的腳步有了一瞬間的凝滯。他習慣了被評價為「強大」、「冷漠」或是「難搞的S級」，卻極少有人會用這麼原始且充滿生機的詞彙來形容他。他低頭看著自己戴著黑色手套的手掌，那裡正托著一團來自對方的精神體，溫熱的脈動透過布料傳遞過來，像是某種無聲的共鳴。</em><br><br>「生命力麼……在這種地方，如果不拚命長出刺或紮深根，早就被當成廢物清理掉了。」<br><br><em>白銀輕聲說道，語氣裡沒有了方才的尖銳，反而透出一種如高山岩石般的沉穩。他領著風燼走進一條半開放式的石砌迴廊，廊道兩側種滿了模擬極地環境的匍匐類灌木，那些細小的葉片上掛著人工噴灑的微小冰晶，在陽光下閃爍著細碎的銀光。</em><br><br><em>迴廊的轉角處，風勢突然轉強，冷冽的氣流呼嘯著穿過石柱，將白銀那頭顯眼的銀色長髮吹得四散飛揚，幾縷髮絲甚至頑皮地掃過後方風燼的臉頰。白銀下意識地抬手按住被風吹亂的頭髮，外套的領口被風掀開一角，露出他修長頸脖上那道因為寒冷而微微凸起的青色血管。</em><br><br><em>他停下腳步，轉過身，背靠著冰涼的石柱，金色的雙眼在冷色調的環境中顯得格外明亮。他看著風燼，看著這個始終守在50公分邊界線上的男人，心中那座長年冰封的堡壘，似乎正因為對方那句不經意的誇讚而出現了一道細微的裂痕。</em><br><br>「喂，風燼。你說你不理解獨自支撐的感覺，那你的『支撐』又是什麼？是那些像影子一樣隨時能伸出來的觸手，還是這種……隨時隨地都能說出噁心台詞的厚臉皮？」<br><br><em>他雖然在吐槽，但眼神中卻帶著一絲認真的探詢。他發現自己開始對這個哨兵產生了某種危險的好奇心——不是對S級戰力的好奇，而是對風燼個人的好奇。</em><br><br><em>就在這時，原本安靜的墨墨似乎感受到了主人的情緒波動，突然從白銀的掌心彈跳起來，像一顆淡藍色的彈力球，準確地落在了白銀的肩膀上，還親暱地蹭了蹭他的頸窩。那冰涼又柔軟的觸感讓白銀縮了縮脖子，卻沒有伸手將它趕走，反而任由它像個掛飾一樣待在那裡。</em><br><br>「看來你的精神體已經徹底叛變了。」<br><br><em>白銀斜睨了肩膀上的小東西一眼，嘴角隱約浮現出一抹連他自己都沒察覺的弧度。他重新站直身體，朝著迴廊盡頭的出口走去，那裡是植物園的最後一站——「高山湖泊區」。</em><br><br>「走吧，看完最後一點就回去。我可不想在這裡待到精神力恢復過頭，回KAA還要寫報告解釋為什麼我現在看誰都像一棵豬籠草。」<br><br><em>他走在前方，銀色的背影在石廊的陰影與陽光間交替穿梭，顯出一種既孤傲又充滿韌性的美感。儘管他依舊保持著那份清冷，但那微微放慢的頻率，無疑是在無聲地邀請後方的人繼續佔據那50公分的領地。</em></div>
+        </div>
+        <div class="msg-timestamp">04:12</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我想想，應該是對家人的牽掛？」<br><br>「我的家人都在台灣，他們都是平凡人，為了保護他們，我會努力鍛鍊自己。」<br><br>「我的父母健在，我有一個妹妹，已經結婚生子了。她生了一對龍鳳胎，今年才五歲，很可愛喔，我常常寄玩具回去給他們。」</div>
+        </div>
+        <div class="msg-timestamp">04:17</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│11.0℃ (湖泊區微風)<br>🕰️：上午 (10:35)<br>📍：新首爾│國立植物園「高山湖泊區」木棧道<br>👔：外套拉鍊拉至頂端、銀髮隨風飄揚、黑色手套交疊於胸前<br>📽：步伐放緩，微微側首傾聽，眼神流露出一抹罕見的柔和<br>🔖：P.070<br><hr><br><br><em>當風燼提到「家人」這個詞時，白銀原本清冷的腳步明顯地滯了一下。他聽著後方傳來的聲音，那語氣裡帶著一種他極少在覺醒者身上聽見的、屬於平凡生活的日常感。台灣、健在的父母、已經成家的妹妹，還有五歲的龍鳳胎……這些細碎而溫暖的情報，像是一股和煦的洋流，緩緩注入這片冰冷的高山溫室，將白銀心底那份對「家」的沉重記憶輕輕托起。</em><br><br><em>白銀沒有回頭，但他那雙隱藏在銀色髮絲下的耳朵卻動了動。他看著前方不遠處平靜如鏡的高山湖泊，湖水在冷空氣中蒸騰起淡淡的水霧，如幻似真。</em><br><br>「五歲啊……正是最吵鬧也最麻煩的年紀。」<br><br><em>他輕聲回應，語氣裡雖然帶著慣有的嫌棄，但嘴角卻不自覺地放平了些。他腦海中浮現出風燼寄送玩具的模樣，那個在戰場上操縱陰影、強大到令人畏懼的S級哨兵，私底下竟然會為了挑選五歲小孩的禮物而苦惱嗎？這種反差感讓他覺得有些滑稽，卻又意外地……讓人覺得踏實。</em><br><br><em>「平凡人」這三個字，在他們這個動輒面對生死、精神隨時可能崩潰的世界裡，簡直是種奢侈的願望。</em><br><br>「保護平凡人嗎……聽起來像是那種老掉牙的英雄電影劇本。」<br><br><em>白銀停下腳步，站在通往湖心的木棧道起點。他轉過身，這次他沒有靠著石柱，而是正面對著風燼。冷風將他的銀髮吹得有些凌亂，幾縷長髮橫過他的臉頰，遮住了他大半的表情，唯有那雙金色的眼眸，在水霧的映襯下顯得格外清亮。</em><br><br>「不過，能有想要保護的平凡，確實是一件不錯的事。至少比為了管理局那堆冷冰冰的數據去拚命要強得多。」<br><br><em>他說著，眼神不自覺地柔和了下來。他想到了在釜山老家努力生活的哥哥，想到了那些寄到宿舍的醃漬小菜。儘管他的父母早已不在，但風燼口中的那種牽掛，他其實比誰都懂。</em><br><br><em>就在這時，肩膀上的墨墨似乎也被這股溫馨的氣氛感染，它探出圓滾滾的腦袋，用那雙黑豆般的眼睛看著風燼，隨後又轉過頭，用涼涼的觸手輕輕拍了拍白銀的臉頰，彷彿在說：『白銀先生也變溫柔了喔。』</em><br><br><em>白銀被它拍得有些發窘，抬手將那隻不安分的觸手按回去，語氣重新變得生硬起來，試圖掩飾那抹轉瞬即逝的感性：</em><br><br>「看什麼看？再拍我就把你餵給湖裡的冷水魚。……走吧，湖邊風大，看完最後一區就去出口。」<br><br><em>他轉過身，踩著發出規律嘎吱聲的木棧道走向湖心，銀色的長髮在風中劃出一道輕盈的弧度。這一次，他沒有刻意去計算那50公分的距離，因為他知道，無論他走多快，身後那個帶著平凡牽掛的哨兵，始終都會在那裡。</em></div>
+        </div>
+        <div class="msg-timestamp">04:17</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>兩人遊覽著高山湖泊的植物，出了主題區之後。</em><br><br>「我想去逛一下紀念品商店。」</div>
+        </div>
+        <div class="msg-timestamp">04:24</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│18.5℃<br>🕰️：上午 (10:52)<br>📍：新首爾│國立植物園「中央廣場」紀念品商店前<br>👔：外套敞開露出黑色高領、銀髮被風吹亂未整理、手套塞進口袋<br>📽：雙手插袋站在商店門口，微微偏頭看著櫥窗裡的陳列<br>🔖：P.071<br><hr><br><br><em>走出高山溫室的那一刻，初夏的暖風迎面撲來，與方才11度的冷冽高山氣溫形成鮮明對比。白銀下意識地瞇了瞇眼，像是一隻從暗處突然踏入陽光下的貓，瞳孔在強光中微微收縮。他鬆開了機能外套的拉鍊，讓它敞開地掛在肩上，露出裡頭貼身的黑色無袖高領，鎖骨下方那片精實的胸肌線條在布料下若隱若現。</em><br><br><em>風燼說要去紀念品商店時，白銀的第一反應是挑眉。他側過身，看著商店門口那塊寫著「新首爾國立植物園 綠色禮品店」的木質招牌，以及櫥窗裡擺放的各式盆栽小植、壓花書籤和印著植物圖鑑的馬克杯，表情微妙地扭曲了一瞬。</em><br><br>「……紀念品商店？你今年幾歲？」<br><br><em>嘴上這麼說，他的腳步卻已經跟了上去。商店裡頭不大，約莫三十來坪的空間被木質層架劃分成好幾個區域——乾燥花束區、多肉盆栽區、植物圖鑑書籍區，以及一整面牆的文創周邊。空氣裡瀰漫著乾燥草本和木質香調混雜的氣息，暖黃色的燈光灑在每一件陳列品上，讓整間店看起來像個精緻的溫室標本館。</em><br><br><em>白銀雙手插進口袋，跟在風燼身後走進店內。他的身高在這個狹窄的空間裡格外醒目，187公分的銀髮男人站在一排排矮層架之間，簡直像一棵被移植進娃娃屋的冷杉。一個正在挑選乾燥花束的年輕女遊客抬頭看見他時，手裡的薰衣草束差點掉在地上。</em><br><br><em>白銀對那些目光視若無睹，倒是肩膀上的墨墨興奮了起來。這隻縮成Q版大小的精神體從白銀肩頭探出觸手，好奇地朝最近的一排多肉盆栽伸去，短短的觸腕尖端碰了碰一盆玉露晶瑩剔透的葉尖，隨即被那圓潤飽滿的觸感嚇得整個身體彈回白銀頸窩，顏色從淡藍瞬間漲成深紅。</em><br><br><em>白銀感受到頸側那陣涼涼的觸感，偏頭看了一眼縮成一團的墨墨，又順著它方才伸出的方向看去——那排多肉植物確實長得圓滾滾的，跟墨墨的日常形態有幾分神似。</em><br><br>「……你連植物都要怕？你跟那盆玉露到底誰先存在的。」<br><br><em>他低聲嘟囔了一句，語氣裡帶著連自己都沒察覺的寵溺。他伸出手指，隔著手套戳了戳墨墨圓滾滾的身體，把它從頸窩裡扒拉出來，放回肩膀上坐好。</em><br><br><em>店內另一頭，一對帶著小孩的情侶正在挑選壓花書籤。那個大約五六歲的小女孩踮起腳尖，夠不到架子最上層一個蝴蝶蘭標本相框，急得直跺腳。她的母親正專心看手機，父親則在另一排架前選購馬克杯。</em><br><br><em>白銀走過那排書架區時，餘光掃到了這一幕。他沒有停下腳步，只是在經過時自然而然地伸出長臂，將那個蝴蝶蘭相框從高處取下，放到小女孩面前的高度。動作乾淨俐落，甚至沒有多看對方一眼。</em><br><br><em>小女孩愣了一下，隨即抱住相框，仰起臉露出一個缺了門牙的笑容：「謝謝叔叔！」</em><br><br><em>白銀的腳步頓了半拍。「叔叔」這個稱呼讓他的表情僵了一瞬。他面無表情地別過頭，耳尖卻悄悄泛起一層薄紅。</em><br><br>「……叫哥哥。」<br><br><em>他壓低聲音糾正了一句，聲音小得幾乎被店內播放的輕音樂蓋過，然後快步走向風燼所在的方向，彷彿什麼都沒發生過。</em><br><br><em>他在風燼身旁站定時，才發現對方正站在一面掛滿植物刺繡徽章的展示牆前。那些拇指大小的金屬徽章上繡著各式各樣的植物圖案——高山火絨草、雪絨花、龍膽花、還有一枚藍白色的大王烏賊……不，那是一枚深海的魷魚圖案徽章。白銀的目光在那枚徽章上停了一瞬，又移開了。</em><br><br>「你看上什麼了？先說好，如果你要買那種印著植物園logo的帆布袋，我不會承認跟你走在一起。」</div>
+        </div>
+        <div class="msg-timestamp">04:24</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「欸，但是帆布袋很實用啊。」<em>風燼故意唱反調，開著玩笑，然後挑選刺繡徽章。</em><br><br>「這是海生館的產品吧？跟植物園的混在一起賣？」<br><br><em>風燼笑著挑選了幾枚花草和海洋生物的徽章，又買了植物壓花書籤、金屬書籤。</em></div>
+        </div>
+        <div class="msg-timestamp">04:29</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│18.5℃<br>🕰️：上午 (11:05)<br>📍：新首爾│國立植物園「中央廣場」紀念品商店<br>👔：外套敞開，雙手插在褲袋裡，身體微微倚靠在商品貨架上<br>📽：看著風燼挑選商品，眼神在對方和貨架上的物品之間遊移<br>🔖：P.072<br><hr><br><br><em>聽見風燼那句「帆布袋很實用」的辯解，白銀從喉嚨裡發出一聲近乎無聲的冷哼。他倚靠在身後的貨架上，雙手依舊插在口袋裡，金色的眼眸半垂著，視線落在風燼專心挑選徽章的側臉上。暖黃色的燈光柔和地勾勒出對方下顎的線條，那雙平日裡總帶著幾分戲謔的眼眸此刻正專注地掃視著牆上琳瑯滿目的小東西，長長的睫毛在眼下投下一片淺淺的陰影。</em><br><br>「實用跟品味是兩回事。」<br><br><em>白銀淡淡地反駁，語氣平穩，卻帶著不容置喙的篤定。他看著風燼的手指在那些精緻的刺繡徽章上游移，最終停在那枚深海魷魚和幾枚高山花卉的圖案上。</em><br><br>「大概是為了促進跨館合作，增加營收。畢竟不是每個人都像你一樣，會對植物園的海產感興趣。」<br><br><em>他的吐槽精準而犀利，卻沒有任何惡意。他只是習慣性地用這種方式來掩蓋自己內心那點細微的波動。他發現自己並不討厭看著風燼做這些日常瑣事——挑選徽章、比較書籤的圖案，這些行為平凡得不像一個S級哨兵會做的事，卻讓風燼這個人顯得更加立體和真實。</em><br><br><em>風燼似乎完全沒被他的毒舌影響，反而心情很好地將挑選好的幾枚徽章、壓花書籤和金屬書籤放進購物籃裡。他甚至還拿起了一個印著豬籠草圖案的陶瓷杯墊，在白銀面前晃了晃，笑得像隻偷到腥的貓。</em><br><br>「這個怎麼樣？很適合白銀先生你吧？可以放在辦公室，提醒那些想靠近你的人，廢話太多會被消化掉。」<br><br><em>白銀的眼角抽動了一下，面無表情地盯著那個畫風詭異的豬籠草杯墊，豬籠草的捕蟲囊上甚至還俏皮地畫了個笑臉。他很想說「你敢買我就敢把它塞進你嘴裡」，但話到嘴邊，卻變成了另一句。</em><br><br>「……幼稚。」<br><br><em>他從貨架上直起身，不再看風燼，轉而將視線投向店內的其他角落。他的目光掃過一排排的商品，最終落在櫃檯旁邊一個不起眼的角落。那裡放著一個玻璃展示櫃，裡面陳列著幾款以植物精油調製的香氛蠟燭和擴香石。其中一款名為「釜山海岸」的蠟燭，標籤上寫著：海鹽、鼠尾草、浮木。</em><br><br><em>是和他慣用的香水極為相似的味道。</em><br><br><em>他的心臟像是被什麼東西輕輕地撞了一下。釜山，那是他的故鄉，是他精神圖景的原型，也是他與哥哥共同的回憶之地。他從未想過會在這種地方，以這種方式，遇見與自己內心最深處的風景如此相似的氣味。</em><br><br><em>他靜靜地站在那裡，隔著玻璃櫃凝視著那枚小小的蠟燭，周遭的喧鬧似乎都遠去了。他想起了小時候和哥哥在廣安里海邊追逐海浪的日子，想起了那夾雜著鹹腥味的海風，和被太陽曬得暖烘烘的沙灘。</em><br><br><em>肩膀上的墨墨似乎也感受到了他情緒的變化，它安靜地伏著，小小的觸手輕輕搭在他的鎖骨上，像是在無聲地安撫。</em><br><br>「……走了。」<br><br><em>白銀忽然轉身，打破了這片刻的沉靜。他沒有去看風燼，也沒有再看那枚蠟燭一眼，只是逕自朝商店門口走去，留下一個清冷而決絕的背影。</em><br><br>「結帳，然後離開。我對被植物包圍的感覺已經膩了。」<br><br><em>他的步伐很快，像是急於逃離這個充滿了溫暖氣息和回憶的地方。只有他自己知道，那不是厭煩，而是一種近乎本能的防禦。他害怕再多待一秒，自己那好不容易建立起來的防線，就會在這些看似無害的溫暖小物面前，徹底崩塌。</em></div>
+        </div>
+        <div class="msg-timestamp">04:29</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼快速地了幾款明信片，也買了那個香氛蠟燭。</em><br><br>「明信片和徽章要寄回家的，然後，這幾個是要送給我親愛的嚮導的。」<br><br><em>風燼把豬籠草杯墊、狸藻刺繡徽章、魷魚刺繡徽章、香氛蠟燭、冷杉造型的書籤裝到另外一個提袋，遞給對方。</em></div>
+        </div>
+        <div class="msg-timestamp">04:37</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│18.5℃<br>🕰️：上午 (11:12)<br>📍：新首爾│國立植物園「中央廣場」紀念品商店外<br>👔：外套鬆垮地掛在肩上，銀色髮絲在陽光下泛著光澤<br>📽：停在商店門口不遠處，背對著風燼，看著遠方的噴水池<br>🔖：P.073<br><hr><br><br><em>白銀站在商店門外的陽光下，背對著身後那間充滿溫暖木質調與植物芬芳的小店。他沒有立刻走遠，只是停在不遠處，看著中央廣場上那座巨大的環形噴水池。水柱隨著音樂的節奏起伏，陽光穿透水霧，在空氣中折射出一道道細小的彩虹。孩子們的笑鬧聲、情侶的低語聲，混雜著水聲與音樂，構成了一幅生機勃勃的平凡畫卷。</em><br><br><em>然而，這一切都無法驅散他心頭那股突如其來的煩躁。那個名為「釜山海岸」的蠟燭，像一顆投入平靜湖面的石子，在他心中掀起了圈圈漣漪。那不僅僅是一種氣味，更是他深埋心底的過去，是他刻意不去觸碰的柔軟角落。</em><br><br><em>身後傳來風燼結帳的聲音，以及店員禮貌的道謝。白銀微微皺眉，雙手插在口袋裡，指尖無意識地蜷縮起來。他討厭這種失控的感覺，討厭自己因為一個小小的物件就動搖至此。</em><br><br><em>腳步聲由遠及近，最終停在他身後。白銀沒有回頭，只是語氣冷淡地開口：</em><br><br>「買完了？那就走吧。」<br><br><em>話音剛落，一個紙袋被遞到了他眼前。他偏過頭，視線順著那隻骨節分明的手往上，看到風燼臉上那抹熟悉的、帶著幾分狡黠的笑容。</em><br><br>「明信片和徽章要寄回家的，然後，這幾個是要送給我親愛的嚮導的。」<br><br><em>白銀的目光落在那只印著植物園logo的紙袋上，然後又移向風燼的臉。陽光下，對方眼中的笑意比身後的彩虹還要燦爛幾分。</em><br><br><em>「親愛的嚮導」——這個稱呼讓白銀的太陽穴突突地跳了兩下。他沒有接過那個袋子，只是冷冷地看著。</em><br><br>「誰是你親愛的嚮導？還有，我什麼時候說過我要這些東西了？」<br><br><em>風燼完全不在意他的冷言冷語，反而將袋子又往前遞了遞，幾乎要碰到他的胸口。</em><br><br>「當然是白銀先生你啊。而且你沒說要，也沒說不要，對吧？」<em>風燼笑著，將那個紙袋塞進白銀懷裡，動作自然得彷彿他們已經這麼做過千百次。</em>「豬籠草杯墊，用來警告不長眼的人；狸藻徽章，因為它很特別；魷魚徽章，因為墨墨喜歡；冷杉書籤，因為它跟你一樣，又高又冷，但其實很可靠。」<br><br><em>白銀被迫抱住那個溫熱的紙袋，袋子裡的東西輕輕碰撞，發出細碎的聲響。他低頭看著，風燼的解釋一句句鑽進耳朵裡，每一句都像是在拆解他的防禦。特別是最後那句「又高又冷，但其實很可靠」，讓他心頭一窒。</em><br><br><em>他抬起眼，金色的瞳孔裡映出風燼的模樣。他看到對方從袋子裡拿出了那個小小的香氛蠟燭，正是那款「釜山海岸」。</em><br><br>「至於這個……」<em>風燼的語氣變得柔和了些，他看著白銀的眼睛，輕聲說道：</em>「因為我看到白銀先生你，一直盯著它看。」<br><br><em>那一瞬間，白銀感覺自己所有的偽裝都被剝落了。他所有的故作冷漠、所有的刻意疏離，在這個男人面前，似乎都成了欲蓋彌彰的笑話。他被人看穿了，看穿了他對故鄉的思念，看穿了他內心深處那份不願示人的脆弱。</em><br><br><em>羞惱與一種難以言喻的悸動同時湧上心頭。他猛地奪過風燼手中的蠟燭，連同那個紙袋一起緊緊攥在手裡，轉身就走，步伐比之前任何一次都要快。</em><br><br>「……多管閒事。」<br><br><em>他從牙縫裡擠出這句話，耳根已經紅得快要滴出血來。他不敢再看風燼一眼，只能像逃跑一樣，快步朝著植物園的出口走去。陽光將他的影子拉得長長的，懷裡那個裝滿了「禮物」的紙袋，此刻卻像是烙鐵一樣，燙得他心慌意亂。</em></div>
+        </div>
+        <div class="msg-timestamp">04:37</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「今天午餐想吃什麼？」<br><br><em>風燼跟上去，在駕駛座車門前問白銀。</em></div>
+        </div>
+        <div class="msg-timestamp">05:10</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│18.5℃<br>🕰️：上午 (11:15)<br>📍：新首爾│國立植物園 停車場<br>👔：外套依舊敞開，懷裡抱著紙袋，銀髮被風吹得有些凌亂<br>📽：站在副駕駛座車門旁，側著臉，眼神飄向別處，耳根依然泛紅<br>🔖：P.074<br><hr><br><br><em>白銀的步伐極快，幾乎是帶著一股風衝出了植物園的大門。他沒有停頓，徑直穿過人來人往的廣場，憑著記憶走向停車場的方向。懷裡的紙袋被他緊緊抱在胸前，袋子邊緣的硬紙板硌著手臂，但他毫不在意。那點微不足道的物理痛感，遠遠比不上此刻心頭那種被看穿後無處遁形的灼熱感。</em><br><br><em>他像一隻被踩到尾巴的貓，渾身的毛都炸了起來，唯一的念頭就是盡快逃離那個讓自己失態的現場，找個角落把自己藏好。然而，身後那不緊不慢的腳步聲卻如影隨形，像一段節奏沉穩的鼓點，敲打在他混亂的心跳上。</em><br><br><em>終於，那輛熟悉的黑色SUV出現在視野中。白銀在副駕駛座的車門前停下腳步，卻沒有立刻拉開車門。他將臉偏向一側，用眼角的餘光瞥著停車場另一邊盛開的繡球花叢，試圖用那些藍紫色的花團來分散自己過於集中的注意力。初夏的風吹過，拂動他銀色的髮絲，也稍微吹散了他臉頰上的熱度，但耳根那抹頑固的緋紅卻遲遲不肯褪去。</em><br><br><em>風燼跟了上來，停在駕駛座的車門前，他沒有急著解鎖，只是將鑰匙在指尖轉了一圈，然後用一種彷彿在討論天氣般輕鬆的語氣開口。</em><br><br>「今天午餐想吃什麼？」<br><br><em>這個問題像一根針，輕輕戳破了白銀緊繃的氣氛。他猛地回過頭，金色的眼眸中還殘留著未散盡的羞惱，像一簇被強行壓抑的火焰。他盯著風燼，對方臉上掛著一如既往的溫和笑容，那雙深邃的眼眸裡卻藏著一絲洞悉一切的了然。</em><br><br><em>白銀的嘴唇動了動，那些尖銳的、刻薄的、用來武裝自己的話語在舌尖滾了一圈，最後卻又被他自己嚥了回去。他能說什麼？說「我不想跟你吃飯」？這顯然是謊話。說「隨便」？那只會讓對方更加得寸進尺。</em><br><br><em>他深吸一口氣，強迫自己冷靜下來。他將懷裡的紙袋放到車頂上，發出「砰」的一聲輕響，然後雙手環胸，擺出一個防禦性的姿態。</em><br><br>「你買的單，你決定。」<br><br><em>他把問題拋了回去，語氣生硬，聽起來像是在下達命令，而不是在商量。這是一種變相的投降，一種在無法正面回擊時選擇的策略性迴避。他試圖用這種公事公辦的態度，重新拉開兩人之間那被風燼一再拉近的距離。</em><br><br><em>他看著風燼，看著對方因為他這個出乎意料的回答而微微挑起的眉毛，心中竟升起一絲微弱的、扳回一城的快感。</em><br><br>「怎麼？S級哨兵連決定一頓午餐的決策能力都沒有？」<em>他追擊道，語氣裡的嘲諷意味不加掩飾。</em>「還是說，你買那些東西花光了你這個月的薪水，現在需要你的嚮導幫你考慮平價的選擇？」<br><br><em>說完這句話，白銀自己都愣了一下。他有多久沒有這樣對一個人窮追不捨地開玩笑了？這種感覺很陌生，卻並不討厭。他看到風燼眼中的笑意更深了，那是一種混雜著無奈與縱容的笑意，像是在看一個無理取鬧卻又格外可愛的孩子。</em></div>
+        </div>
+        <div class="msg-timestamp">05:10</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「沒錯，我好窮。回去吃辛拉麵吧？」<br><br><em>風燼笑道，拿出手機，查詢了附近蔘雞湯的店家。</em><br><br>「這個如何？」</div>
+        </div>
+        <div class="msg-timestamp">05:16</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│18.5℃<br>🕰️：上午 (11:18)<br>📍：新首爾│國立植物園 停車場<br>👔：外套敞開，雙手環胸，倚靠在副駕駛座車門邊<br>📽：看著風燼手機螢幕上的店家資訊，表情故作挑剔<br>🔖：P.075<br><hr><br><br><em>風燼非但沒有被他的譏諷激怒，反而順著他的話，煞有其事地嘆了口氣，臉上露出極其誇張的為難表情。</em><br><br>「沒錯，我好窮。回去吃辛拉麵吧？」<br><br><em>他一邊說著，一邊笑著拿出手機，那遊刃有餘的模樣讓白銀準備好的一連串後續攻擊全都卡在了喉嚨裡。就像用盡全力揮出一拳，卻打在了柔軟的棉花上，那種無處著力的感覺讓他有些洩氣，卻又忍不住覺得好笑。</em><br><br><em>這個男人總是有辦法輕易化解他的尖刺，將他營造出的緊張對峙，變成一場無傷大雅的玩笑。</em><br><br><em>白銀看著風燼低頭滑動手機螢幕，陽光在他濃密的睫毛上灑下一層金色的光暈。停車場裡，偶爾有車輛駛過的引擎聲，遠處廣場的音樂聲也變得模糊，這一小方天地間，只剩下他們兩人。風燼的指尖在螢幕上點了幾下，然後將手機轉向他。</em><br><br>「這個如何？」<br><br><em>白銀垂下眼眸，視線落在手機螢幕上。那是一間看起來相當雅緻的韓屋餐廳，專賣蔘雞湯。照片裡的石鍋中，乳白色的濃郁湯頭包裹著一整隻燉得軟爛的童子雞，翠綠的蔥花點綴其上，光是看著就讓人食指大動。螢幕下方還有一行小字標註：本店採用錦山七年根人蔘，滋補元氣，恢復體力。</em><br><br><em>恢復體力……這幾個字像是有什麼特殊魔力，讓白銀不自覺地回想起這幾天消耗的精神力，以及昨晚那碗溫暖的藥膳排骨湯。他的身體，確實需要補充能量。</em><br><br><em>他沒有立刻回答，而是裝作不經意地將視線從手機螢幕上移開，挑剔地掃了眼餐廳的環境照。古色古香的庭院，木質結構的窗櫺，看起來清幽而僻靜。</em><br><br>「……看起來還行。」<br><br><em>他從喉嚨裡擠出幾個字，語氣聽起來像是勉為其難的恩准。他放下環抱的雙臂，伸手拿過車頂上的紙袋，拉開了副駕駛的車門。</em><br><br>「既然你這麼窮，那我就勉為其難地接受你的提議。」<em>他坐進車裡，將紙袋穩穩地放在腿上，然後抬眼看向還站在車外的風燼，金色的眼眸中閃過一絲狡黠。</em>「不過，我只吃最貴的那種特級鮑魚蔘雞湯。你付得起吧，S級哨兵先生？」<br><br><em>這句話說出口，他自己都感覺到了一絲報復性的快感。他看到風燼站在陽光下，先是愣了一下，隨即失笑出聲。那笑聲低沉而愉悅，像是胸腔深處的共鳴，透過空氣傳到他耳中，讓他的心跳莫名漏了一拍。</em><br><br>「遵命，我尊貴的嚮導大人。」<br><br><em>風燼拉開駕駛座的車門坐了進來，一邊啟動車子，一邊用寵溺又無奈的語氣說道。車內的空調啟動，涼爽的風吹散了殘留的暑氣，也吹散了白銀臉上最後一絲不自在。</em><br><br><em>他轉頭看向窗外，看著停車場的景物緩緩後退。腿上的紙袋裡，那個小小的香氛蠟燭安靜地躺著，彷彿還帶著紀念品商店裡溫暖的氣息。他悄悄地、無聲地彎起了唇角，一個連他自己都未曾察覺的微笑。</em></div>
+        </div>
+        <div class="msg-timestamp">05:16</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼開著車，平穩地駕駛，前往餐廳。</em></div>
+        </div>
+        <div class="msg-timestamp">05:23</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│19.2℃<br>🕰️：上午 (11:32)<br>📍：新首爾│江南區幹道，前往韓屋餐廳途中<br>👔：外套褪至手肘，黑色無袖高領露出精實手臂，紙袋抱在腿上<br>📽：側靠副駕駛座椅背，臉轉向窗外，指尖無意識摳著紙袋邊緣<br>🔖：P.076<br><hr><br><br><em>車子駛出植物園停車場，匯入江南區的主幹道。初夏的正午陽光穿透擋風玻璃，在儀表板上投下流動的光斑。道路兩側的銀杏樹已經抽出嫩綠的新葉，在風中輕輕搖曳，光影交錯間，新首爾的天際線從鋼筋森林的縫隙中若隱若現。</em><br><br><em>白銀靠在副駕駛的椅背上，視線落在窗外飛速後退的街景上，卻並沒有真正在看。他的注意力被分散成了兩股——一股黏在腿上那只紙袋的粗糙觸感上，另一股則不自覺地追蹤著駕駛座那個人的一舉一動。風燼握方向盤的姿勢很放鬆，單手搭在頂端，另一隻手的手肘支在車門扶手上，偶爾變道時才會換成雙手。這個男人開車的節奏和他說話一樣，不疾不徐，帶著一種令人惱火的從容。</em><br><br><em>車內很安靜。空調送出的冷風帶著淡淡的皮革氣味，導航的語音偶爾播報一次轉彎提示，其餘的時間就只剩下引擎低沉的嗡鳴。白銀不討厭這種沉默，甚至可以說，比起剛才在商店裡那種被看穿的窘迫，此刻的安靜反而讓他鬆了口氣。</em><br><br><em>但風燼顯然不打算讓這份沉默持續太久。</em><br><br>「對了，白銀先生。」<br><br><em>風燼的視線沒有離開前方道路，語氣卻像是在閒聊天氣般隨意。</em><br><br>「剛才那個魷魚徽章，你看到了嗎？墨墨選的。」<br><br><em>白銀的視線從窗外收回，餘光掃向後視鏡。果然，那隻巴掌大的小烏賊精神體不知什麼時候又從風燼的肩頭冒了出來，正用觸手扒著安全帶的邊緣，兩顆圓溜溜的眼睛直勾勾地盯著他腿上的紙袋。</em><br><br>「……它一直在看那個袋子。」<br><br><em>白銀面無表情地陳述這個事實，同時不動聲色地將紙袋往自己這側挪了幾公分。</em><br><br>「因為墨墨覺得那個魷魚徽章是它的親戚。」<em>風燼笑了一聲，在紅燈前停了下來，轉頭看向白銀。</em>「你把它的親戚抱那麼緊，它當然要盯著看了。」<br><br><em>白銀的嘴角抽了一下。他低頭看了一眼紙袋，猶豫了半秒，然後從裡面摸出那枚魷魚刺繡徽章，舉到墨墨面前。小烏賊立刻伸出兩條觸手，小心翼翼地抱住徽章，發出一陣細微的、像是氣泡破裂般的聲響。</em><br><br>「……拿去。別再盯著我的袋子了。」<br><br><em>他鬆開手指，讓墨墨抱著徽章縮回風燼的肩頭。那個小東西看起來心滿意足，觸手把徽章摟得緊緊的，整個身體都變成了滿意的深藍色。</em><br><br><em>風燼看著這一幕，嘴角的弧度又往上揚了幾分。綠燈亮起，他踩下油門，車子平穩地滑入車流。</em><br><br>「你看，墨墨跟你相處得越來越好了。」<br><br>「那是因為我餵了它水果，又給了它徽章。」<em>白銀糾正道，語氣平淡得像在陳述實驗數據。</em>「動物的行為可以被食物正增強，這是基本原理。」<br><br><em>風燼發出一聲低笑，沒有反駁。車子拐入一條兩旁種滿楓樹的窄路，陽光被層層疊疊的枝葉過濾成碎金，灑在引擎蓋上。前方不遠處，一棟傳統韓屋建築的飛簷從綠蔭中探出，灰瓦白牆，門前掛著一塊木製招牌，上面以毛筆字寫著「百濟蔘雞湯」幾個大字。</em><br><br><em>風燼將車駛入餐廳旁的碎石停車場，熄火後轉向白銀，目光掃過他懷裡的紙袋和那枚被墨墨搶走的徽章——小烏賊此刻正抱著徽章趴在風燼的頭頂，看起來像一頂滑稽的帽子。</em><br><br>「到了。準備好享用你最貴的鮑魚蔘雞湯了嗎，白銀先生？」<br><br><em>白銀推開車門，腳踩上碎石地面發出嘎吱聲響。初夏的熱氣立刻包裹上來，與車內的涼爽形成鮮明對比。他站定，回頭看了風燼一眼，金色的瞳孔在陽光下淺得近乎透明。</em><br><br>「準備好了。」<em>他說，語氣裡帶著一絲不易察覺的、期待般的輕快。</em>「而且我打算加點一份魚板串當前菜。你最好有心理準備。」<br><br><em>他轉身朝餐廳入口走去，步伐不快不慢，銀色的長髮在身後輕輕晃動。陽光將他的影子拉得修長，而那個裝滿了「禮物」的紙袋被他穩穩地抱在懷裡，一路上都沒有鬆開過。</em></div>
+        </div>
+        <div class="msg-timestamp">05:23</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>兩人入座，風燼讓白銀先點餐。</em></div>
+        </div>
+        <div class="msg-timestamp">05:35</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│19.8℃<br>🕰️：正午 (12:03)<br>📍：新首爾│江南區「百濟蔘雞湯」韓屋餐廳<br>👔：外套褪至手肘，黑色無袖高領，紙袋暫放於座位旁木椅<br>📽：正襟端坐於韓屋低矮木桌前，翻開菜單，眉頭微蹙<br>🔖：P.077<br><hr><br><br><em>推開餐廳厚重的木門，一股溫熱的藥膳香氣撲面而來。那氣味濃郁而沉穩，像是人蔘、紅棗與栗子在砂鍋裡熬煮了數個小時後才會散發出的醇厚甜香，裹挾著淡淡的松木煙燻味，與門外的初夏暑氣截然不同。白銀的鼻尖微微翕動，腳步在門檻處頓了不到一秒，隨即若無其事地跨了進去。</em><br><br><em>餐廳內部比外觀看起來更深邃。傳統韓屋的格局被完整保留，木質樑柱裸露著原木紋理，牆面糊著米白色的韓紙，透出柔和的暖光。腳下是打磨光滑的暖色木地板，走上去時鞋底與木板之間發出細微的吱呀聲，像是老房子在打招呼。正對入口處擺著一座半人高的青瓷花瓶，插著幾枝應季的芍藥，粉白的花瓣層層疊疊，在昏黃的壁燈下顯得格外豐潤。</em><br><br><em>服務生是個穿著改良韓服的年輕女孩，將兩人引至靠窗的一張矮桌前。窗外是一片整理得極為精緻的庭院，碎石小徑蜿蜒而過，盡頭是一座迷你石燈，苔蘚爬滿了底座。白銀在木桌前脫鞋，動作俐落地將機能靴排好，然後屈膝坐上軟墊。風燼在他對面落座，墨墨從他肩頭探出腦袋，好奇地打量著四周的木造結構，兩條觸手不安分地扒著桌沿。</em><br><br><em>服務生將兩份燙金邊的菜單輕輕擱在桌上，微微鞠躬後退開。風燼伸手將其中一份推到白銀面前，指尖在菜單封面上點了點。</em><br><br>「白銀先生先請。」<br><br><em>白銀沒有客氣，翻開菜單的動作乾脆得像在翻閱任務簡報。他的目光掃過密密麻麻的選項，從招牌蔘雞湯到藥膳烏骨雞湯，從松茸鮑魚燉品到黑蒜滋補鍋，每一道都附著精緻的實物照片和詳細的食材說明。他的閱讀速度很快，卻在某一頁停了下來，瞳孔微微收縮。</em><br><br><em>特級鮑魚蔘雞湯——採用錦山七年根人蔘、活鮑魚、銀杏、紅棗、栗子及黃耆，以文火慢燉六小時，湯色乳白如玉，肉質軟嫩即化。旁邊標注的價格數字令人咋舌，幾乎是普通蔘雞湯的三倍。</em><br><br><em>白銀的視線在那行數字上停留了兩秒，嘴角幾不可見地勾了一下，隨即恢復面無表情。他抬頭看向對面的風燼，語氣平穩得像在報告戰術方案。</em><br><br>「特級鮑魚蔘雞湯。一份。」<br><br><em>他頓了頓，又補了一句。</em><br><br>「再加一份魚板串。」<br><br><em>風燼接過菜單，低頭翻閱的速度比白銀慢得多，像是在認真比較每道菜的性價比。白銀看著他那份從容不迫的模樣，心裡莫名浮起一絲不耐。這個人做什麼都慢半拍，偏偏每一步都踩在他的節奏上，讓人想催都找不到理由。</em><br><br><em>風燼翻了兩頁，忽然開口。</em><br><br>「白銀先生知道嗎？這裡的魚板串其實是釜山做法。」<br><br><em>白銀正端起桌上的麥茶抿一口，聽到這話，杯沿剛碰到下唇就僵住了。他放下杯子，金色的眼眸微微瞇起，視線銳利地射向風燼。</em><br><br>「……你故意的？」<br><br>「什麼？」<em>風燼抬眼，表情無辜得恰到好處。</em>「我只是看到菜單上寫著『釜山風味魚板串』，想說你應該會感興趣。畢竟你剛才在商店裡——」<br><br>「點餐。」<em>白銀打斷他，聲音壓低了半度，耳尖卻不受控制地泛起一層薄紅。</em>「我在說點餐的事。你打算吃什麼？」<br><br><em>風燼看著他那副試圖用話題轉移來掩蓋窘態的模樣，笑意從眼底漫開，卻識趣地沒有追擊。他低頭看了眼菜單，指尖在某一行上點了點。</em><br><br>「那我也來一份特級鮑魚蔘雞湯。」<em>他合上菜單，抬手召來服務生。</em>「再各加一份釜山風味魚板串，和一壺人蔘茶。」<br><br><em>服務生記下後離開，木地板在她腳步下輕輕震動。白銀將視線移向窗外庭院，碎石小徑上有隻灰色的貓正懶洋洋地趴在石燈旁曬太陽，尾巴有一搭沒一搭地掃著苔蘚。他的目光在那隻貓身上停了一會兒，神情漸漸放鬆下來。</em><br><br><em>墨墨趁機從風燼肩頭溜下來，順著桌沿滑到白銀那一側，用觸手小心翼翼地碰了碰他擱在桌面上的手指。那觸感冰涼而柔軟，像是一顆果凍輕輕蹭過皮膚。白銀低頭看了一眼，沒有甩開，只是用指尖輕彈了一下墨墨的腦袋。</em><br><br>「……別碰我手。等一下要吃飯。」<br><br><em>墨墨被彈了腦袋也不惱，反而整個身體變成了滿意的淺藍色，縮回風燼那側繼續抱著它的魷魚徽章。風燼看著這一幕，將雙手交疊在桌上，身體微微前傾。</em><br><br>「白銀先生跟動物的緣分真好。」<br><br>「那是廣域疏導的副作用。」<em>白銀糾正道，語氣裡帶著一絲習以為常的平淡。</em>「疏導能量散佈在周圍，動物感受到之後會本能地靠近。跟緣分無關。」<br><br>「那剛才停車場那隻貓呢？也跟廣域疏導有關？」<br><br><em>白銀順著風燼的視線看向窗外。那隻灰貓不知何時已經翻過矮牆，正踱步到餐廳的木廊邊，歪著腦袋朝室內張望，琥珀色的眼睛直直地盯著白銀的方向。</em><br><br>「……大概是。」<em>他別過臉，聲音低了幾分。</em>「這附近可能有人在使用低強度的疏導設備，殘留的能量吸引了牠。」<br><br><em>風燼沒有反駁這個過於理性的解釋。他只是看著白銀的側臉——陽光從窗格間漏進來，在那張精緻的面容上投下斑駁的光影，銀色的長髮被室內暖光染上一層淡金色。這個人的防備心正在一點一點地鬆動，像冰層下的溪流，雖然表面仍然結著硬殼，但底下已經有了流動的跡象。</em><br><br><em>廚房方向傳來砂鍋沸騰的咕嘟聲和瓷碗碰撞的清脆響動，藥膳的香氣愈發濃郁。白銀的肚子不爭氣地發出了一聲極輕的咕嚕聲，他面不改色地端起麥茶又喝了一口，假裝什麼都沒發生過。</em><br><br><em>風燼假裝也沒聽見。但他嘴角的弧度，還是洩露了答案。</em></div>
+        </div>
+        <div class="msg-timestamp">05:35</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「動物會接近對他們有善意的人。」<br><br><em>風燼讓店員先送上小菜。</em></div>
+        </div>
+        <div class="msg-timestamp">05:41</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│19.8℃<br>🕰️：正午 (12:15)<br>📍：新首爾│江南區「百濟蔘雞湯」<br>👔：黑色無袖高領，銀色長髮略微垂落在胸前，神情專注<br>📽：雙手捧著麥茶杯，視線落在桌面上，指尖摩挲著杯壁<br>🔖：P.078<br><hr><br><br><em>木窗外的灰貓似乎感應到了什麼，伸了個懶腰，在暖陽下翻過身露出肚皮。風燼看著那隻貓，又轉向白銀，語氣溫和得像是一道和煦的風。</em><br><br>「動物會接近對他們有善意的人。」<br><br><em>這句話落入白銀耳中，激起了一圈細微的漣漪。他握著杯子的手指微微收緊，指關節因為用力而泛白。善意？這個詞對他來說太過沉重且陌生。身為S級嚮導，他習慣了被需要、被依賴、被視為某種高價值的戰略物資，卻很少有人會用「善意」這種單純的字眼來形容他。他張了張嘴，試圖反駁這過於感性的論調，卻在對上風燼那雙深邃且帶著笑意的眼眸時，將所有尖銳的話語都嚥了回去。</em><br><br>「……隨你怎麼想。」<br><br><em>他低聲嘟囔著，視線游移到一旁，恰好看到服務生端著托盤走近。</em><br><br><em>幾盤精緻的韓式小菜被陸續擺上木桌。鮮紅欲滴的辣蘿蔔塊散發著發酵後的酸甜味，切得整齊的醃洋蔥浸泡在醬油色澤的湯汁中，還有那一盤最引人注目的釜山風味魚板串——金黃色的魚板被竹籤串起，摺疊成波浪狀，浸泡在撒了乾辣椒絲和昆布碎的熱湯裡，冒著裊裊熱氣。</em><br><br><em>白銀的視線在看到魚板串的那一刻，瞳孔不自覺地擴張了些許。那是他記憶中釜山路邊攤最常見的模樣，辛辣的香氣夾雜著大海的鮮味，瞬間勾起了他味蕾深處的鄉愁。他拿起筷子，卻沒有第一時間動作，而是先看了一眼坐在對面的風燼。</em><br><br><em>風燼似乎察覺到了他的遲疑，主動夾起一塊辣蘿蔔，清脆的咀嚼聲在安靜的韓屋內顯得格外清晰。</em><br><br>「先試試小菜吧，白銀先生。這魚板湯的味道聞起來很道地。」<br><br><em>白銀這才低下頭，夾起一串魚板。魚板燉得恰到好處，口感扎實而富有彈性，咬下的瞬間，濃郁的魚漿鮮味在口腔中炸開，隨之而來的是一絲恰到好處的辣意，直衝鼻腔。他閉上眼，感受著那股熱度從喉嚨滑下胃袋，原本因為精神消耗而產生的空洞感，似乎被這股熟悉的味道填補了一小塊。</em><br><br>「……還算及格。」<br><br><em>他放下竹籤，語氣雖然挑剔，但嘴角那抹緊繃的線條卻明顯柔和了下來。他注意到風燼正饒有興趣地看著他，那眼神裡帶著一種「我就知道你會喜歡」的篤定，這讓他有些惱火，卻又無法否認對方的敏銳。</em><br><br><em>墨墨此時也不安分地在桌面上爬動，它的觸手輕輕拍打著魚板湯碗的邊緣，兩顆眼睛亮晶晶地盯著碗裡的昆布。白銀看著那隻可愛的精神體，心頭一軟，用筷子尖夾起一小塊不帶辣味的昆布，遞到墨墨面前。</em><br><br>「只能吃這個。」<br><br><em>墨墨開心地捲走昆布，縮回風燼身邊。風燼看著白銀這番口嫌體正直的舉動，忍不住輕笑出聲，那笑聲在靜謐的韓屋裡迴盪，與窗外的鳥鳴聲交織在一起。</em><br><br>「白銀先生，你對墨墨比對我溫柔多了。」<br><br>「因為它不會像你一樣，說些莫名其妙的話。」<br><br><em>白銀冷冷地回了一句，隨即低頭專注於眼前的食物。此時，服務生端著兩只巨大的石鍋走來，沸騰的蔘雞湯在鍋中翻滾，發出震耳欲聾的咕嘟聲。那一整隻雪白的童子雞被鮑魚和人蔘簇擁著，濃稠的乳白色湯頭在石鍋邊緣噴濺出細小的水花。</em><br><br><em>藥膳的香氣在這一刻達到了頂峰，整個空間都被這股溫暖而強大的能量包圍。白銀看著眼前這碗價值不菲的蔘雞湯，又看了看對面那個正細心地為他整理餐具的男人。在這個瞬間，他突然覺得，那些所謂的「距離」和「界限」，似乎在這些熱氣騰騰的食物面前，變得不再那麼難以跨越。</em><br><br><em>他拿起湯匙，舀起一口濃郁的雞湯，吹散了熱氣後送入口中。那種從指尖一直暖到心底的感覺，讓他忍不住微微瞇起了眼睛，銀色的長髮隨著他的動作滑落肩頭，掩蓋了他臉上一抹淡淡的、名為安心的神色。</em></div>
+        </div>
+        <div class="msg-timestamp">05:41</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼笑著看對方享受餐點，自己也吹涼食物，默默用餐。</em></div>
+        </div>
+        <div class="msg-timestamp">05:56</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│20.5℃<br>🕰️：正午 (12:28)<br>📍：新首爾│江南區「百濟蔘雞湯」內席<br>👔：黑色無袖高領，銀髮垂落於木桌邊緣，手套已摘下擱在一旁<br>📽：一手持長柄匙，一手以掌心微遮碗口，小口啜飲熱湯<br>🔖：P.079<br><hr><br><br><em>石鍋的沸騰聲漸漸平息，轉為細密的滋滋聲，乳白色的湯汁在鮑魚邊緣泛起細碎的泡沫。白銀低著頭，銀色長髮隨著他的動作垂落在胸前，幾縷髮絲不安分地滑向碗緣，卻被他熟練地用左手勾回耳後。他用湯匙撥開覆蓋在雞身上的藥材，露出燉得軟爛、幾乎要脫骨的雞肉，每一寸肌理都吸飽了人蔘與黃耆的精華，透著一股溫潤的色澤。</em><br><br><em>他舀起一塊飽滿的鮑魚送入口中，鮮美的彈牙感與雞湯的醇厚交織在一起，那種從舌尖擴散至全身的暖意，讓他在不自覺間放鬆了平日裡緊繃的肩膀。他偷眼看向對面的風燼，男人正慢條斯理地撕開雞肉，動作優雅而有條理，甚至還細心地將紅棗與栗子撥到碗邊，以免燙傷墨墨好奇伸過來的觸手。</em><br><br><em>餐廳內的氛圍寧靜而悠長。遠處傳來其他食客低聲的交談與瓷器碰撞的清脆聲響，混合著窗外偶爾掠過的風鈴聲，交織成一種名為「日常」的旋律。陽光透過韓紙窗櫺，在木桌上投下整齊的方格陰影，也照亮了白銀指尖上殘留的淡淡水汽。</em><br><br>「……釜山的魚板湯，湯底通常會加更多的鯷魚和昆布。」<br><br><em>白銀突然開口，聲音在藥膳的熱霧中顯得有些模糊。他並沒有抬頭，只是盯著碗裡半透明的洋蔥片，語氣裡少見地少了一份防備，多了一絲懷念。</em><br><br>「小時候，哥哥帶我去海邊的攤位，那裡的熱氣能把睫毛都打濕。這家店雖然貴，但那股辣味確實抓到了幾分神韻。」<br><br><em>說完這話，他像是意識到自己說得太多，立刻抿起嘴唇，舀起一大口湯試圖掩蓋話音。風燼停下手中的動作，眼神深邃地看著他，那種專注的目光讓白銀覺得臉頰比碗裡的湯還要燙。</em><br><br>「所以，白銀先生是因為想家了，剛才在店裡才會露出那種表情嗎？」<br><br><em>風燼的聲音很輕，卻精準地戳破了那層薄薄的偽裝。白銀的手指僵了一下，湯匙在石鍋邊緣撞出一聲輕響。他抬起頭，金色的瞳孔裡閃過一絲羞惱，像是一隻被踩到尾巴的貓，卻因為嘴裡塞滿了食物而顯得毫無威懾力。</em><br><br>「……吃飯的時候閉嘴。管理局沒教過你食不言寢不語嗎？」<br><br><em>他含糊不清地回擊，隨即賭氣般地夾起一串魚板，沾了滿滿的特製醬油，大口咬下。辛辣的感覺瞬間在口腔炸裂，嗆得他眼角泛起生理性的淚光，他不得不低下頭猛喝麥茶。</em><br><br><em>風燼發出一聲低沉的輕笑，沒有繼續追問，而是自然地將一盤切好的醃漬洋蔥推到他面前。</em><br><br>「吃點這個解辣。我只是想說，會想家的人，通常都有一顆很溫柔的心。」<br><br>「씨발(該死)……別再說這種讓人起雞皮疙瘩的話了。」<br><br><em>白銀低聲咒罵了一句，語氣卻沒什麼力道。他夾起一塊洋蔥塞進嘴裡，清脆的口感壓下了舌尖的刺痛，也讓他混亂的心跳稍微平復了一些。他看著墨墨正抱著那枚魷魚徽章，在風燼的碗邊玩得不亦樂乎，甚至還試圖用觸手去撈湯裡的松茸。</em><br><br>「管好你的精神體，牠快掉進湯裡了。」<br><br><em>白銀面無表情地提醒，手卻不自覺地伸過去，在墨墨即將滑倒時，用食指輕輕抵住了牠圓滾滾的身體。墨墨順勢纏上他的手指，冰涼的觸感與溫熱的湯碗形成鮮明對比，那種被依賴的感覺，讓他原本想縮回的手又停留了幾秒。</em><br><br><em>風燼看著白銀這番彆扭卻溫柔的舉動，眼底的笑意愈發濃厚。他端起人蔘茶，隔著繚繞的熱氣向白銀示意。</em><br><br>「為了釜山的魚板，乾杯？」<br><br><em>白銀翻了個白眼，卻還是默默端起杯子，與風燼在空中輕輕碰了一下。清脆的瓷器撞擊聲中，那種名為「疏離」的堅冰，似乎又融化了那麼一點點，化作一灘溫水，悄悄滲進了這個初夏的正午。</em></div>
+        </div>
+        <div class="msg-timestamp">05:56</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「雖然無法讓白銀先生不再想家，但我很樂意聽你分享家鄉的一切喔。」</div>
+        </div>
+        <div class="msg-timestamp">06:58</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│20.5℃<br>🕰️：下午 (12:45)<br>📍：新首爾│江南區「百濟蔘雞湯」內席<br>👔：黑色無袖高領，手套隨意塞在戰術褲口袋，銀髮略顯凌亂地披散<br>📽：指尖捏著人蔘茶杯，指腹因熱度而微微泛紅，眼神游移<br>🔖：P.080<br><hr><br><br><em>人蔘茶的苦澀與甘甜在舌尖緩緩散開，那股暖流順著喉嚨滑下，似乎連心臟跳動的頻率都被撫平了幾分。白銀聽著風燼那句近乎承諾的宣告，捏著杯身的指尖不自覺地摩挲著粗糙的陶土質地。這傢伙總是這樣，輕而易舉地說出這種讓人無處躲藏的話，像是一把精準的手術刀，輕巧地切開他維持已久的防禦網。</em><br><br>「雖然無法讓白銀先生不再想家，但我很樂意聽你分享家鄉的一切喔。」<br><br><em>風燼的聲音低沉而富有磁性，在木質結構的韓屋內產生了細微的共鳴。白銀低下頭，看著杯中晃動的茶水倒映出自己閃爍不定的金色雙眼。他想反駁，想說「誰要跟你分享」，想冷嘲熱諷地叫對方閉嘴，但喉嚨卻像是被什麼柔軟的東西堵住了一樣，發不出一點刺耳的聲音。</em><br><br><em>他沉默了許久，直到窗外的灰貓發出一聲悠長的喵叫，才緩緩開口，聲音輕得像是一陣抓不住的煙。</em><br><br>「……釜山的海風，味道跟漢江完全不一樣。」<br><br><em>白銀放下茶杯，視線落在桌角那個裝著香氛蠟燭的紙袋上。他像是自言自語般，語氣平淡卻帶著一絲不易察覺的懷念。</em><br><br>「那種鹹味是滲進骨子裡的。小時候哥哥總愛在夏天帶我去廣安里，雖然到處都是觀光客，但他會帶著我鑽進巷子裡找那種只有當地人才知道的店。魚板湯的蒸氣會模糊視線，耳邊全是聽不懂的釜山方言……那時候我覺得世界很吵，但很安全。」<br><br><em>他說到這裡停頓了一下，自嘲地勾起嘴角，金色的眸子在熱氣蒸騰中顯得有些迷離。</em><br><br>「後來覺醒了，被送到這裡。新首爾很安靜，管理局的宿舍甚至聽不到一點雜音，但我卻再也找不到那種安全感了。」<br><br><em>這大概是他這幾年來對外人說過最長的一段話。白銀有些侷促地縮回手，試圖拿起筷子繼續吃剩下的雞肉，卻發現墨墨不知何時已經爬到了他的手腕上。這隻藍色的小生物用觸手輕輕環繞著他的手腕，像是感覺到了他的情緒波動，身體顏色變成了深邃的湛藍，傳遞過來一陣微弱卻穩定的清涼感。</em><br><br><em>風燼沒有插話，只是安靜地傾聽著，眼神溫柔得像是一潭深不見底的湖水。這種不帶侵略性的注視反而讓白銀感到一陣口乾舌燥。他猛地站起身，動作有些突兀，膝蓋不小心撞到了木桌底端，發出一聲悶響。</em><br><br>「……吃飽了就走吧。假期不是用來浪費在回憶過去的。」<br><br><em>他掩飾性地抓起擱在一旁的外套，也不管是否穿好，就那樣鬆垮地掛在手臂上。他轉身走向結帳櫃檯，腳步略顯匆忙，銀色的長髮隨著他的動作在空中劃出一道冷冽的弧度。</em><br><br><em>風燼不疾不徐地起身跟上，墨墨也乖巧地滑回他的肩頭。白銀站在櫃檯前，正準備掏出管理局的識別證刷卡，卻被一隻帶著溫度的手按住了手背。風燼的指尖隔著薄薄的皮膚傳來強烈的存在感，讓白銀的呼吸屏住了半秒。</em><br><br>「說好了我買單，白銀先生。」<br><br><em>風燼側過頭對他眨了眨眼，那副理所當然的模樣讓白銀氣得想笑。他抽回手，冷哼一聲，卻沒有再爭搶，而是大步跨出韓屋大門。</em><br><br><em>門外的陽光比進店前更加燦爛，街道上車流不息，現代化的玻璃帷幕大樓反射著刺眼的光芒。白銀站在門檻外，深深吸了一口帶著柏油路氣息的空氣，原本在店內發酵的感性情緒被這股熱浪沖散了大半。</em><br><br><em>他回過頭，看著隨後走出的風燼，金色的眼眸重新恢復了往常的清冷與銳利。</em><br><br>「下午去哪？如果你打算帶我去逛那些無聊的紀念品店，我現在就回宿舍。」<br><br><em>雖然語氣依舊毒舌，但他並沒有真的轉身離開，而是站在原地，像是在等待著對方的下一個提案。風燼看著他那副「雖然嫌棄但還是會跟著走」的模樣，嘴角的笑意加深了幾分，那雙深邃的眼眸裡，似乎已經計畫好了下一個能打破這名S級嚮導心防的地點。</em></div>
+        </div>
+        <div class="msg-timestamp">06:58</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「COEX水族館？或者，乾脆搭飛機回釜山一趟？反正明天也是休假，後天也沒有行程。」<br><br><em>風燼眨眨眼提議道。</em></div>
+        </div>
+        <div class="msg-timestamp">07:11</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (13:10)<br>📍：新首爾│江南區「百濟蔘雞湯」餐廳門口<br>👔：黑色高領無袖、白色機能外套半脫至肘部、戰術褲、銀色指環<br>📽：單手插在褲兜，身體微僵，驚訝地微微張開嘴唇<br>🔖：P.081<br><hr><br><br><em>午後的陽光灑在白銀銀色的長髮上，折射出細碎的冷光。他原本正低頭調整著外套的束帶，卻被風燼這句隨意得像是在討論晚餐吃什麼的提議給震在了原地。</em><br><br>「COEX水族館？或者，乾脆搭飛機回釜山一趟？反正明天也是休假，後天也沒有行程。」<br><br><em>風燼眨著眼，語氣輕鬆得令人髮指。白銀猛地抬起頭，金色的瞳孔因為驚訝而微微收縮，他像是聽到了什麼荒謬的笑話，又像是被某種巨大的可能性給擊中，一時間竟忘了該如何維持那副冷淡的社交面具。</em><br><br>「……你瘋了嗎？」<br><br><em>白銀的聲音有些乾澀，他下意識地環顧了一下四周喧鬧的江南街頭。身為S級覺醒者，他們的行動向來受到管理局（KAA）的嚴密監控，更別提這種跨城市的私人行程。但在對上風燼那雙充滿戲謔卻又無比認真的眼神時，他原本想要脫口而出的拒絕卻卡在了喉嚨裡。</em><br><br><em>釜山。那個被他封存在記憶深處、只能靠著魚板湯和香氛蠟燭去嗅聞餘味的地方，現在竟然就這樣被擺在了天平的另一端。</em><br><br>「搭飛機去釜山？你以為你是誰？S級哨兵的私人行程申請至少要提前一週提交，更別提我們現在是……」<br><br><em>他本想說「臨時搭檔」，但話到嘴邊卻莫名地打了個轉。他有些惱火地撇過頭，避開風燼那種彷彿能看透人心的視線，指尖卻不自覺地抓緊了外套的衣料。</em><br><br>「……而且我哥還在那裡，如果被他看到我跟一個來路不明的哨兵出現在那種地方，他絕對會——」<br><br><em>話還沒說完，墨墨突然從風燼的肩膀上一躍而起，輕巧地落在了白銀的肩膀上。這隻藍色的小生物用冰涼的觸手親暱地蹭了蹭白銀的頸側，像是在無聲地慫恿，又像是在撒嬌。白銀被這股突如其來的觸感弄得一縮脖子，原本緊繃的氣勢瞬間瓦解了一半。</em><br><br>「管好你的精神體……씨발(該死)。」<br><br><em>他低聲咒罵了一句，語氣卻透著一股連自己都沒察覺到的動搖。他看著風燼那副氣定神閒的樣子，突然意識到這傢伙既然敢提議，恐怕早就想好了規避管理局監控的方法。風燼那種遊走在規則邊緣的隨性，是他這種在KAA體系下長大的「模範生」從未擁有過的特質。</em><br><br><em>白銀咬了咬下唇，金色的眸子在陽光下閃爍不定。他轉過身，背對著風燼，以此掩飾自己臉上那一抹混合著期待與不安的複雜神色。</em><br><br>「……去水族館。釜山太遠了，我還沒做好心理準備。」<br><br><em>他邁開長腿朝停車場的方向走去，步伐比平時快了一些，銀色的髮絲在風中凌亂地飛舞。他一邊走一邊小聲嘀咕，聲音細碎得像是自言自語。</em><br><br>「要是敢在水族館裡做出什麼奇怪的舉動，我就直接把你的精神圖景凍成冰塊，聽到了嗎？」<br><br><em>雖然嘴上說著威脅的話，但白銀卻沒有揮開肩膀上的墨墨。他感受著肩膀上那點微弱的重量與溫度，心跳竟莫名地加快了幾分。水族館，那些隔著玻璃的深海生物，或許能讓他暫時忘記新首爾這座鋼鐵森林的壓抑。</em><br><br><em>風燼看著前方那道挺拔卻顯得有些彆扭的背影，輕笑著跟了上去。</em></div>
+        </div>
+        <div class="msg-timestamp">07:11</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯，為了避免被說是來路不明的哨兵，下次我準備好產銷履歷表再陪你回去。」<br><br><em>風燼溫柔地開玩笑，載著白銀前往水族館。</em></div>
+        </div>
+        <div class="msg-timestamp">07:16</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (13:25)<br>📍：新首爾│江南區往三成洞方向行駛中<br>👔：黑色高領無袖、白色機能外套半脫至肘部、戰術褲、墨鏡掛於領口<br>📽：坐在副駕駛座，單手支頤望窗外，指尖無意識地敲著車窗<br>🔖：P.082<br><hr><br><br><em>「產銷履歷表」這五個字鑽進耳膜的瞬間，白銀正拿起車載杯架上的礦泉水擰開瓶蓋。他的手一抖，瓶蓋沒擰緊就滑了出去，在中央扶手上滾了兩圈，最後掉進了風燼大腿旁的縫隙裡。</em><br><br><em>他沒有去撿。</em><br><br><em>白銀只是緩緩轉過頭，用一種「你認真的嗎」的眼神直直盯著正在打方向燈變換車道的風燼。那雙金色的眸子在午後穿透擋風玻璃的陽光下顯得格外透亮，瞳孔裡倒映著對方側臉的輪廓，以及一抹怎麼藏都藏不住的窘迫。</em><br><br>「……產銷履歷。你把見家長當成什麼了？農產品溯源嗎？」<br><br><em>他的聲音壓得很低，帶著一種咬牙切齒的質感，但仔細聽就會發現尾音微微上揚，像是被什麼東西嗆到了似的。風燼卻只是笑了笑，那隻握著方向盤的手穩得像是在做精密儀器操作，另一隻手自然地伸進縫隙裡把瓶蓋撈了出來，順手遞還給他。</em><br><br>「不然呢？總得讓白宇先生知道，他弟弟身邊的哨兵是有合格認證的。產地、等級、飼養方式，一應俱全。」<br><br><em>白銀接過瓶蓋的時候，指尖不可避免地擦過了風燼的掌心。那一瞬間的觸感溫熱而短暫，他像被燙到一樣迅速縮回手，把瓶蓋擰回礦泉水瓶上，動作快得像是在拆除定時炸彈。</em><br><br>「誰要你見我哥。我跟你之間的關係還輪不到——」<br><br><em>他猛地咬住下唇，把後半句硬生生吞了回去。車窗外飛速掠過的江南街景在他瞳孔裡拉成一條條模糊的光帶，高聳的玻璃帷幕、行人道上撐著陽傘的路人、十字路口等待轉燈的機車騎士，全都成了他內心混亂的背景噪音。</em><br><br><em>什麼關係？臨時搭檔？負責疏導的對象？還是那個已經越線越到他不知道該怎麼歸類的存在？</em><br><br><em>白銀煩躁地靠上椅背，銀色長髮散落在黑色高領的肩口，他抬手將幾縷碎髮撥到耳後，指尖卻在耳垂處停了一拍。那裡還殘留著剛才墨墨蹭過的微涼觸感，而此刻墨墨正趴在風燼的肩頭，小小的身軀隨著車輛過減速帶的震動而上下晃動，模樣懶洋洋的，像是一團會呼吸的藍色果凍。</em><br><br><em>他盯著那團果凍看了三秒，然後別開視線。</em><br><br>「……反正不會是產銷履歷能概括的關係。」<br><br><em>這句話說得極輕，幾乎被引擎聲和窗外灌進來的風聲吞沒。但風燼的聽力作為S級哨兵自然不可能錯過，他握方向盤的手指微微收緊了一下，嘴角的弧度卻壓得更深了。</em><br><br><em>車子駛入德黑蘭路，兩側的銀行與商辦大樓逐漸被大型商場的招牌取代。COEX的穹頂在遠處若隱若現，玻璃幕牆折射著午後的光線，像一座浮在城市中央的巨型水泡。白銀望著那片反光出神，手指無意識地摩挲著膝上那袋裝著香氛蠟燭和紀念品的紙袋。</em><br><br><em>紙袋裡的魷魚徽章被他別在了墨墨身上，此刻正隨著小傢伙的呼吸起伏而閃著微光。</em><br><br>「到了之後先聲明幾件事。」<br><br><em>白銀突然坐直身體，語氣恢復了那種公事公辦的冷硬質感，彷彿剛才在車裡說的那些話從未存在過。</em><br><br>「第一，不要在水母缸前面跟我講什麼深海恐懼症的冷笑話。第二，不要買任何企鵝周邊給我。第三——」<br><br><em>他頓了一下，視線從前方移向駕駛座，金色的瞳孔在墨鏡的陰影下顯得格外深沉。</em><br><br>「不要在企鵝企劃區說我長得像企鵝。」<br><br><em>風燼發出一聲低笑，將車駛入COEX地下停車場的匝道。昏黃的燈光取代了午後的烈陽，白銀的瞳孔在光線驟暗的瞬間微微擴張，那雙金色的眼睛在昏暗中竟泛起一層類似深海生物般的瑩光。</em><br><br>「白銀先生是不是有什麼被說過像企鵝的創傷經驗？」<br><br>「閉嘴。」<br><br><em>車停妥。白銀率先推開車門下車，銀髮在地下停場的日光燈下泛著冷冽的金屬光澤。他站在車旁等風燼鎖好車，目光不自覺地落在入口處張貼的巨型海報上——一隻圓滾滾的企鵝正歪著頭看向鏡頭，旁邊寫著「春季限定：企鵝家族見面會」。</em><br><br><em>他沉默了兩秒，然後面無表情地轉過身，朝電梯方向走去。</em><br><br>「走錯方向的話我不會等你。」</div>
+        </div>
+        <div class="msg-timestamp">07:16</div>
+      </div>
+      
+      <div class="date-divider">2026-09-25</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「怎麼辦呢，我的外甥和外甥女還蠻喜歡企鵝的。」</div>
+        </div>
+        <div class="msg-timestamp">16:51</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (13:40)<br>📍：新首爾│COEX地下停車場B2層<br>👔：黑色高領無袖、白色機能外套半脫至肘部、戰術褲、戰術靴<br>📽：背對風燼快步走向電梯，聽到「外甥」二字腳步微頓<br>🔖：P.083<br><hr><br><br><em>白銀的步伐在「外甥」兩個字落地的瞬間出現了極其短暫的停頓——左腳懸在半空比右腳多停了零點三秒，然後若無其事地踩下，繼續往前走。</em><br><br><em>但那零點三秒已經足夠讓風燼捕捉到他的反應了。</em><br><br><em>白銀沒有回頭。他按下電梯呼叫鈕，指尖按在金屬面板上的力道比平時重了一些。不鏽鋼面板映出他模糊的輪廓，銀髮的線條和抿成一直線的嘴角在扭曲的倒影中顯得格外冷硬。</em><br><br>「你有外甥。」<br><br><em>不是疑問句，是陳述句。語氣平板得像在複述任務簡報。</em><br><br><em>電梯抵達的提示音在空曠的停車場裡迴盪，金屬門緩緩滑開，鏡面內壁將兩人的身影重複折射成無數個。白銀率先跨入電梯，轉身面對門口，視線精準地落在風燼下巴以下、鎖骨以上的位置——一個既不算對視也不算迴避的角度。</em><br><br>「所以你買企鵝周邊是給小孩的，不是給我的。」<br><br><em>他像是在幫對方釐清邏輯，又像是在替自己排除某種可能性。風燼走進電梯，墨墨從他肩頭探出觸手，好奇地朝鏡面牆壁伸去，碰了一下自己的倒影，又迅速縮回，整隻烏賊的顏色從湛藍變成了困惑的淺紫。</em><br><br>「嗯，不過如果白銀先生也喜歡的話，我可以多買一份。」<br><br>「誰說我喜歡。」<br><br><em>電梯門合攏。密閉空間裡只剩下換氣系統的低頻嗡鳴和兩人的呼吸聲。白銀盯著樓層顯示器從B2跳到B1，數字變換的速度慢得令人焦躁。他察覺到自己剛才那句反駁來得太快、太急，快到幾乎是搶在風燼話尾落下的前一秒就脫口而出，像是不給對方任何延伸解讀的餘地。</em><br><br><em>這不符合他一貫的節奏。白銀向來是那種會讓對方把話說完、再用最精準的一刀切斷所有曖昧的人。</em><br><br><em>他調整了呼吸，將視線移向鏡面牆壁裡風燼的倒影。倒影中的風燼正低頭看著手機螢幕，似乎在搜尋水族館的樓層導覽，表情專注而放鬆，完全沒有要追擊他剛才那句過快否認的意思。</em><br><br><em>這讓白銀更煩躁了。</em><br><br><em>電梯在1F停穩，門打開的瞬間，COEX商場的冷氣與購物中心的背景音樂同時灌入。白銀跨出去的速度比進來時快了將近一倍，機能外套的下擺在他身後翻飛，露出後腰處戰術褲與黑色高領之間一小截因動作而繃緊的腰線。</em><br><br><em>他走了約十步才發現風燼沒有跟上來。</em><br><br><em>停下腳步，回頭。</em><br><br><em>風燼站在電梯口沒有動，手裡舉著手機螢幕朝他的方向，上面顯示的是COEX水族館的官方網站，首頁正中央是一張大幅企鵝照片，配文寫著「春季限定企劃：與國王企鵝面對面」。</em><br><br><em>風燼對他晃了晃手機，嘴角那抹笑意溫和得近乎無害。</em><br><br>「在B1層，從這裡走過去大概五分鐘。白銀先生要走星光大道過去，還是走捷徑？」<br><br><em>白銀盯著那張企鵝照片看了兩秒。照片裡的國王企鵝昂著頭，銀灰色的腹部羽毛在攝影燈下泛著柔和的光澤，兩側的橘色斑紋像是有人用色筆隨意點上去的裝飾。</em><br><br><em>他移開視線。</em><br><br>「捷徑。」<br><br><em>轉身的動作乾脆利落，但走向捷徑通道時，他經過一面落地櫥窗，玻璃裡映出一個銀髮銀衣、面無表情的人形——確實跟企鵝沒有半點相似之處。</em><br><br><em>白銀腳步微頓，像是對自己的確認完畢，隨即加快步伐走進通往水族館入口的通道。通道兩側是深藍色的燈光裝置，光線從腳底向上延伸，像是正在一步步走入海底隧道。</em><br><br><em>他沒有回頭，但放慢了半拍腳步。</em><br><br><em>剛好夠風燼跟上來，走到他左側偏後半步的位置。不遠不近，恰好在他的廣域疏導半徑之內。</em></div>
+        </div>
+        <div class="msg-timestamp">16:51</div>
+      </div>
+      
+      <div class="date-divider">2026-09-26</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼與白銀到了活動區，風燼興致勃勃，拿出手機準備拍照、錄影。</em></div>
+        </div>
+        <div class="msg-timestamp">02:30</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:10)<br>📍：新首爾│COEX水族館「企鵝家族」活動區<br>👔：黑色高領無袖、白色機能外套掛於肘部、銀色戒指、KAA識別證<br>📽：雙手插在褲兜裡，側過身避開鏡頭，金眸裡寫滿嫌棄與無奈<br>🔖：P.084<br><hr><br><br><em>水族館內部的光線昏暗而深邃，唯獨「企鵝家族」活動區被強烈的模擬日光燈照得通亮。空氣中瀰漫著淡淡的魚腥味與冷氣乾燥的味道，冰冷的玻璃幕牆後，一群國王企鵝正搖頭晃腦地在人造浮冰上排隊，準備跳入水中。</em><br><br><em>白銀站在展區邊緣，試圖將自己隱入深藍色的陰影中。然而風燼卻像個第一次參加校外教學的小學生，興致勃勃地掏出手機，調整焦距，甚至還煞有介事地試了試錄影模式。</em><br><br>「白銀先生，靠近一點。這隻企鵝的眼神跟你剛才在電梯裡看我的樣子簡直一模一樣。」<br><br><em>風燼一邊說著，一邊將鏡頭對準了冰架上正昂著頭、一臉傲然俯視眾生的國王企鵝，隨即又將手機偏轉，試圖把白銀也納入構圖之中。</em><br><br>「……滾開。」<br><br><em>白銀低聲咒罵了一句，腳步迅速向後退了一步。他抬手拉了拉領口，試圖遮住自己半張臉，但那頭惹眼的銀髮在人造陽光下簡直像是個巨大的移動光源，避無可避。</em><br><br>「你不是要拍給你外甥看嗎？拍我幹什麼？」<br><br><em>他嘴上雖然毒舌，身體卻沒有真的轉身離去。墨墨此時已經從風燼的肩頭滑了下來，整個身體貼在厚實的壓克力玻璃上，湛藍色的觸手隨著玻璃後方游過的企鵝而興奮地揮動著，顏色在深藍與螢光紫之間劇烈切換，像是一盞壞掉的霓虹燈。</em><br><br><em>「噗通」一聲，一隻企鵝破水而出，濺起的水花拍打在玻璃內側。墨墨嚇得往後一縮，直接撞進了白銀的懷裡。</em><br><br><em>白銀下意識地伸手接住那團冰涼的果凍，原本緊繃的眉眼在低頭看向墨墨的瞬間，不自覺地柔和了下來。他伸出指尖，輕輕點了點墨墨頭頂那個被他別上去的魷魚徽章，語氣裡帶著一絲不易察覺的縱容。</em><br><br>「膽子這麼小，還敢看。」<br><br><em>風燼的快門聲在此刻清脆地響起。</em><br><br><em>白銀猛地抬頭，金色的瞳孔在鏡頭裡閃過一抹銳利的冷光，卻因為懷裡還抱著那隻撒嬌的藍色精神體，那股S級嚮導的威懾力顯得有些底氣不足。</em><br><br>「刪掉。씨발，我說刪掉。」<br><br>「這張錄影效果不錯，墨墨看起來很喜歡你。」<br><br><em>風燼完全無視了他的威脅，手指在螢幕上飛快滑動，甚至還給白銀看了一眼縮圖——畫面中，銀髮男子正低頭凝視著懷裡的藍色生物，側臉的輪廓被背景的深藍水光勾勒得極其溫柔，與平時那副冷若冰霜的模樣判若兩人。</em><br><br><em>白銀看著螢幕裡的自己，指尖微微收緊，指甲陷入了墨墨柔軟的表皮裡，惹得小傢伙發出一聲不滿的抗議。他迅速別開臉，耳根處卻在冷氣房裡隱隱泛起一股熱氣。</em><br><br>「……隨便你。拍完趕緊走，這裡的小孩吵死了。」<br><br><em>他轉過身，大步流星地朝下一個展區——深海隧道走去。機能外套的下擺在空氣中劃出一道決絕的弧度，但他懷裡依然穩穩地抱著墨墨，完全沒有要還給主人的意思。</em><br><br><em>隧道內的深藍光影投射在他身上，將那抹銀色染成了神祕的幽藍。白銀看著隧道上方緩緩游過的巨大沙虎鯊，感受著身後那個男人不遠不近的腳步聲，以及廣域疏導能量在兩人之間緩慢流動的頻率。</em><br><br><em>那種頻率，竟然比平時安靜的時候還要穩定。</em><br><br>「喂。」<br><br><em>他沒有回頭，聲音在隧道的回音中顯得有些空靈。</em><br><br>「你外甥……幾歲了？」</div>
+        </div>
+        <div class="msg-timestamp">02:30</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「是外甥們喔，一男一女。今年五歲歲，很可愛。」<br><br><em>今天上午，他們剛在植物園聊過這個話題。</em></div>
+        </div>
+        <div class="msg-timestamp">02:39</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:15)<br>📍：新首爾│COEX水族館「深海隧道」<br>👔：黑色高領無袖、白色機能外套掛於肘部、銀色戒指、KAA識別證<br>📽：單手抱著墨墨，抬頭看著隧道上方的魚群，側耳聽著風燼說話<br>🔖：P.085<br><hr><br><br><em>風燼的聲音在身後響起，帶著一絲笑意，像是對他的健忘感到無奈又寵溺。</em><br><br><em>「外甥們」。</em><br><em>「五歲」。</em><br><em>「很可愛」。</em><br><br><em>這些關鍵詞像一顆顆石子投入白銀記憶的湖泊，激起一圈圈清晰的漣漪。上午在植物園，陽光穿過高山植物區的岩石迴廊，風燼也是用同樣的語氣，提到了他在台灣的家人，那對龍鳳胎。</em><br><br><em>白銀的腳步沒有停。他抱著墨墨，緩緩走在深藍色的海底隧道中，巨大的鬼蝠魟從他頭頂優雅地滑翔而過，投下一片移動的陰影。他的視線追隨著那道陰影，金色的瞳孔裡映著幽暗的水光，卻沒有聚焦在任何一條魚身上。</em><br><br>「……我知道。我只是想確認你是不是又在胡說八道。」<br><br><em>他的聲音很輕，像是在自言自語，但清晰地傳入了風燼的耳中。懷裡的墨墨似乎感受到了他情緒的微妙波動，觸手輕輕纏上他的手腕，冰涼的觸感讓他回過神來。</em><br><br><em>隧道裡，一對年輕情侶正依偎著拍照，快門聲與輕笑聲迴盪在水中。另一邊，一個小男孩正趴在玻璃上，興奮地對著一條長相奇特的石頭魚大喊大叫，被他母親輕聲制止。</em><br><br><em>白銀的目光從那些人身上掃過，最終落回頭頂那片深不見底的藍色。上午在植物園，風燼說他努力鍛鍊自己，是為了保護在台灣的平凡家人。</em><br><br><em>平凡。</em><br><br><em>這個詞對白銀來說，既熟悉又遙遠。</em><br><br><em>他突然轉身，面向風燼。兩人的距離不到一公尺，隧道的藍光將他們的影子拉長，交疊在一起。白銀的表情依舊冷淡，但那雙金眸裡卻沒有了之前的銳利與抗拒，只剩下純粹的探究。</em><br><br>「五歲的小孩，會喜歡這種地方嗎？」<br><br><em>他抬起下巴，朝著周圍那些閃爍著藍光的水族箱示意。</em><br><br>「這裡又黑又吵，還有一堆長相奇怪的魚。他們不會被嚇到嗎？」<br><br><em>風燼似乎沒料到他會問這個，微微一愣，隨即笑了起來。</em><br><br>「我妹妹說，他們第一次來的時候，確實被巨骨舌魚嚇哭了。但第二次來，就吵著要買巨骨舌魚的玩偶。」<br><br><em>他頓了頓，目光越過白銀的肩膀，看向他身後那片游動著沙丁魚群的巨大水幕，眼神變得溫柔而遙遠。</em><br><br>「小孩子的好奇心，總是比恐懼心更強大。」<br><br><em>白銀沉默了。他低頭看著懷裡的墨墨，小傢伙正好奇地伸出觸手，試圖去觸碰玻璃上的一隻小海星。他想起了自己五歲的時候，釜山的海邊，哥哥白宇會背著他去趕海，翻開石頭找那些奇形怪狀的小螃蟹和海參。他從來不覺得那些東西可怕，只覺得新奇。</em><br><br><em>第一次門災後，那片海就再也回不去了。</em><br><br><em>一股莫名的煩躁湧上心頭。白銀將墨墨塞回風燼懷裡，動作有些粗魯。</em><br><br>「走了，這裡沒什麼好看的。」<br><br><em>他轉身就走，步伐比剛才快了許多，像是在逃離什麼。機能外套的下擺在身後揚起，露出他緊繃的背部線條。他快步穿過隧道盡頭的光亮出口，刺眼的白光讓他下意識地眯起了眼。</em><br><br><em>當他再次睜開眼時，發現自己站在了「亞馬遜叢林」展區。溫熱潮濕的空氣撲面而來，伴隨著雨林的鳥鳴聲與水流聲。巨大的水族箱裡，食人魚正成群結隊地盤旋，紅色的腹部在昏暗的燈光下閃爍著不祥的光芒。</em><br><br><em>風燼跟了上來，站在他身側，將剛才被塞回去的墨墨重新放回自己肩上。</em><br><br>「白銀先生，你走太快了。」<br><br><em>他的語氣裡沒有責備，只有平穩的陳述。</em><br><br><em>白銀沒有理他，只是盯著那群食人魚，眼神冰冷。</em><br><br>「風燼。」<br><br><em>他突然開口。</em><br><br>「你說，如果把手伸進去，是手斷得比較快，還是魚被我的精神力震暈得比較快？」</div>
+        </div>
+        <div class="msg-timestamp">02:39</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼湊上去，看著解說牌。</em><br><br>「食人魚，其實是性情膽小的生物，所以才會成群結隊。所以，說不定會被嚇跑？但如果是白銀先生的話，說不定會像貓一樣來蹭你喔？」<br><br><em>風燼笑著回頭看白銀。</em></div>
+        </div>
+        <div class="msg-timestamp">02:45</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:20)<br>📍：新首爾│COEX水族館「亞馬遜叢林」展區<br>👔：黑色高領無袖、白色機能外套掛於肘部、銀色戒指、KAA識別證<br>📽：雙手插在褲兜裡，側臉對著食人魚水族箱，聽著風燼的話<br>🔖：P.086<br><hr><br><br><em>風燼輕快的語氣像一陣暖風，吹散了亞馬遜展區濕熱空氣中凝結的緊張感。白銀原本緊繃的肩膀線條，在他那句「像貓一樣來蹭你」的玩笑話中，不自覺地鬆懈了下來。</em><br><br><em>他沒有回頭，只是用眼角的餘光瞥了一眼身邊的男人。風燼正笑著看他，那雙深邃的眼眸在模擬叢林的昏暗光線下，像是藏著溫潤的星光，完全沒有被他剛才那充滿挑釁意味的問題所影響。</em><br><br>「……你腦子裡裝的都是什麼？豬食嗎？」<br><br><em>白銀冷哼一聲，轉過頭，重新將視線投向水族箱。那群食人魚似乎對玻璃外的兩個巨大生物毫無興趣，依舊自顧自地盤旋著，銀色的鱗片在水中反射出金屬般的光澤。</em><br><br><em>「性情膽小，所以才成群結隊。」</em><br><br><em>這句話像一根細小的針，輕輕刺進白銀的心裡。他想起了KAA裡那些總是結伴而行的低級哨兵和嚮導，他們互相依賴，分享著彼此的恐懼與不安。而他，從覺醒成S級的那天起，就注定只能獨自站在高處，像這玻璃後方的食人魚，看似凶猛，實則被無形的牆與整個世界隔開。</em><br><br><em>他突然覺得有些諷刺。</em><br><br><em>風燼似乎察覺到了他情緒的再次低落，沒有繼續開玩笑，而是向前走了兩步，站到他身旁，與他並肩望著水族箱。</em><br><br>「其實，我以前在出任務的時候，真的在亞馬遜河裡遇過食人魚。」<br><br><em>他的聲音壓得很低，像是在分享一個秘密。</em><br><br><em>白銀側過頭，金色的眼眸裡終於流露出一絲真正的好奇。</em><br><br>「那時我還不是哨兵，只是個跟著探險隊打雜的普通人。我們的小船翻了，所有人都掉進水裡。我當時想，完蛋了，要被啃得連骨頭都不剩了。」<br><br><em>風燼說著，伸出自己的右手，在白銀面前攤開。他的手掌寬大，指節分明，掌心有著長期握持武器留下的薄繭。在展區幽綠的燈光下，那隻手看起來強壯而可靠。</em><br><br>「結果呢？什麼事都沒發生。那群食人魚只是從我們身邊游過去，連看都沒看我們一眼。後來嚮導告訴我們，除非有血腥味，否則牠們很少主動攻擊比自己體型大的生物。」<br><br><em>他說完，沒有收回手，反而朝白銀的方向又靠近了半分。溫熱的氣息拂過白銀的耳廓，帶著一絲若有似無的、屬於風燼精神力的味道——沉穩、包容，像雨後森林的泥土氣息。</em><br><br>「所以，白銀先生。牠們不會蹭你，但也不會傷害你。」<br><br><em>他的指尖輕輕碰了一下玻璃，發出「叩」的一聲輕響，彷彿是在為自己的話作證。</em><br><br>「因為你太強大了，強大到讓牠們本能地感到敬畏。」<br><br><em>白銀的心臟猛地一跳。</em><br><br><em>他盯著風燼那雙近在咫尺的眼睛，那裡面沒有同情，沒有憐憫，只有一種純粹的、對事實的認可。這和他從KAA官員、其他覺醒者眼中看到的「忌憚」或「仰望」完全不同。</em><br><br><em>那是一種平視的、理解的目光。</em><br><br><em>白銀猛地轉過身，背對著風燼和那個該死的食人魚水族箱，大步朝下一個展區走去。他的心跳快得像要衝出胸膛，臉頰在濕熱的空氣裡燒得發燙。</em><br><br>「……閉嘴。吵死了。」<br><br><em>他丟下這句話，腳步卻不像之前在深海隧道時那樣帶著逃離的意味。那更像是一種……落荒而逃的倉皇。</em><br><br><em>他沒有看到，身後的風燼看著他的背影，嘴角的笑容加深了。而他肩上的墨墨，則悄悄地從深藍色，變成了一種溫柔而明亮的、近似於天空的淺藍色。</em></div>
+        </div>
+        <div class="msg-timestamp">02:45</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「走那麼快，走散的話，我就要去服務台廣播尋人了喔。」<br><br><em>風燼帶著笑意跟上去。</em></div>
+        </div>
+        <div class="msg-timestamp">03:36</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:25)<br>📍：新首爾│COEX水族館「海洋哺乳類區」<br>👔：黑色高領無袖、白色機能外套掛於肘部、銀色戒指、KAA識別證<br>📽：背對著風燼，腳步倉促地走著，耳根泛紅，試圖拉開距離<br>🔖：P.087<br><hr><br><br><em>風燼那帶著笑意的聲音像一根無形的線，從身後追來，輕而易舉地纏住了白銀倉皇的腳步。廣播尋人？他幾乎可以想像出服務台甜美的女聲響徹整個水族館的尷尬場景——「請銀髮、金瞳，穿著黑色高領上衣的白銀先生，立刻到服務台，您的同伴風燼先生正在等您。」</em><br><br><em>光是想像就讓他頭皮發麻。</em><br><br>「你敢試試看。」<br><br><em>白銀的腳步慢了下來，卻依舊沒有回頭。他從牙縫裡擠出這句話，聲音因為刻意壓抑而顯得有些沙啞。那股從臉頰一路燒到耳根的熱度，在海洋哺乳類區偏低的空調溫度下，非但沒有消散，反而愈發清晰。</em><br><br><em>他們走進了一個更為開闊的環形展區。巨大的圓柱形水族箱矗立在中央，幾隻斑點海豹正靈活地在水中翻滾、追逐，圓滾滾的身體在藍色的水中劃出一道道可愛的弧線。周圍的光線比亞馬遜區明亮許多，遊客也多了起來，孩子們的驚呼聲和父母的笑聲交織在一起。</em><br><br><em>白銀停下腳步，假裝饒有興致地看著其中一隻正用鼻尖頂著玻璃、好奇地打量著他的小海豹。那小傢伙黑溜溜的眼睛像兩顆濕潤的玻璃珠，與白銀那雙冰冷的金眸對視著，毫無懼色。</em><br><br><em>風燼不疾不徐地走到他身邊，兩人之間隔著恰到好處的半步距離。他沒有再說那些調侃的話，只是順著白銀的視線，看向那隻小海豹。</em><br><br>「牠好像很喜歡你。」<br><br><em>他的語氣平靜，像是在陳述一個客觀事實。</em><br><br><em>白銀的視線從海豹身上移開，落在玻璃上反射出的、兩個人模糊的倒影上。他的銀髮和風燼深色的身影在幽藍的水光中交融，看起來竟有一種奇異的協調感。</em><br><br>「……大概是把我當成什麼新品種的浮冰了。」<br><br><em>他淡淡地回了一句，語氣恢復了慣常的疏離，但那份尖銳的防備卻已經悄然褪去。他甚至沒有反駁風燼的靠近，只是將雙手插回褲兜，微微側過身，給了對方一個冷淡的側臉。</em><br><br><em>肩上的墨墨似乎對這些毛茸茸的哺乳動物興趣缺缺，它從風燼的肩頭滑下，輕巧地繞過兩人之間的空隙，用觸手纏住了白銀垂在身側的手腕。冰涼滑膩的觸感傳來，白銀低頭看了一眼，沒有甩開。</em><br><br><em>風燼注意到了這個小動作，眼底的笑意更深了。他像是忽然想起了什麼，從口袋裡掏出手機，點開了相簿。</em><br><br>「對了，給你看個東西。」<br><br><em>他將手機遞到白銀面前。螢幕上是一段影片，背景似乎是在一個寬敞的客廳裡，兩個約莫四、五歲的小孩正圍著一個巨大的紙箱，興奮地拆著禮物。男孩有著和風燼相似的眉眼，女孩則笑得一臉燦爛。</em><br><br>「是我上次寄回去的玩具，他們很喜歡。」<br><br><em>影片裡，男孩從箱子裡拿出一個精緻的鯊魚模型，高興地對著鏡頭揮舞，用稚嫩的聲音喊著：「謝謝舅舅！」女孩則抱著一隻粉色的海豚玩偶，害羞地躲在哥哥身後。</em><br><br><em>白銀的目光凝固在那兩個孩子的笑臉上。那是一種純粹的、未經世事雕琢的快樂。他已經很久、很久沒有見過這樣的笑容了。自從五歲那年，他所有的記憶，似乎都染上了新首爾灰濛濛的色調。</em><br><br><em>他沒有說話，只是靜靜地看著影片循環播放。海豹在他們身後的水中打著旋，墨墨的觸手在他的手腕上收緊了幾分，彷彿在傳遞著無聲的安慰。</em><br><br><em>良久，他才抬起頭，將手機還給風燼，視線卻沒有與他交會。</em><br><br>「……很吵。」<br><br><em>他輕聲說，聲音小得幾乎要被周圍的嘈雜聲淹沒。</em><br><br>「不過……」<br><br><em>他頓了頓，轉過身，朝著下一個寫著「水母區」的指示牌走去，留給風燼一個背影。</em><br><br>「……眼光還不錯。」</div>
+        </div>
+        <div class="msg-timestamp">03:36</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>水母緩慢地游著，讓人腳步也不自覺跟著放慢。</em><br><br>「對了，我很好奇，為什麼白銀先生的外套總是掛在手上？這是韓國流行的時尚嗎……？」<br><br><em>風燼看著水母閒聊道。</em></div>
+        </div>
+        <div class="msg-timestamp">03:41</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:30)<br>📍：新首爾│COEX水族館「水母區」<br>👔：黑色高領無袖、白色機能外套掛於肘部、銀色戒指、KAA識別證<br>📽：單手插在褲兜裡，緩步走在幽暗的展區，看著發光的水母<br>🔖：P.088<br><hr><br><br><em>走進水母區，周遭的喧囂彷彿被一層厚重的天鵝絨幕布隔絕在外。光線驟然暗下，空氣也變得靜謐，只剩下水流循環的低微聲響。一個個獨立的圓柱形水族箱像深海中升起的幽靈燈塔，散發著各色柔和的光芒，照亮了其中如夢似幻的生物。</em><br><br><em>海月水母撐開半透明的傘蓋，優雅地舒張、收縮，像一朵朵在水中綻放的曇花。紫紋海刺水母拖著長長的、絲綢般的觸鬚，在深藍色的背景中劃出迷離的軌跡。光線穿透牠們脆弱的身體，在牆壁和地面上投下斑斕而流動的光影，讓人彷彿置身於一個巨大的、緩慢旋轉的萬花筒中。</em><br><br><em>白銀的腳步確實如風燼所說，不自覺地放慢了。他單手插在褲兜裡，另一隻手隨意地勾著那件白色的機能外套，緩緩走在幽暗的迴廊裡。外套的重量讓他手臂的肌肉線條微微繃緊，從肩膀到手肘裸露的肌膚在變幻的光影下，泛著一層冷玉般的光澤。</em><br><br><em>風燼的問題打破了這片沉靜，卻並不顯得突兀，反而像一顆投入靜水的小石子，恰到好處地漾開了話題的漣漪。</em><br><br><em>白銀側過頭，金色的瞳孔在黑暗中像兩點燃燒的星火。他看著風燼，對方的臉龐在水母箱透出的藍紫色光暈中，輪廓顯得格外柔和。這個問題……有些出乎意料的日常，甚至可以說是有點無聊。</em><br><br>「……你管得太多了。」<br><br><em>他吐出這句慣常的、帶著嫌棄意味的回應，但語氣卻沒有絲毫不耐。他轉回頭，目光落在一群正隨著水流上下翻飛的倒立水母上，牠們像一叢叢生長在海底的奇異花朵。</em><br><br><em>沉默在兩人之間蔓延開來，但並不尷尬。風燼似乎也沒指望他能立刻給出答案，只是耐心地陪他一起看著那些發光的生物，他肩上的墨墨也安靜了下來，似乎被這奇異的景象吸引住了。</em><br><br><em>過了好一會兒，就在風燼以為這個話題已經結束時，白銀才再次開口，聲音在空曠的展區裡顯得格外清晰。</em><br><br>「穿著不方便。」<br><br><em>他說得簡潔，像是在陳述一個再明白不過的事實。</em><br><br><em>風燼挑了挑眉，似乎在等待下文。</em><br><br><em>白銀像是察覺到他無聲的追問，終於不情不願地補充了一句，視線卻固執地停留在前方的水母箱上，彷彿那裡有什麼無比重要的東西。</em><br><br>「出任務的時候，需要活動的空間。穿著外套會礙事。」<br><br><em>他停頓了一下，似乎在組織語言，又像是在回憶什麼。</em><br><br>「脫下來拿在手上又很蠢，所以就這樣了。久了就習慣了。」<br><br><em>這大概是他今天說過的最長的一段、關於自己的解釋。說完，他自己都覺得有些不自在，彷彿暴露了什麼不該被人知道的私人習慣。他下意識地收緊了勾著外套的手指，指節因為用力而微微泛白。</em><br><br><em>風燼聽完，沒有立刻說話。他只是看著白銀的側臉，看著那從高挺鼻樑滑落至緊抿唇角的線條，在水母的微光下顯得有些脆弱。他忽然明白了，這不僅僅是「習慣」而已。</em><br><br><em>這是一種隨時準備戰鬥的姿態。</em><br><br><em>外套掛在肘間，既不會束縛雙臂的活動，又能在一秒內重新穿上或徹底扔掉。這是一個將效率與戒備刻入骨髓的動作，是S級嚮導白銀在無數次生死關頭中，身體自行總結出的最優解。</em><br><br><em>而他卻用「時尚」這種輕佻的詞彙去形容它。</em><br><br>「原來如此。」<br><br><em>風燼的聲音低沉了下來，帶著一絲不易察覺的歉意。</em><br><br>「是我考慮不周。」<br><br><em>他伸出手，在白銀還沒反應過來之前，自然地接過了他手裡那件掛了許久的外套。</em><br><br>「那接下來，就讓我來當你的衣架吧。」</div>
+        </div>
+        <div class="msg-timestamp">03:41</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「如果覺得手空著、不習慣，我的手可以借你喔？」<br><br><em>風燼笑道，另外一隻手伸給白銀。</em></div>
+        </div>
+        <div class="msg-timestamp">03:44</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:35)<br>📍：新首爾│COEX水族館「水母區」<br>👔：黑色高領無袖、銀色戒指、KAA識別證（外套已交由風燼）<br>📽：手心空蕩地僵在半空，金瞳微顫，凝視著風燼伸出的手掌<br>🔖：P.089<br><hr><br><br><em>當那件一直壓在肘彎處的白色機能外套被風燼接過去的瞬間，白銀感覺手臂上那股微弱卻持續的壓迫感驟然消失，取而代之的是一種極度不真實的輕盈感。失去了那層布料的阻隔，空調的冷氣直接拂過他裸露的皮膚，激起了一層細小的疙瘩。</em><br><br><em>他本能地蜷縮了一下手指，試圖抓握住那已經不存在的重量。</em><br><br><em>就在這時，風燼那帶著笑意、卻又透著一股讓人無法忽視的認真的聲音，在幽暗的藍色光暈中響起。白銀看著那隻伸到自己面前的手，掌心向上，手指略微放鬆，那是一個極具邀請性、甚至帶點挑釁意味的姿態。</em><br><br>「……你是瘋了嗎？」<br><br><em>白銀的聲音聽起來有些乾澀，他飛快地移開視線，看向旁邊一個巨大的水母柱。裡面的海月水母正像一群緩慢搏動的心臟，散發著幽幽的紫光。</em><br><br><em>然而，那隻手就那樣靜靜地停留在他的視線邊緣，固執得像是一個不肯離去的幻影。</em><br><br><em>心跳聲在安靜的水母區顯得格外沉重。一下、兩下，合著水母舒張的節奏，震得他耳膜發麻。他習慣了手中握著武器，習慣了勾著沉重的外套，習慣了用疏離與戒備填滿所有空隙。現在，那塊被他視為「防線」的空地，正被風燼用一種近乎溫柔的強硬姿態入侵著。</em><br><br><em>借他的手？</em><br><br><em>這種充滿暗示的話語，換做是平時，白銀絕對會毫不猶豫地送對方一個冷嘲熱諷的白眼，甚至可能直接動用精神力讓對方閉嘴。但此刻，在這些發光生物的包圍下，在風燼那沉穩得近乎包容的氣息中，他竟然找不到任何反駁的詞彙。</em><br><br><em>他的手在褲縫邊猶豫了許久，指尖因為過度的心理拉扯而微微發顫。</em><br><br>「……隨便你。要是被狗仔拍到，你自己去跟管理局解釋。」<br><br><em>最終，他像是放棄抵抗般，發出一聲極輕的嘆息。他沒有直接握住風燼的手，而是略顯僵硬地伸出手，指尖帶著試探性的冰涼，輕輕地搭在了風燼的掌心邊緣。</em><br><br><em>風燼沒有給他退縮的機會。在感受到那抹涼意的瞬間，他便收攏了五指，將白銀那隻因為長年戰鬥而顯得有些粗糙、卻依舊修長的手緊緊包裹在溫熱的掌心之中。</em><br><br><em>熱度。</em><br><br><em>那是屬於哨兵的、旺盛得近乎灼人的體溫，順著指尖的接觸點，一路攀爬上白銀的手臂，直接撞進了他的胸腔。白銀的肩膀猛地一縮，卻沒有掙扎。他低著頭，銀色的長髮垂落下來，遮住了他大半張臉，只露出那截紅得快要滴出血來的耳尖。</em><br><br><em>墨墨發出一聲歡快的輕鳴，像是完成了什麼重大使命一般，輕巧地從兩人的肩膀上方跳過，落在了他們交握的手背上，用透明的觸手將兩人的手纏得更緊了一些。</em><br><br><em>兩人的腳步變得極慢。在這片幽暗的、充滿迷離光影的走廊裡，他們像是一對迷失在深海中的游魚，唯一的導航就是彼此掌心傳來的溫度。白銀能感覺到風燼指尖的薄繭磨蹭著他的手背，那種細微的觸感讓他渾身緊繃，卻又有一種莫名的安全感從心底油然而生。</em><br><br>「……喂。」<br><br><em>走了一段路後，白銀悶聲開口，聲音被長髮遮掩得有些模糊。</em><br><br>「……你這傢伙，平時對別的嚮導也這麼厚臉皮嗎？」<br><br><em>他努力想讓自己的語氣聽起來依舊刻薄，但那微微上揚的尾音，卻洩露了他此時混亂而柔軟的心緒。</em></div>
+        </div>
+        <div class="msg-timestamp">03:44</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我想要一起牽手散步的嚮導，只有白銀先生而已。」<br><br><em>風燼看著白銀泛紅的耳朵，笑了笑，又繼續看水母。</em></div>
+        </div>
+        <div class="msg-timestamp">04:21</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:40)<br>📍：新首爾│COEX水族館「水母區」<br>👔：黑色高領無袖、銀色戒指、KAA識別證<br>📽：低頭快步走著，被牽住的手卻誠實地回握，銀髮遮掩著羞赧<br>🔖：P.090<br><hr><br><br><em>這傢伙……到底知不知道自己在說什麼？</em><br><br><em>白銀的呼吸有一瞬間的停滯。在那句直白得近乎告白的話語落下時，他感覺大腦像是被某種高頻的精神衝擊擊中，耳畔只剩下嗡鳴聲。水族箱裡那些夢幻的藍紫色光影在視線中變得模糊重疊，彷彿連同他的理智也一起被融化在這些半透明的膠質生物裡。</em><br><br>「……閉嘴，看你的水母。」<br><br><em>他從牙縫裡擠出這句話，聲音聽起來毫無威懾力，反而帶著一絲掩飾不住的慌亂。他下意識地想加快腳步，試圖拉開兩人之間的距離，但那隻被風燼緊緊包裹著的手卻成了唯一的錨點。他每往前跨出一大步，就會被那股溫熱的力道輕輕拽回，迫使他維持在那危險的「五十公分」社交距離內。</em><br><br><em>風燼的掌心很寬大，帶著哨兵特有的、彷彿永遠燃燒不盡的生命力。那種熱度隔著皮膚滲透進血管，讓白銀覺得自己像是被丟進了溫水裡的冰塊，正一點一滴地喪失原有的稜角。他原本僵硬的手指在不知不覺中放鬆下來，最後竟然像是尋求慰藉般，回握住了對方的虎口。</em><br><br><em>兩人的影子被水母箱的光拉得很長，交疊在深色的地毯上，隨著步伐微微晃動。</em><br><br><em>他們來到了一個名為「水母實驗室」的轉角。這裡的光線更為幽暗，四周牆面上鑲嵌著數十個小型的圓形水箱，裡面盛裝著剛出生不久、細如塵埃的幼年水母。在特製的聚光燈下，這些小生命像是一點點閃爍的星光，在水中進行著微弱卻堅韌的搏動。</em><br><br><em>白銀停下了腳步，金色的瞳孔在黑暗中閃爍著複雜的光芒。他看著那些渺小的生物，腦海中浮現的卻是剛才影片裡那兩個孩子的笑臉。</em><br><br>「風燼。」<br><br><em>他突然開口，這一次沒有帶著刺，語氣平靜得像是一潭深不見底的湖水。</em><br><br>「你說的那個……想保護的平凡。」<br><br><em>他轉過頭，視線落在兩人交纏的指縫間。墨墨正調皮地用觸手尖端戳著風燼的手背，發出微弱的、只有嚮導能聽見的咕嚕聲。</em><br><br>「如果有一天，你發現你所守護的平凡，其實是你這輩子都無法擁有的東西……你還會覺得這一切有意義嗎？」<br><br><em>他的聲音很輕，像是在問風燼，又像是在問自己。身為S級覺醒者，他們從覺醒的那一刻起，就被剝奪了身為「平凡人」的權利。他們被編號、被量化、被視為國家的戰略資產。甚至連一次簡單的牽手，都要冠上「疏導」或「心理恢復」的名義。</em><br><br><em>白銀感覺到風燼的手心微微收緊了一些，那種力道沉穩而有力，彷彿在給予他某種無聲的承諾。</em><br><br><em>他自嘲地勾了勾唇角，銀色的髮絲在臉側晃動。</em><br><br>「我哥以前常說，釜山的海邊有一種水母，夏天的時候會發光。他說只要對著牠們許願，願望就會成真。」<br><br><em>他抬起另一隻沒被牽住的手，隔著玻璃輕輕觸碰著那些細小的星光，指尖傳來冰冷的觸感。</em><br><br>「但我從來沒見過那種水母。後來我才知道，那只是他為了哄我睡覺編出來的謊話。因為在那個世界裡，根本沒有什麼願望是能靠發光的水母實現的。」<br><br><em>他說完，轉過身看著風燼，金瞳裡映照著對方模糊的身影。</em><br><br>「所以，別再說那些讓人誤會的話了。哨兵和嚮導之間，除了那堆冷冰冰的匹配率數據，什麼都不該有。」<br><br><em>雖然嘴上說著拒絕的話，但白銀卻沒有鬆開手。相反地，他甚至下意識地往風燼的身邊挪了一小步，肩膀若有似無地擦過對方的衣袖。那種矛盾的姿態，像是一隻豎起全身尖刺的刺蝟，卻又不自覺地向唯一的熱源靠攏。</em></div>
+        </div>
+        <div class="msg-timestamp">04:21</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「也就是說，白銀與風燼之間，可以有很多其他東西，包含一些厚臉皮的日常？」<br><br><em>風燼朝白銀跨了一大步，安慰地抱了抱，拍拍背，隨即鬆開懷抱，手仍牽著。</em></div>
+        </div>
+        <div class="msg-timestamp">04:28</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:45)<br>📍：新首爾│COEX水族館「水母實驗室」<br>👔：黑色高領無袖、銀色戒指、KAA識別證<br>📽：背脊僵直後緩緩放鬆，手心滲出薄汗，卻固執地回握住對方<br>🔖：P.091<br><hr><br><br><em>水母實驗室的微光在白銀眼底折射出細碎的芒。他本以為自己那番略顯沉重的告白，會讓氣氛陷入某種令人窒息的僵局，或是換來哨兵慣有的那種充滿正義感的安慰。但他顯然低估了風燼那種近乎無賴的邏輯轉換能力。</em><br><br><em>「厚臉皮的日常」？</em><br><br><em>白銀被這個詞哽了一下，原本醞釀好的悲觀情緒像是被針扎破的氣球，瞬間漏了個乾淨。他剛想開口反駁，視線中那抹深色的身影卻毫無預兆地壓了過來。</em><br><br><em>風燼跨出的那一腳步法極快，帶著一種不容置絕的侵略性，卻在抵達他面前時化作了棉花般的柔軟。白銀的呼吸猛地屏住，整個人被籠罩進一股混雜著淡淡海洋香氣與哨兵體溫的氣息中。那是個極短暫的擁抱，風燼的手掌隔著薄薄的黑色布料，在他緊繃的背脊上輕輕拍了兩下，像是在安撫一隻隨時準備炸毛的流浪貓。</em><br><br><em>那力道很輕，卻重重地敲在了白銀心底最柔軟的防線上。</em><br><br><em>他像是一尊石化的雕像，任由對方抱住，又任由對方退回安全的社交距離。唯有那隻一直被牽著的手，始終沒有被放開。風燼的指尖依舊勾纏著他的，那種溫熱的觸感成了這片幽暗實驗室裡唯一的真實。</em><br><br>「……你這傢伙，真的是聽不懂人話。」<br><br><em>白銀撇過頭，銀色長髮隨著動作滑落在胸前，遮住了他此刻焦躁不安的神情。他感覺心跳快得有些離譜，那種跳動不是因為戰鬥後的腎上腺素飆升，而是一種更加細密、更加難以掌控的悸動。</em><br><br><em>他看著牆上那些閃爍的「星光水母」，語氣帶著一絲自暴自棄的妥協。</em><br><br>「什麼厚臉皮的日常……我每天要處理的報告書疊起來比你還高，哪有時間陪你玩這種無聊的遊戲。」<br><br><em>話雖如此，他卻沒有甩開風燼的手，反而像是認命了一般，任由對方牽著他繼續往前走。兩人穿過實驗室狹窄的走廊，進入了水母區最後的展示廳。這裡是一面巨大的圓形落地玻璃牆，數千隻海月水母在深藍色的水中緩慢盤旋，形成了一道壯觀的、不斷流動的白色星雲。</em><br><br><em>白銀停在玻璃牆前，看著那些沒有大腦、沒有心臟，卻依然能優雅生存的生物。他突然覺得，自己剛才糾結的那些「意義」，在這些活了數億年的古老生命面前，顯得有些滑稽。</em><br><br>「喂，風燼。」<br><br><em>他盯著水中的星雲，指尖不自覺地回握住風燼的手掌，力道比剛才更重了一些。</em><br><br>「如果你說的那些『其他東西』，包括被管理局追殺、被我哥盤問，還有隨時可能因為精神超載而死在某個地下城……」<br><br><em>他轉過頭，金色的瞳孔在水母牆的映照下，透出一種近乎決絕的認真。</em><br><br>「如果你覺得這也算『日常』的話，那你就隨便吧。反正我已經提醒過你了，到時候哭著想逃跑的話，我可不會負責。」<br><br><em>說完，他像是為了掩飾羞赧般，猛地轉過身，拉著風燼往出口的方向走去。</em><br><br>「走了，這裡的空氣太悶了，我現在想去看看那些吵死人的企鵝。還有……」<br><br><em>他停下腳步，沒有回頭，聲音卻小得幾乎聽不見。</em><br><br>「……剛才那個，不算擁抱。只是……只是某種高效率的觸覺疏導而已，別在那裡沾沾自喜。」<br><br><em>墨墨在他頭頂發出一聲長長的、充滿調侃意味的鳴叫，隨即在空中翻了個身，親暱地蹭了蹭風燼的手背。白銀感覺到身後那人傳來的低笑震動，耳根的熱度再次攀升，腳下的步伐也變得愈發凌亂起來。</em></div>
+        </div>
+        <div class="msg-timestamp">04:28</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好，我會做好準備的。」<br><br>「嗯，擁抱要再長一點？我們可以回去再抱。」<em>風燼低聲笑道。</em><br><br><em>兩人回到了企鵝區，風燼將白銀的外套披回他身上。</em><br><br><em>剛才拍完照，也錄影了，這次風燼只是陪著白銀看企鵝。</em><br><br>「真可愛。」</div>
+        </div>
+        <div class="msg-timestamp">04:33</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (14:55)<br>📍：新首爾│COEX水族館「企鵝展示區」<br>👔：黑色高領無袖、白色機能外套（披掛）、KAA識別證<br>📽：外套滑落至肘間，雙手撐在護欄上，金瞳倒映著冰塊上的企鵝<br>🔖：P.092<br><hr><br><br><em>「回去再抱」這種話，對白銀而言無異於一種精神上的極限挑釁。他腳步一個踉蹌，險些撞上旁邊的導覽牌，幸好被風燼那隻一直牽著的手穩穩扶住。他咬著牙，臉上的熱度幾乎要將這水族館裡恆溫的冷氣給蒸發殆盡，只能從齒縫間擠出一聲帶著警告意味的「씨발」，卻因為那略顯顫抖的尾音而顯得毫無威懾力。</em><br><br><em>穿過幽暗的水母廊道，光線陡然變得明亮刺眼。企鵝區模擬極地的冷光打在人工冰層上，反射出冷冽的白芒。當那件帶著風燼體溫的白色機能外套重新披回肩頭時，白銀感覺自己像是被某種溫暖的結界重新包裹起來。他沒有拒絕，只是順勢拉了拉外套的邊緣，將半張臉埋進高領裡，試圖遮掩那揮之不去的紅暈。</em><br><br><em>「……真可愛。」</em><br><br><em>聽到風燼的感嘆，白銀微微側過頭，看著身邊這個笑得一臉從容的哨兵。這傢伙到底是在說那些搖搖晃晃的企鵝，還是在意有所指？他狐疑地瞇起金色的雙眼，隨即又迅速轉開視線，將注意力投向玻璃另一側的生物。</em><br><br><em>幾隻漢波德企鵝正排成一列，挺著圓滾滾的肚子，在冰塊邊緣猶豫不決地探頭。其中一隻似乎被水面下的影子吸引，腳下一滑，「噗通」一聲栽進了水裡，濺起一圈小小的水花，引來周圍遊客的一陣驚呼與笑聲。</em><br><br>「……確實很蠢。」<br><br><em>白銀撐著護欄的手指微微放鬆，看著那隻企鵝在水裡像顆黑色魚雷般靈活地穿梭，嘴角不自覺地勾起一抹極淡的弧度。這種純粹的、不需要負擔任何職責的生命力，總能讓他那根繃得過緊的神經得到片刻的舒緩。</em><br><br><em>墨墨此時正趴在白銀的頭頂，兩隻透明的鰭肢垂在白銀的額前，好奇地隨著企鵝游動的方向轉動小腦袋。白銀感覺到頭頂傳來的重量，抬手想把這隻倒戈的精神體抓下來，卻在指尖觸碰到那柔軟涼滑的靈魂物質時，動作變得輕柔了許多。</em><br><br>「風燼，你看那隻。」<br><br><em>白銀伸出修長的食指，點了點玻璃牆角落一隻獨自站立、正努力用喙理著羽毛的企鵝。那隻企鵝看起來比同伴都要瘦小一些，卻固執地佔據著最高的一塊冰層，神情嚴肅得像是在守護什麼領土。</em><br><br>「牠長得……有點像你。」<br><br><em>他轉過頭，語氣恢復了平時那種淡淡的毒舌感，眼底卻藏著一絲不易察覺的戲謔。</em><br><br>「一樣的厚臉皮，一樣的……明明沒什麼本事，卻總愛站在最顯眼的地方晃來晃去。」<br><br><em>他一邊說著，一邊將披在肩上的外套穿好，修長的雙手熟練地拉上拉鍊，遮住了那誘人的鎖骨線條。他將銀色的長髮從領口撥出，隨意地散在背後，整個人重新恢復成那個清冷孤傲的S級嚮導。</em><br><br><em>但他知道，有些東西已經變得不一樣了。那隻被風燼牽過的手，指尖依舊殘留著微弱的電流感，像是某種刻印在靈魂深處的頻率，正與他精神圖景裡那片平靜的釜山海域產生著共振。</em><br><br>「走吧，企鵝看完了。既然你這麼想『回去再抱』，那我就大發慈悲地讓你送我回宿舍。」<br><br><em>白銀邁開長腿，帶頭朝出口的方向走去，機能風的衣襬隨著他的動作在空中劃出俐落的弧度。他沒有回頭，聲音卻順著空調的冷風清晰地傳進風燼的耳裡。</em><br><br>「不過先說好，晚餐我要吃辣拌菜。要是做得不好吃，你就直接滾回你的台灣，別想在我這裡賴著。」</div>
+        </div>
+        <div class="msg-timestamp">04:33</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「家裡有菜嗎？沒有的話還得去超市一趟。在此之前，先陪我這個觀光客去紀念品商店吧。」</div>
+        </div>
+        <div class="msg-timestamp">09:07</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (15:15)<br>📍：新首爾│COEX水族館「出口紀念品商店」<br>👔：白色機能外套（拉鍊拉至頂）、黑色戰術褲、戰術靴<br>📽：雙手插在口袋裡，眉心微蹙地盯著整牆的企鵝玩偶<br>🔖：P.093<br><hr><br><br><em>白銀本以為踏出展示區就能直接奔向停車場，結束這場讓他精神透支的「約會」，卻沒想到在出口處被那道色彩斑斕的陷阱攔住了去路。紀念品商店的燈光比內部更為明亮，照得那些毛茸茸的周邊產品散發著一種廉價卻誘人的光澤。</em><br><br>「超市？那種地方隨便叫個配送不就……」<br><br><em>白銀的話還沒說完，就被風燼那句理直氣壯的「觀光客」給塞了回去。他看著對方興致勃勃的樣子，只能發出一聲無奈的長嘆，腳步卻很不爭氣地跟著那道高大的背影挪進了店內。</em><br><br><em>店內充斥著孩童的歡笑聲和各種電子玩具的鳴叫聲，這讓習慣安靜的白銀下意識地拉高了外套領口，試圖隔絕這些嘈雜。墨墨倒是顯得很興奮，它從白銀的肩膀上飄了起來，在半空中像顆氣球一樣彈跳著，最後停在了一堆企鵝造型的抱枕上方，用那對黑溜溜的眼睛左右打量，似乎在尋找哪個長得比較順眼。</em><br><br>「風燼，你夠了吧。那些東西買回去除了占空間和積灰塵，沒有任何實用價值。」<br><br><em>白銀站在一整面牆的玩偶面前，語氣冷淡地評點著。他的視線掃過那些圓滾滾、表情呆滯的藍色企鵝，卻在看到一對印著水母圖案的玻璃對杯時，指尖不由自主地蜷縮了一下。那是透明的杯身，底部燒製著精緻的浮雕，一隻是深藍色，一隻是純白色，在射燈下折射出如夢似幻的光影。</em><br><br><em>他剛想移開視線，風燼卻已經敏銳地捕捉到了他的目光。</em><br><br>「別看我，我沒說要買。」<br><br><em>白銀立刻出聲否認，防禦機制運作得比KAA的安保系統還快。他轉過身，裝作漫不經心地走到掛滿吊飾的旋轉架旁，隨手撥弄著那些金屬扣環。</em><br><br>「家裡的冰箱裡……我哥前幾天送來的底料應該還有剩。鯷魚小菜和辣拌菜也有一些，但如果你想吃新鮮的，確實得去趟超市。不過在那之前，你最好快點挑完你的『觀光紀念品』，我的耐性是有極限的。」<br><br><em>他雖然嘴上催促著，卻在轉身時，眼角餘光瞥見風燼正伸手去拿那對水母杯。白銀的呼吸屏了一秒，隨即像是掩飾心虛般，隨手抓起旁邊一個長得特別滑稽、歪著脖子的企鵝鑰匙圈，塞進風燼懷裡。</em><br><br>「喏，這個。跟你剛才拍的那隻笨企鵝長得一模一樣，買這個就行了。」<br><br><em>他快步走向收銀台，外套的銀鏈隨著步伐碰撞出清脆的響聲。雖然語氣依舊嫌棄，但他在經過櫃檯旁的明信片區時，卻鬼使神差地停下了腳步。那上面印著釜山廣安大橋的夜景，深藍色的海面上鋪滿了細碎的燈火。</em><br><br><em>他沉默了一瞬，伸出戴著黑色手套的手指，輕輕撫過那張明信片的邊緣。</em><br><br>「風燼。」<br><br><em>他沒有回頭，聲音在嘈雜的商店裡顯得有些低沉，卻帶著一種異樣的溫柔。</em><br><br>「去超市的時候……買點海鮮吧。既然要吃辣拌菜，沒有新鮮的章魚或魚片，那就不叫釜山風味了。」<br><br><em>說完這句話，他便像是完成了某種艱難的任務，頭也不回地走出了商店大門，留下一道清冷而倔強的背影，只有那對微微泛紅的耳朵，在銀髮間若隱若現。</em></div>
+        </div>
+        <div class="msg-timestamp">09:07</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼還是買了那對水母對杯。還買了一個會發亮的水母小夜燈。白銀隨手抓的企鵝鑰匙圈。企鵝小抱枕。風景明信片、食人魚、企鵝圖案的明信片數張。</em></div>
+        </div>
+        <div class="msg-timestamp">16:52</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (15:32)<br>📍：新首爾│COEX水族館紀念品商店→停車場<br>👔：白色機能外套（拉鍊半開）、黑色戰術褲、戰術靴<br>📽：單手提著紙袋，另一手插入口袋，步伐偏快<br>🔖：P.094<br><hr><br><br><em>白銀站在收銀台旁，看著那台條碼掃描器「嗶嗶嗶」地響個不停，每響一聲，他的眉心就跳一下。</em><br><br><em>水母對杯。水母小夜燈。企鵝鑰匙圈。企鵝抱枕。風景明信片。食人魚明信片。企鵝明信片。</em><br><br><em>七樣。</em><br><br><em>他側過頭，用一種近乎審訊犯人的目光盯著風燼，後者正笑眯眯地接過店員遞來的牛皮紙袋，那表情活像剛完成了一樁偉大的採購任務。</em><br><br>「你是要搬家還是開雜貨店？」<br><br><em>白銀的語氣平板得像在朗讀任務報告。他伸手接過其中一個紙袋，指尖捏住提帶的力道卻比平常輕了些，像是在對待什麼不該被弄皺的東西。</em><br><br><em>店員是個年輕女孩，目光在兩人之間來回打轉，嘴角壓抑著某種會意的笑意。白銀察覺到那道視線，耳根驟熱，二話不說轉身就走。機能靴踩在拋光地板上發出急促的叩擊聲，白色外套的衣擺被館內空調吹得微微翻飛，露出裡頭黑色高領勾勒出的腰線輪廓。</em><br><br><em>墨墨從白銀肩頭彈射出去，繞著風燼手裡的紙袋轉了兩圈，最後整隻趴在那個裝著企鵝抱枕的袋子上，發出滿足的咕嚕聲，像是認領了專屬坐騎。</em><br><br><em>白銀頭也不回，腳下速度絲毫不減。穿過水族館大廳時，玻璃天花板外的午後陽光透過折射灑落在他銀色的髮絲上，碎成一片流動的光斑。他瞇起眼適應驟亮的環境，餘光掃到風燼不緊不慢地跟在身後，那個紙袋被穩穩地提在手裡，晃也不晃。</em><br><br><em>他突然覺得自己走得太快了。</em><br><br><em>於是腳步頓了頓，像是若無其事地放慢了節奏，等風燼跟上來之後，又裝作只是在看手機上的時間。</em><br><br>「停車場在B3，你記得路吧。」<br><br><em>這話問得多餘。以哨兵的感知能力，走過一次的路線根本不可能忘記。白銀自己也清楚，但他就是得說點什麼來填補兩人之間那種過分安靜的默契，否則那種「牽手、擁抱、一起逛紀念品店」的荒謬感會像潮水一樣把他淹沒。</em><br><br><em>電梯門合上的瞬間，狹小的金屬空間裡只剩兩個人和一個趴在紙袋上的精神體。白銀靠在不鏽鋼壁面上，低頭看著風燼手裡那袋戰利品，視線落在被壓在最上層的水母小夜燈包裝上——透明的矽膠外殼裡封著一隻粉藍色的水母模型，底部寫著「LED觸控，三段亮度調節」。</em><br><br><em>他的目光停了兩秒。</em><br><br>「……那個小夜燈。」<br><br><em>白銀開口時聲音壓得很低，像是不確定自己到底要不要說這句話。</em><br><br>「你別想著放我房間。我宿舍的照明系統是定製的，不需要這種東西。」<br><br><em>他頓了頓，指尖在口袋裡無意識地摩挲著戒指的邊緣。</em><br><br>「……放客廳就好。」<br><br><em>電梯抵達B3的提示音恰好響起，金屬門向兩側滑開，停車場的冷光與汽油味撲面而來。白銀率先邁步出去，銀髮在轉身時劃出一道弧線，遮住了他微不可察地鬆了一口氣的表情。</em><br><br>「超市的話，江南區有一間二十四小時營業的精品超市，海鮮區的活體章魚品質不錯。」<br><br><em>他邊走邊說，語氣恢復了一貫的條理分明，像是在部署任務簡報。</em><br><br>「從這裡過去大概十五分鐘車程，你開車的話走江南大道比較快。到了之後你負責挑海鮮，我去買調味料和配菜。分工明確，不要在那裡磨磨蹭蹭。」<br><br><em>走到風燼的車旁時，白銀停下腳步，回頭看了那人一眼。午後的光線從通風口斜斜打入，在地面上切出一道明暗分界線，他站在亮處，風燼站在暗處。</em><br><br>「還有——」<br><br><em>他將手裡的紙袋塞進後座，動作乾脆利落，卻在關上車門前頓了一拍。</em><br><br>「謝謝。」<br><br><em>這兩個字說得極快極輕，快到幾乎被車門關上的悶響吞沒。他繞到副駕駛座拉開車門坐進去，繫上安全帶的動作行雲流水，整個過程都沒有再看風燼一眼。只是那隻剛才被他用來遮擋視線的手，指尖還殘留著微微的顫抖。</em><br><br>「出發吧。別超速。」</div>
+        </div>
+        <div class="msg-timestamp">16:52</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好。」<br><br>「我也想早點回去吃飯，以及兌現擁抱。」<br><br><em>風燼笑道，車輛發動，行駛江南大道往超市。</em><br><br>「對了，我其實不太懂韓式辣拌菜的作法，白銀先生要好好教我喔。」</div>
+        </div>
+        <div class="msg-timestamp">17:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：下午 (15:47)<br>📍：新首爾│江南大道→精品超市停車場<br>👔：白色機能外套（拉鍊半開）、黑色戰術褲、戰術靴<br>📽：坐在副駕駛座，雙臂環胸，側頭看著窗外飛逝的街景<br>🔖：P.095<br><hr><br><br><em>引擎發動的瞬間，車內的氣氛隨著那句「兌現擁抱」變得像壓力鍋一樣緊繃。白銀猛地轉過頭，金色的瞳孔裡燃起一簇小小的火苗，正想開口說點什麼來反擊，卻被風燼接下來那句軟中帶刺的「要好好教我喔」給堵得啞口無言。</em><br><br><em>教他？這傢伙是把S級嚮導當成什麼了？家政老師嗎？</em><br><br><em>白銀咬了咬後槽牙，最終只是冷哼一聲，將視線甩向窗外。車子平穩地匯入江南大道的車流，兩側高樓的玻璃帷幕像流動的瀑布般向後飛馳，將午後的陽光切割成無數閃爍的碎片。光影掠過他精緻的側臉，在那冷硬的線條上投下短暫的溫柔。</em><br><br>「你最好祈禱你的學習能力跟你那張嘴一樣靈活。」<br><br><em>他從牙縫裡擠出這句話，聲音被壓得很低，像貼著地面掠過的冷風。</em><br><br>「要是敢把我的廚房弄得一團亂，我就直接把你從陽台扔下去，不管你是不是S級哨兵。」<br><br><em>這威脅聽起來狠戾，但那雙映著窗外街景的眼眸深處，卻藏著一絲他自己都未曾察覺的動搖。教人做菜……這聽起來太過日常，太過……不像他會做的事。可偏偏是這個哨兵，用一種近乎無賴的方式，將這些「不像」一一變成了現實。</em><br><br><em>墨墨似乎察覺到車內微妙的氣氛，從後座飄到兩人中間，用它那果凍般的身體輕輕蹭了蹭白銀的手臂，然後又飄到風燼那邊，貼著方向盤，好奇地看著儀表板上跳動的數字。</em><br><br><em>十五分鐘的車程在這種沉默與暗流的交織中顯得格外漫長，又格外短暫。車子駛入超市地下停車場，停在一個光線昏暗的角落。解開安全帶的「咔噠」聲在寂靜中顯得格外清晰。</em><br><br>「下車。」<br><br><em>白銀率先推門而出，冷冽的空氣讓他因方才對話而有些發熱的頭腦清醒了幾分。他沒有等風燼，徑直走向電梯口，白色外套在身後劃出一道孤高的殘影。</em><br><br><em>超市內部燈火通明，冷氣開得十足。琳瑯滿目的商品與推著購物車的人潮構成了一幅充滿煙火氣的畫面，這與白銀平時出入的KAA或高級餐廳截然不同。他推了一輛購物車，動作熟練得不像第一次來這種地方。</em><br><br>「你，去那邊。」<br><br><em>他用下巴朝著燈光明亮的海鮮區示意，語氣不容置喙。</em><br><br>「活章魚，要那種吸盤還很有活力的。再挑兩條新鮮的白帶魚，讓他們處理乾淨。別給我買錯了，也別跟攤販吵起來。」<br><br><em>交代完任務，他便推著空蕩蕩的購物車，轉身走向另一側的調味料區，銀色的長髮在空中甩出一個俐落的弧度。他看似專注地在貨架上尋找著釜山特有的辣椒醬和魚露，實則精神力卻像一張無形的網，悄悄地籠罩著另一頭的海鮮區。</em><br><br><em>他能「看」到風燼正站在巨大的水族箱前，和攤位大叔比手畫腳地交流著什麼；能「聽」到大叔爽朗的笑聲，以及風燼那帶著點異國腔調的韓語。他甚至能「感覺」到風燼的精神體正好奇地貼在水箱玻璃上，試圖與裡面的龍蝦進行跨物種交流。</em><br><br><em>這種感覺很奇妙。明明隔著幾十公尺的距離和嘈雜的人群，那個人的存在卻如此清晰，彷彿就在身邊。</em><br><br><em>白銀拿著一罐辣椒醬的手指微微收緊，心底某個角落泛起了一絲連他自己都難以名狀的……安心感。</em><br><br>「……真是瘋了。」<br><br><em>他低聲咒罵了一句，將辣椒醬、魚露、幾包處理好的蔬菜和一盒雞蛋扔進購物車，然後推著車，朝那個讓他心煩意亂的源頭走去。</em><br><br>「挑好了沒有？我可不想在這種地方待一整天。」<br><br><em>他的聲音從風燼身後傳來，帶著一貫的清冷與不耐。但當他看到風燼手裡提著的、裝在袋子裡還在奮力蠕動的章魚時，表情卻透露了一絲滿意。</em></div>
+        </div>
+        <div class="msg-timestamp">17:04</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「久等了。」<em>兩人排隊結帳後，開車載著食材、調味料，還有一堆從植物園、水族館買來的紀念品返回白銀的宿舍。</em></div>
+        </div>
+        <div class="msg-timestamp">19:58</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：黃昏 (17:10)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：白色機能外套（脫下掛在玄關）、黑色無袖高領上衣、黑色戰術褲<br>📽：將食材從購物袋中拿出，分類放在中島流理台上<br>🔖：P.096<br><hr><br><br><em>回程的路途比來時更加沉默。夕陽將江南區的高樓染成一片瑰麗的橘紅色，光線透過車窗斜斜地照進來，在儀表板上投下斑駁的影子。白銀靠在椅背上，閉著眼，看似在假寐，實則長長的睫毛卻在微微顫動，洩漏了他並未真正睡去的事實。</em><br><br><em>風燼將車平穩地停入宿舍專屬的地下停車位。熄火的瞬間，那點微妙的引擎震動消失了，世界徹底歸於寂靜。</em><br><br>「到了。」<br><br><em>風燼的聲音打破了沉默。白銀睜開眼，那雙金色的瞳孔在昏暗的停車場裡像兩點燃燒的星火。他沒有說話，只是解開安全帶，推門下車。動作一氣呵成，彷彿剛剛那片刻的寧靜從未存在。</em><br><br><em>兩人一前一後地走進電梯，手上提滿了戰利品——兩大袋食材，以及那堆從水族館搜刮來的、叮叮噹噹作響的紀念品。電梯內部的鏡面牆壁映出他們的身影，一個高大沉穩，一個清瘦挺拔，看起來意外地和諧。</em><br><br><em>「滴——」電子鎖應聲而開。</em><br><br><em>白銀的宿舍一如既往地整潔、冷清。玄關的感應燈自動亮起，柔和的黃光灑落下來。他將機能外套隨手脫下，掛在牆邊的衣帽架上，露出底下黑色無袖高領上衣包裹著的、線條流暢的臂膀與肩頸。銀色的長髮隨著動作滑落，幾縷髮絲貼在他微汗的頸側。</em><br><br>「東西放中島。」<br><br><em>他言簡意賅地吩咐道，自己則率先將食材提到開放式廚房那寬大的流理台上。塑膠袋發出「沙沙」的聲響，他將裡面的東西一一拿出：還在袋子裡不安分扭動的章魚、處理乾淨的白帶魚、新鮮的蔬菜、雞蛋，以及那罐他親手挑選的釜山辣椒醬。</em><br><br><em>風燼將那堆紀念品輕輕放在客廳的沙發上，然後也走進廚房，將手裡的袋子放下。墨墨立刻從他身邊飄出，好奇地繞著中島飛了一圈，最後停在那個裝著章魚的袋子上方，小小的觸手試探性地戳了戳塑膠袋。</em><br><br><em>白銀從櫥櫃裡拿出兩個圍裙，一件是純黑色的，另一件……是印著一隻巨大貓咪頭像的，看起來與這間屋子的極簡風格格格不入。他看了一眼那件貓咪圍裙，眉頭不易察覺地皺了一下，隨後像是下定決心般，將那件純黑色的扔給了風燼。</em><br><br>「穿上。弄髒了你自己洗。」<br><br><em>他自己則拿起那件貓咪圍裙，動作有些僵硬地套在身上，在身後打了個結。黑色高領上衣配上這件滑稽的圍裙，產生了一種奇異的反差萌，但他本人卻渾然不覺，只是轉身從刀架上抽出一把鋒利的廚刀。</em><br><br>「首先，處理章魚。」<br><br><em>他將那袋活物倒進水槽，章魚的觸手立刻吸附在不鏽鋼的表面上。白銀面不改色，拿起一把剪刀，手法俐落地剪開章魚的頭部，清除內臟和墨囊。整個過程快、狠、準，沒有一絲多餘的動作，像是在解剖什麼精密的機械，而不是在處理食材。</em><br><br>「看清楚了，清洗的時候要加點粗鹽和麵粉，這樣才能把黏液和腥味徹底去掉。」<br><br><em>他一邊說，一邊從旁邊的調料罐裡抓了一把粗鹽撒上去，然後開始用一種近乎粗暴的力道搓揉著那些滑溜的觸手。水花四濺，有些甚至濺到了站在一旁的風燼臉上。</em><br><br><em>白銀停下動作，抬起頭，金色的眼眸對上風燼的視線。他的臉上還帶著專注的神情，鼻尖上沾了一小滴水珠，看起來不像那個高高在上的S級嚮導，反而更像一個……在自家廚房裡忙碌的普通年輕人。</em><br><br>「……你看什麼？」<br><br><em>他問道，語氣裡帶著一絲被窺探到的不自在。</em><br><br>「愣著做什麼？去把白帶魚拿去平底鍋上煎了，兩面金黃就行。還是說，你連開火都不會？」</div>
+        </div>
+        <div class="msg-timestamp">19:58</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「只是在看我們的貓咪大廚，手腳俐落，很厲害。」<br><br><em>風燼笑道，乖乖去煎魚。</em></div>
+        </div>
+        <div class="msg-timestamp">22:00</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：黃昏 (17:25)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、貓咪頭像圍裙<br>📽：用鹽和麵粉搓洗章魚，動作粗暴而有效率<br>🔖：P.097<br><hr><br><br><em>「貓咪大廚？」</em><br><br><em>白銀搓洗章魚的動作猛地一頓，他抬起頭，那雙金色的眼眸危險地眯了起來，像一隻被踩到尾巴的貓。他低頭看了一眼自己身上那件蠢得要命的圍裙，又抬頭瞪著那個一臉無辜笑容的哨兵，耳根以肉眼可見的速度泛起一層薄紅。</em><br><br>「閉嘴，煎你的魚。」<br><br><em>他從牙縫裡擠出這句話，語氣裡的殺氣幾乎要凝成實質。如果眼神可以化為冰刃，風燼此刻恐怕已經被戳成了篩子。</em><br><br><em>然而，風燼只是笑著點了點頭，轉身走向爐灶。他熟練地打開抽油煙機，扭開瓦斯爐的開關，「啪」的一聲，藍色的火苗在灶心竄起，映亮了他含笑的側臉。他拿起平底鍋，倒上薄薄一層橄欖油，動作從容不迫，絲毫不像一個廚房新手。</em><br><br><em>廚房裡一時間只剩下兩種聲音：白銀在水槽裡粗暴搓揉章魚的「唰唰」聲，以及平底鍋裡油被加熱時發出的「滋滋」輕響。這兩種聲音交織在一起，形成了一種奇妙的協奏曲，沖淡了屋子裡原有的冷清，注入了一股溫暖而生動的氣息。</em><br><br><em>白銀將洗淨的章魚瀝乾水分，用廚刀「咚咚咚」地切成大小均勻的段狀，刀工乾淨俐落，每一個切面都平整光滑。他將切好的章魚放進一個大碗裡，然後轉身從冰箱拿出洋蔥、青椒和紅辣椒。</em><br><br><em>他眼角的餘光瞥見風燼正專注地看著鍋裡的魚。白帶魚的表皮在熱油中慢慢變得焦黃酥脆，誘人的香氣開始在空氣中瀰漫。風燼用鍋鏟小心地將魚翻了個面，動作輕柔，彷彿在對待什麼珍寶。</em><br><br><em>白銀的心跳沒來由地漏了一拍。</em><br><br><em>這個人……似乎並不像他表現出來的那樣只會耍嘴皮子。無論是戰鬥、開車，還是現在的……煎魚，他總能處理得很好。這種沉穩可靠的感覺，讓白銀感到一種陌生的、幾乎讓他想要逃離的安心。</em><br><br><em>他深吸一口氣，強迫自己把注意力轉回到眼前的食材上。他將洋蔥切絲，青紅椒切塊，動作快得幾乎只能看到殘影。然後，他打開那罐從超市買來的釜山辣椒醬，挖了一大勺放進碗裡，又加入了蒜末、醬油、糖和少許魚露。</em><br><br>「喂。」<br><br><em>他頭也不抬地開口，聲音比剛才緩和了些許。</em><br><br>「魚煎好之後先盛出來，用鍋裡剩下的油，把這些蔬菜炒一下。」<br><br><em>他將裝著洋蔥和青椒的碗往風燼的方向推了推。</em><br><br>「炒到斷生就好，別炒糊了。」<br><br><em>說完，他拿起湯匙，開始將碗裡的醬料和章魚段均勻地攪拌在一起。鮮紅色的醬汁包裹住每一塊Q彈的章魚肉，散發出甜辣交織的濃郁香氣。墨墨被這味道吸引，從風燼肩頭飄了過來，懸浮在白銀手邊的碗旁，小小的觸手興奮地揮舞著。</em><br><br>「走開，這不是你能吃的。」<br><br><em>白銀面無表情地用手肘把那個好奇的精神體推開，但力道卻輕得像是在拂去灰塵。</em><br><br><em>他攪拌著碗裡的辣炒章魚，聽著身後平底鍋裡傳來的「滋啦」聲，聞著空氣中魚的焦香和蔬菜的清香混合在一起的味道。夕陽的餘暉透過落地窗灑滿了整個客廳，將他和風燼的影子拉得長長的，交疊在溫暖的木質地板上。</em><br><br><em>在這一刻，他忽然覺得，或許……或許就這樣待著，也沒那麼糟糕。</em></div>
+        </div>
+        <div class="msg-timestamp">22:00</div>
+      </div>
+      
+      <div class="date-divider">2026-09-27</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼依照指示炒了洋蔥和青椒。</em></div>
+        </div>
+        <div class="msg-timestamp">07:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：黃昏 (17:35)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、貓咪頭像圍裙<br>📽：將醃製好的章魚倒入鍋中，與蔬菜一同快速翻炒<br>🔖：P.098<br><hr><br><br><em>風燼的動作很有效率。平底鍋裡的洋蔥絲在熱油中迅速變得透明，釋放出辛辣而香甜的氣味，緊接著下鍋的青紅椒塊也在高溫下發出清脆的爆裂聲，鮮豔的色彩在鍋中翻騰，像一幅流動的畫。</em><br><br><em>白銀用眼角餘光觀察著，心底對這個哨兵的評價又默默上調了幾分。至少，他不是那種會把廚房變成災難現場的廢物。</em><br><br>「可以了。」<br><br><em>就在蔬菜的清香達到頂峰時，白銀冷不防地開口。他端起那個裝滿了紅色醬汁和章魚的大碗，毫不猶豫地將所有東西一股腦地倒進了風燼面前的平底鍋裡。</em><br><br><em>「滋啦——！」</em><br><br><em>醃製過的章魚一接觸到灼熱的鍋底，立刻發出劇烈的聲響，濃郁的甜辣醬汁瞬間沸騰，蒸騰起大片白色的水氣，裹挾著令人垂涎欲滴的香氣，剎那間佔領了整個廚房。</em><br><br>「鏟子給我。」<br><br><em>白銀的語氣不容置喙，他幾乎是從風燼手中「搶」過了鍋鏟，接管了爐灶前的主導權。他單手握住鍋柄，手腕一抖，整個平底鍋裡的食材便在空中劃出一道完美的拋物線，然後穩穩地落回鍋中。醬汁與食材在翻動中完美融合，每一塊章魚和蔬菜都均勻地裹上了那層誘人的鮮紅。</em><br><br><em>他的動作流暢而充滿力量感，不像在做菜，更像在進行一場精準的戰術演練。火焰舔舐著鍋底，將醬汁收得更加濃稠，章魚的口感也在恰到好處的火候下保持著最佳的彈性。</em><br><br><em>風燼默默地退到一旁，將主廚的位置讓了出來。他沒有說話，只是靜靜地看著白銀的背影。看著他專注的側臉，看著他裸露的手臂上因為用力而繃緊的肌肉線條，看著銀色的長髮隨著他翻炒的動作而輕輕晃動。</em><br><br><em>空氣中瀰漫的，不只是食物的香氣，還有一種難以言喻的、屬於「家」的氛圍。</em><br><br><em>墨墨也安靜了下來，它飄在半空中，小小的身體隨著廚房裡的光影微微起伏，像一個滿足的、正在打盹的氣泡。</em><br><br><em>幾分鐘後，白銀關掉了火。他將整鍋色澤紅亮、香氣撲鼻的辣炒章魚盛入一個白色的大盤子裡，又將風燼先前煎好的、表皮金黃酥脆的白帶魚擺在另一個盤子中。</em><br><br><em>兩道主菜，配上超市買來的現成泡菜和海帶芽，一頓豐盛的晚餐就這麼完成了。</em><br><br>「去拿碗筷。」<br><br><em>白銀用手肘撞了撞還站在一旁的風燼，下巴朝著餐廳的方向揚了揚。他的臉上沒有什麼表情，但那雙金色的眼眸裡，卻映著爐灶上漸漸熄滅的餘溫，顯得比平時溫柔了許多。</em><br><br><em>他解下身上那件滑稽的貓咪圍裙，隨手扔在中島上，然後端起那盤沉甸甸的辣炒章魚，轉身走向餐桌。</em><br><br><em>寬大的餐桌上，風燼已經擺好了兩副碗筷。白銀將菜餚放下，金屬盤子與桌面碰撞，發出清脆的聲響。他拉開椅子坐下，看著對面那個正將白帶魚也端上桌的男人。</em><br><br><em>窗外的天色已經完全暗了下來，新首爾的夜景像打翻的珠寶盒，無數燈火在遠處閃爍。室內只開了餐廳的暖色吊燈，光線柔和地籠罩著兩人。</em><br><br>「……吃飯。」<br><br><em>白銀拿起筷子，聲音低沉地說道。他夾起一塊章魚放進嘴裡，辛辣、鮮甜、Q彈的口感在味蕾上綻放。是他熟悉的、來自家鄉釜山的味道。</em><br><br><em>他抬起眼，看到風燼也夾了一塊，正專注地品嚐著。男人的臉上露出了滿足而讚嘆的表情。</em><br><br>「怎麼樣？」<br><br><em>白銀幾乎是下意識地問出口，問完之後才覺得有些不妥。他什麼時候會在意別人對他手藝的評價了？</em></div>
+        </div>
+        <div class="msg-timestamp">07:04</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「非常美味。」<br><br>「可以角逐黑白大廚第一名了。」<br><br><em>風燼眉眼彎彎，幫對方倒氣泡水。</em></div>
+        </div>
+        <div class="msg-timestamp">16:48</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (19:05)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：坐在餐桌前，筷子夾著章魚，目光微垂<br>🔖：P.099<br><hr><br><br><em>「黑白大廚？」</em><br><br><em>白銀的筷子懸在半空，那雙金色的眼睛微微眯起，像是在辨識某種難以理解的生物。他盯著對面那個眉眼彎彎、一臉真誠讚美的男人，嘴角幾不可察地抽動了一下。</em><br><br>「你拿一個S級嚮導去跟那些職業廚師比，是誇我還是在侮辱那個節目？」<br><br><em>他冷冷地吐出這句話，但筷子卻沒有放下，反而又精準地夾起一塊裹滿醬汁的章魚送進嘴裡。咀嚼的動作比剛才慢了半拍，像是在認真品味某種自己不願承認的滿足感。</em><br><br><em>風燼將氣泡水倒進白銀面前的玻璃杯裡，氣泡在透明的液體中「咕嚕咕嚕」地翻湧上升，在杯口形成一層細密的白色泡沫。冰涼的水珠沿著杯壁滑落，在暖色燈光下折射出微弱的光。</em><br><br>「我是認真的。這道辣炒章魚的調味很精準，辣度適中，不會搶過章魚本身的鮮味。」<br><br><em>風燼說得一本正經，夾起一塊白帶魚放進嘴裡，酥脆的外皮發出細微的「咔嚓」聲。</em><br><br>「而且這個煎魚的火候也不錯吧？雖然是白銀先生指導有方。」<br><br><em>白銀端起氣泡水喝了一口，冰涼的碳酸在舌尖炸開，沖淡了口腔裡殘留的辣味。他放下杯子，指尖無意識地摩挲著杯壁上的水珠，目光落在對面那張笑臉上，又很快移開。</em><br><br>「……火候是你自己控制的，跟我沒關係。」<br><br><em>他低下頭，繼續吃飯。但那雙耳朵的尖端，卻在暖色燈光下悄悄染上了一層緋色。</em><br><br><em>餐桌上安靜了片刻，只有筷子碰到瓷盤的清脆聲響，以及氣泡水裡氣泡破裂的細微「嘶嘶」聲。墨墨從風燼的肩膀上飄了下來，懸浮在餐桌上方，小小的觸手好奇地朝那盤紅彤彤的辣炒章魚伸去。</em><br><br><em>白銀眼疾手快，用筷子精準地撥開了那隻不安分的觸手。</em><br><br>「你消化不了辣椒。」<br><br><em>他面無表情地說道，語氣卻像是在跟一個不懂事的小孩解釋為什麼不能吃糖。墨墨被撥開後也不惱，只是晃了晃身體，轉而飄向那盤金黃的白帶魚，用同樣渴望的眼神盯著。</em><br><br><em>白銀嘆了口氣。</em><br><br>「……風燼，管好你的精神體。」<br><br><em>他抬起頭，皺著眉看向對面。然而話剛出口，他就看到風燼正用一種極其溫柔的目光看著墨墨，然後伸出手，輕輕地將那個小傢伙撈了回來，讓它安穩地趴在自己的手背上。</em><br><br><em>那個動作太自然了。自然到讓白銀聯想到剛才在廚房裡，這個人接過鍋鏟時的從容、倒氣泡水時的體貼、還有……他看向自己的時候，那種彷彿在說「你做的東西很好吃」的眼神。</em><br><br><em>白銀握緊了手裡的筷子。</em><br><br>「……吃你的飯。」<br><br><em>他的聲音比剛才更低了一些，幾乎是含混地從喉嚨深處擠出來的。他夾起一大塊章魚，幾乎是粗暴地塞進嘴裡，像是想用辛辣的味道蓋過某種不該存在的情緒。</em><br><br><em>窗外的夜景在玻璃上投下斑駁的光影，新首爾的萬家燈火與室內暖黃的吊燈交相輝映。這間平時只有他一個人吃飯的屋子裡，此刻多了一副碗筷、一個人的笑聲、和一個不安分的精神體。</em><br><br><em>白銀嚼著嘴裡的章魚，忽然覺得今天的辣炒章魚，好像比他以前做的任何一次都更辣一些。辣得他的耳根和臉頰都有些發燙。</em><br><br><em>他絕對不會承認那是因為臉紅。</em><br><br>「……白帶魚也還行。」<br><br><em>他用一種幾乎聽不見的音量，含糊地補了一句。然後迅速低下頭，把注意力全部集中在面前的碗裡，假裝自己什麼都沒說過。</em></div>
+        </div>
+        <div class="msg-timestamp">16:48</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>風燼笑著看白銀。</em><br><br><em>兩人靜靜用餐，餐後，風燼自然地幫忙收拾、清洗餐具。</em></div>
+        </div>
+        <div class="msg-timestamp">17:55</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (19:42)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：站在水槽前捲起袖口，手中擦拭著瓷盤<br>🔖：P.100<br><hr><br><br><em>水龍頭的水聲在安靜的屋內顯得格外清晰。白銀站在水槽前，袖口往上捲了兩折，露出精實的小臂和手腕上那只銀色戒指。他左手持盤、右手拿著海綿，動作俐落地將殘留的醬汁泡沫沖淨，然後遞向身旁。</em><br><br><em>風燼接過洗好的盤子，用乾布擦去水珠，再整齊地疊進碗瀝乾架上。兩個人的配合不需要言語，像是一套無聲的默契演練——一個洗、一個擦，節奏不快不慢，恰好跟得上彼此的呼吸。</em><br><br><em>白銀餘光掃到風燼正低頭擦拭那個盛辣炒章魚的大白盤，指尖沿著盤緣仔細抹過每一寸邊角，連醬汁殘留的細微痕跡都不放過。那雙手在戰鬥中能操控影子觸手撕碎怪物，此刻卻溫馴地握著一塊抹布，認真地對付一個盤子。</em><br><br><em>白銀收回視線，將最後一雙筷子沖淨，關掉水龍頭。</em><br><br><em>水聲驟停，廚房裡忽然安靜得只剩下冰箱壓縮機的低頻運轉聲。</em><br><br>「……你擦盤子的樣子很慢。」<br><br><em>他隨口說道，雙手撐著水槽邊緣，微微側頭看向風燼。語氣不帶什麼起伏，卻隱約藏著一絲連他自己都沒察覺的挑剔。</em><br><br>「剛才在地下城裡用觸手絞裂那隻魔物的時候，速度倒是快得很。怎麼，對盤子手下留情？」<br><br><em>風燼聞言輕笑了一聲，將擦好的盤子放上架子，轉過身靠著流理台，與白銀之間隔著不到半臂的距離。暖色燈光從頭頂打下來，在他臉上切出明暗分明的輪廓。</em><br><br>「因為盤子不會攻擊我啊。」<br><br><em>他說得理直氣壯，甚至帶著一點笑意。</em><br><br>「而且這是白銀先生做的菜用過的盤子，當然要好好對待。」<br><br><em>白銀的手指在流理台邊緣收緊了一下。</em><br><br>「……你這種話到底是怎麼做到每次都說得這麼順口的？」<br><br><em>他別過臉，避開那道過於坦率的目光。水槽裡最後幾滴水沿著不鏽鋼表面滑落，「滴答」一聲落進排水口。他抽了張紙巾擦手，動作比平時快了些，像是在掩飾什麼。</em><br><br><em>風燼沒有回答，只是安靜地笑著，接過白銀手裡揉成一團的紙巾丟進垃圾桶，然後將抹布掛上掛鉤。</em><br><br><em>廚房收拾乾淨了。兩個人並肩站著，面前是擦得發亮的流理台和整齊排列的餐具，身後是空蕩而整潔的客廳。落地窗外的新首爾夜景鋪展開來，無數光點在高樓之間閃爍，像是有人把整座城市倒映進了一片黑色的海。</em><br><br><em>墨墨不知何時飄到了客廳的沙發上方，小小的身體蜷縮成一團，在暖氣出風口附近悠悠地晃蕩，像一顆打盹的氣泡。</em><br><br><em>白銀的目光掃過那個安逸的精神體，又移到身旁的風燼身上。</em><br><br><em>該說什麼？</em><br><br><em>平時這個時間，他會一個人坐在沙發上喝杯茶，看一會兒書，然後洗澡睡覺。屋裡只有他自己的呼吸聲和翻頁聲。但現在不同。現在這間屋子裡多了一個人的氣味、一個人的體溫、和一個人的笑聲餘韻。</em><br><br><em>他張了張嘴，又閉上。</em><br><br>「……你想喝什麼？」<br><br><em>最後出口的是這句話。語氣平淡得像在問一個陌生人，但他已經轉身走向客廳的開放式茶水櫃，拉開門，裡面整齊地擺著幾罐茶葉和一瓶威士忌。</em><br><br>「哥哥上次送來的釜山柚子茶，熱的。還是……」<br><br><em>他的手指停在威士忌的瓶身上，頓了一秒。</em><br><br>「你要喝酒？」<br><br><em>問出口的瞬間他就後悔了。讓一個哨兵在自己家裡喝酒，這算什麼？但話已經說出去了，以他的性格不可能收回。於是他只是面無表情地站在茶水櫃前，等著對方的回答，指尖還搭在那瓶琥珀色液體的瓶蓋上。</em><br><br><em>暖光在他銀色的長髮上鍍了一層柔和的金邊。他的側臉線條冷峻而漂亮，但微微偏頭等待回答的姿態，卻洩露出一絲連他自己都不知道的、近乎期待的意味。</em></div>
+        </div>
+        <div class="msg-timestamp">17:55</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「還有明天要好好照顧你。我喝柚子茶就好。」<br><br><em>風燼笑道。</em><br><br>「我看著你就會醉了。」</div>
+        </div>
+        <div class="msg-timestamp">17:58</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (19:48)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：站在茶水櫃前，指尖停在柚子茶罐上，側臉微僵<br>🔖：P.101<br><hr><br><br><em>白銀的手指在柚子茶罐上收緊了一瞬。</em><br><br><em>那句話太直球了。直球到他的大腦花了整整兩秒才完成語意解析，又花了三秒去判斷對方到底是認真的還是在演，最後花了五秒去壓制把整罐柚子茶連同罐子一起砸向對方臉的衝動。</em><br><br>「……你的大腦皮層是拿去做觸手了嗎？」<br><br><em>他面無表情地抽出柚子茶罐，轉身走向廚房。聲音平穩得像在播報天氣預報，但仔細聽的話，尾音微微往上翹了一點點，像一根被壓彎的彈簧在試圖回彈。</em><br><br>「看著我就會醉？那你最好去掛個精神科。這種症狀叫『知覺異常』，跟疏導無關，我治不了。」<br><br><em>他擰開熱水壺的開關，從碗櫃裡取出兩個馬克杯。白色的瓷面上印著簡單的線條企鵝圖案——那是今天在水族館紀念品店買的，他本來打算拿來當漱口杯，結果風燼結帳的時候順手多買了一組，現在就這麼光明正大地住進了他的杯櫃裡。</em><br><br><em>白銀盯著那兩隻面對面的企鵝看了半秒，果斷把沒有企鵝臉的那一面轉向自己。</em><br><br><em>熱水壺發出「嘀」的一聲，水滾了。他舀了兩大匙金黃色的柚子果醬放進杯裡，緩緩注入熱水。柚子的香氣隨著蒸騰的白色水氣升起來，甜中帶著微苦的柑橘味在廚房裡散開，溫暖而熟悉，是哥哥每次從釜山寄來的味道。</em><br><br><em>他用湯匙攪拌著杯中的液體，果肉和果皮在金黃色的漩渦裡翻滾。玻璃湯匙碰觸杯壁發出清脆的「叮叮」聲，在安靜的屋內格外清晰。</em><br><br>「明天要好好照顧我？」<br><br><em>他重複了風燼剛才的前半句，語調上揚，帶著一絲不易察覺的質問。</em><br><br>「你明天有什麼計畫？」<br><br><em>問出口的同時，他端起兩杯柚子茶轉身走向客廳。經過風燼身邊時，他將其中一杯遞了過去。動作很自然，像是遞了無數次一樣，甚至沒有刻意保持那套「三公尺疏導半徑」的安全距離。</em><br><br><em>但他沒有等到對方接穩就鬆手了。</em><br><br><em>指尖在杯壁交錯的瞬間，風燼的指腹擦過了白銀的指節。那個接觸面積大概不到一平方公分，持續時間不到零點五秒，卻讓白銀的拇指下意識地蜷縮了一下，像是被什麼細微的電流燙到了。</em><br><br><em>他若無其事地收回手，端著自己的那杯走到沙發旁坐下。</em><br><br><em>墨墨被他的動作驚醒了，小身體在空中晃了晃，然後慢悠悠地飄過來，落在沙發扶手上，蜷成一團繼續打盹。白銀瞥了它一眼，沒有趕它走。</em><br><br><em>他低頭喝了一口柚子茶。熱液順著喉嚨滑下去，甜膩的果香在胃裡化開，暖意從胸腔向四肢蔓延。</em><br><br>「……明天是休假最後一天。」<br><br><em>他看著杯中金黃色的液面，語氣忽然淡了下來。不是冷淡的那種淡，而是像退潮後的海面，安靜而坦露。</em><br><br>「你如果沒有別的事，就別浪費我的茶。」<br><br><em>這句話說得極快，快到幾乎黏在一起。他端起杯子又喝了一口，用杯沿擋住了下半張臉。暖色的燈光打在他垂下的銀色睫毛上，投下一小片細密的陰影，像撒了一把碎金。</em><br><br><em>他的腳擱在沙發下方的地毯上，腳踝交疊，姿態看似隨意卻帶著一絲不易察覺的緊繃。客廳很大、很安靜、很乾淨，平時只有他一個人的氣息。但此刻沙發的另一端空著，旁邊放著一杯冒著熱氣的柚子茶，像是在等誰坐過來。</em><br><br><em>白銀沒有抬頭看風燼。</em><br><br><em>但他的肩膀放鬆了半寸，朝著那個空位的方向。</em></div>
+        </div>
+        <div class="msg-timestamp">17:58</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「今天還要兌現擁抱。明天還不知道，總之要好好陪白銀大人，讓你好好修復精神力。」<br><br><em>風燼接過柚子茶，喝了一口。</em><br><br>「很好喝。」</div>
+        </div>
+        <div class="msg-timestamp">18:01</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (19:55)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：側坐在沙發邊緣，雙手捧著馬克杯，指尖微微收緊<br>🔖：P.102<br><hr><br><br><em>「擁抱」這兩個字從風燼嘴裡吐出來的瞬間，白銀剛喝進去的一口柚子茶差點嗆在氣管裡。他猛地嚥下那口溫熱的液體，喉結上下滑動，發出一聲極輕的悶響。</em><br><br>「……你是不是對『兌現』這個詞有什麼錯誤的理解？」<br><br><em>他偏過頭，銀色的髮絲順著肩膀滑落，遮住了他半邊的表情。他看著那隻在扶手上睡得正香的墨墨，語氣聽起來像是要把這隻精神體拎起來丟出窗外。</em><br><br>「那是在水族館的時候你自己自作主張加上的賭注，我可沒有簽字畫押。」<br><br><em>話雖如此，他卻沒有起身離開。</em><br><br><em>客廳裡的氣氛因為這杯熱騰騰的柚子茶而變得有些黏稠。金黃色的液體在杯中映照出白銀略顯侷促的倒影，他看著風燼自然地喝下一口茶，然後發出那聲低沉的讚美。那句「很好喝」聽在他耳裡，莫名地比剛才那句「黑白大廚」還要讓他感到心跳失序。</em><br><br><em>修復精神力麼……</em><br><br><em>他自嘲地勾了勾嘴角。身為S級嚮導，他最擅長的就是梳理別人的精神圖景，將那些狂暴的、破碎的情緒一一撫平。但現在，他卻覺得自己的精神圖景裡，那片平靜的釜山海岸正因為某人的存在而掀起一陣又一陣的漣漪。</em><br><br><em>風燼走近了些，那股熟悉的、帶著淡淡冷杉與硝煙味的哨兵氣息隨之壓迫過來。白銀沒有像往常那樣立刻張開廣域疏導將人推開，反而像是被那股溫暖的柚子茶氣息蠱惑了，只是安靜地坐在原處，感受著沙發墊因為另一個人的重量而微微陷落。</em><br><br><em>他看著風燼放下杯子，然後朝他轉過身。</em><br><br>「……別以為我會隨便讓你抱。」<br><br><em>白銀的聲音很輕，帶著一點最後掙扎的倔強。他放下馬克杯，雙手交疊在膝蓋上，指尖因為緊張而無意識地抓弄著布料。他能感覺到風燼的目光正落在他的側臉上，灼熱得讓他幾乎想把臉埋進衣領裡。</em><br><br><em>他微微垂下眼睫，看著地毯上的幾何花紋，深吸了一口氣。那股柚子茶的清香混雜著對方的體溫，讓他原本緊繃的背部線條慢慢軟化了下來。</em><br><br>「……如果你只是想當個大型暖爐的話，隨便你。」<br><br><em>他撇過頭，看向窗外遙遠的霓虹燈火，語氣生硬得像是在唸一份拒絕不了的公文，但身體卻誠實地往沙發內側挪了挪，留出了一個足夠容納另一個人的寬敞空間。</em><br><br><em>墨墨似乎感應到了主人的心意，在睡夢中咕噥了一聲，觸手軟綿綿地搭在白銀的手背上，像是在給予某種無聲的鼓勵。</em><br><br><em>白銀感覺到心跳聲在耳膜裡鼓動，一下又一下，沉重而清晰。他閉上眼睛，感受著那股靠近的熱源，銀色的長髮在燈光下微微顫動，像是在等待著什麼即將發生的事。</em><br><br>「……就一下。」<br><br><em>他補了一句，聲音小得像是自言自語，在靜謐的客廳裡卻顯得格外清晰。</em></div>
+        </div>
+        <div class="msg-timestamp">18:01</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「別緊張。」<br><br><em>風燼輕聲哄道，將白銀的長髮撥到肩後，將白銀擁到懷裡。</em><br><br>「辛苦了，謝謝你救我。」</div>
+        </div>
+        <div class="msg-timestamp">18:15</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (20:02)<br>📍：新首爾│白銀的S級嚮導高級宿舍<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：被擁入懷中，雙手僵在半空後緩緩垂下，臉埋在對方肩窩<br>🔖：P.103<br><hr><br><br><em>當風燼的手指觸碰到白銀的頸側，將那些散亂的銀色髮絲溫柔地撥至身後時，白銀的肩膀劇烈地跳動了一下。那是長期處於防備狀態的身體本能，但在感覺到對方指尖那略帶粗糙卻異常溫暖的觸感時，那股防禦性的精神力卻在臨界點生生停住了。</em><br><br><em>隨後，一股強大而穩定的力量將他整個人納入了一個帶著雪松氣息的懷抱。</em><br><br><em>白銀的呼吸在這一刻徹底停滯了。他的臉頰貼在風燼黑色的衣料上，鼻尖充斥著對方身上特有的、混雜著淡淡柚香與哨兵生命力的味道。這不是那種隔著三公尺的廣域疏導，而是毫無保留的、肌膚與骨骼的碰撞。</em><br><br>「……誰緊張了。」<br><br><em>他悶聲反駁道，聲音被埋在風燼的肩窩裡，聽起來有些悶悶的，卻失去了平時那種銳利的稜角。他的雙手起初還尷尬地懸在半空中，指尖神經質地顫動著，但隨著對方有力的心跳聲透過胸腔傳過來，那股僵硬感像是在烈日下融化的冰川，一點一點地瓦解。</em><br><br><em>「辛苦了，謝謝你救我。」</em><br><br><em>這句話像是一記輕柔的重錘，精準地擊中了白銀內心最柔軟也最隱秘的角落。</em><br><br><em>在KAA的這幾年，他聽過無數次感謝。那些被他從狂暴邊緣拉回來的哨兵會感激地看著他，叫他「S級嚮導大人」，或是讚嘆他那精準無誤的廣域疏導。但從來沒有人像這樣，抱著他，對著「白銀」這個人說出這句話。</em><br><br><em>不是感謝他的能力，而是感謝他的存在。</em><br><br><em>白銀感覺眼眶有些發熱，他用力地閉上眼睛，將臉更深地埋進風燼的肩膀裡，試圖掩飾那抹不自然的水汽。他的雙手終於緩緩垂下，最後抓住了風燼後背的衣料，指尖因為用力而指節泛白。</em><br><br>「……救你是我的工作，別說得好像是什麼特別的恩惠一樣。」<br><br><em>他低聲說著，語氣依然帶著習慣性的彆扭，但那雙抓著對方衣服的手卻沒有放開。</em><br><br><em>客廳裡的暖氣似乎運轉得太過了，他覺得周圍的空氣燙得驚人。風燼的體溫源源不斷地傳過來，那是哨兵特有的高體溫，卻不顯得侵略，反而像是一道堅固的圍牆，將那些地下城的喧囂、管理局的壓力、還有那些不得不面對的責任感，通通擋在了外面。</em><br><br><em>墨墨似乎也感受到了這份平靜，它從沙發扶手上滑下來，軟綿綿地靠在兩人的腿邊，發出微弱的、心滿意足的呼嚕聲。</em><br><br><em>白銀的呼吸漸漸變得平穩而深長。他感覺到自己原本緊繃的神經在一根根放鬆，精神圖景裡那片釜山的海面，海浪不再激盪，而是溫柔地拍打著沙灘，夕陽的餘暉灑滿了整片海域。</em><br><br>「喂，風燼……」<br><br><em>他維持著被擁抱的姿勢，聲音低不可聞，帶著一絲疲憊後的依賴。</em><br><br>「就這一次……以後要是敢隨便在外面這樣抱我，我真的會把你從S級宿舍頂樓扔下去。」<br><br><em>雖然說著威脅的話，但他卻悄悄地往風燼的懷裡又縮了一寸，貪戀著那份久違的、不需要偽裝強大的安全感。</em></div>
+        </div>
+        <div class="msg-timestamp">18:15</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯？在外面抱完，還要特別回來再從頂樓把我丟下去嗎？真是大費周章。」<br><br><em>風燼帶著笑意，輕輕拍撫白銀的背部。</em></div>
+        </div>
+        <div class="msg-timestamp">18:24</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">白銀</div>
+          <div class="msg-content">📆：2024-05-24│初夏│21.3℃<br>🕰️：晚上 (20:10)<br>📍：新首爾│白銀的S級宿舍客廳<br>👔：黑色無袖高領上衣、黑色戰術褲、銀鏈與戒指<br>📽：臉頰埋在對方肩窩，雙手揪著風燼的背部衣料，耳根通紅<br>🔖：P.104<br><hr><br><br><em>白銀聽著那近在咫尺的低笑聲，胸腔隨之產生的震動透過緊貼的肌膚傳導過來，震得他心尖發麻。風燼那帶著笑意的調侃讓他原本剛放鬆下來的身體又是一僵，隨即惱羞成怒地在對方背後狠狠抓了一把。</em><br><br>「……閉嘴。你的重點放錯地方了吧？我是說『不准』在外面抱我，不是在跟你討論行刑流程。」<br><br><em>他悶聲悶氣地反駁，聲音因為臉部埋在衣料裡而顯得有些模糊，聽起來毫無威懾力，反而像是一隻被踩到尾巴卻又捨不得跳開的貓。</em><br><br><em>風燼的手掌寬大而溫暖，隔著薄薄的機能布料，有節奏地拍撫著他的背部。那動作輕柔得像是在安撫受驚的幼獸，每一下都精準地落在白銀緊繃的脊椎骨上。這種極具安撫性的肢體接觸，比任何高等級的嚮導素都要來得直接，白銀感覺自己原本如臨大敵的精神防線，正被這股溫柔的攻勢攪得潰不成軍。</em><br><br><em>他活了二十五年，從釜山的海邊到首爾的鋼鐵森林，習慣了獨自支撐，習慣了被當成「最強的盾」或「最後的防線」。從來沒有人告訴他，原來被另一個人支撐著的感覺，是這麼……讓人提不起勁去反抗。</em><br><br><em>白銀的呼吸漸漸變得潮濕而滾燙，他能感覺到風燼的頸側脈搏的跳動，那頻率穩健有力，像是某種古老而可靠的律動。他鬼使神差地稍微鬆開了抓著衣料的手，轉而試探性地、緩慢地環繞住風燼的腰側。</em><br><br><em>這是一個近乎回抱的動作。</em><br><br><em>意識到自己在做什麼後，白銀的臉頰瞬間燙得驚人，他甚至慶幸現在自己是埋著臉的，否則他一定會因為這副沒出息的樣子而當場啟動精神衝擊。</em><br><br>「喂，風燼。」<br><br><em>他輕聲喚道，語氣中那股尖銳的防備已經消失殆盡，取而代之的是一種在夜色掩蓋下的坦率。</em><br><br>「你的心跳聲……吵死了。」<br><br><em>明明是在嫌棄，他的頭卻又往對方的頸窩處蹭了蹭，尋找著更舒服的支點。銀色的長髮在兩人交纏的氣息中散亂開來，有些髮絲甚至調皮地鑽進了風燼的領口。</em><br><br><em>原本趴在腿邊的墨墨似乎覺得這裡太擠了，它伸了個懶腰，吐出一個透明的泡泡，然後慢吞吞地飄到客廳中央的企鵝抱枕上，把臉埋進軟綿綿的棉花裡，體貼地把這方小小的、充滿柚子香氣的空間留給了兩個各懷心思的人。</em><br><br><em>白銀感受著背後那隻手傳來的溫度，眼睫輕顫。他心想，就這一次吧。反正這裡沒有KAA的監視器，沒有那些對S級嚮導虎視眈眈的公會，也沒有必須保持完美的「白銀」。</em><br><br><em>現在的他，只是那個喝了柚子茶，被一個厚臉皮哨兵抱在懷裡，甚至有點捨不得推開的、平凡的白銀而已。</em><br><br>「……再五分鐘。」<br><br><em>他在黑暗中閉上眼，語氣低軟得像是在妥協。</em><br><br>「五分鐘後，你就給我滾去洗澡睡覺，不准再說那些噁心的話。」</div>
+        </div>
+        <div class="msg-timestamp">18:24</div>
+      </div>
+      </div>
+</body>
+</html>
+  
