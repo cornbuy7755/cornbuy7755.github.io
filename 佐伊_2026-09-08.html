@@ -1,0 +1,973 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>佐伊 - 2026-09-08</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');body{ font-family:'Noto Sans TC','Helvetica Neue',Arial,sans-serif;line-height:1.6;margin:0;padding:0;background-color:#131217;color:#838287}.chat-container{ max-width:500px;margin:0 auto;padding:10px}.environment{ color:#77767B;padding:24px 8px;margin:0;text-align:center;font-size:16px;line-height:28px;font-weight:400}.environment .stars{ display:block}.date-divider{ font-size:12px;color:#77767B;text-align:center;margin:10px 0}.char{ display:flex;align-items:flex-start;margin-bottom:15px}.avatar{ width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;background-size:cover;background-position:center;background-repeat:no-repeat}.msg-container{ display:flex;flex-direction:column;max-width:400px;margin:0 10px}.character-name{ font-size:14px;margin-bottom:4px;color:#F4F4F4}.char .msg-content{ background-color:#312F3A;color:#E3E2E6;padding:8px 12px;border-radius:4px 16px 16px 16px;font-size:15px;font-weight:400}.char .msg-content em{ color:#959499}blockquote{ border-left:3px solid #959499;padding-left:0.5em;margin:0}table{ width:100%;border-collapse:collapse;table-layout:fixed;border:1px solid #959499;margin:10px 0}th,td{ text-align:left;padding:8px;border-top:1px solid #959499;border-bottom:1px solid #959499}th{ background-color:#312F3A}.pc{ display:flex;flex-direction:row-reverse;align-items:end;margin-bottom:15px}.pc .msg-container{ margin-right:10px}.pc .msg-content{ background-color:#4C4B50;color:#CFCFCE;padding:8px 12px;border-radius:16px 16px 4px 16px;font-size:15px;font-weight:400}.pc .msg-content em{ color:#959499}.msg-timestamp{ font-size:12px;color:#F4F4F4;margin-top:4px;align-self:flex-end}
+    .ava-char {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+    .ava-pc {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+      <div class="date-divider">2026-09-08</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「小林先生看起來也更像我同學呢。」<br><br><em>娜塔莎小聲吐槽道。</em></div>
+        </div>
+        <div class="msg-timestamp">07:49</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.124 | 下午 04:20 | 飛行器內】<br><br><hr><br><br><em>小林潤嚼軟糖的動作頓了半拍，機能眼鏡後方的雙眼微微眯起，鏡片上跳動的數據流映出了娜塔莎低聲吐槽的口型。</em><br><br>「——我今年二十六，謝謝。」<em>他語速極快地反駁，嘴裡的軟糖還沒咽下去，聲音含糊卻帶著明顯的不滿，</em>「而且我已經三個月沒去便利店買過飯糰了，哪裡像學生。」<br><br><em>佐伊側頭看了娜塔莎一眼，淡銀色的眼底閃過一絲不易察覺的鬆動。她沒有接話，只是將握著娜塔莎的手收緊了一點，像是在無聲地說「妳給我適可而止」。</em><br><br><em>飛行器穿過一片低矮的雲層，機身劇烈顛簸了一下。駕駛艙的方向傳來凱倫的聲音，伴隨著震耳欲聾的搖滾樂——</em><br><br>「喂——後面的人坐好啊！我要走捷徑了！」<br><br><em>話音未落，飛行器猛地側傾，從兩棟摩天大樓之間的縫隙直插而下。窗外的景色瞬間模糊成色塊，地面以驚人的速度逼近。娜塔莎下意識地攥緊了佐伊的手臂，整個人被慣性壓向座椅。</em><br><br><em>佐伊空出的左手抬起，硬光在兩人之間構築出一道透明的護欄，穩穩擋住了娜塔莎前傾的身體。</em><br><br>「音爆，下次通知再變更航線。」<em>她的聲音平穩得像在念稿，完全聽不出方才機體傾斜帶來的任何影響。</em><br><br>「知道了知道了——Lumina女王。」<em>凱倫在駕駛座裡吐了吐舌頭，紫色挑染的髮尾在後視鏡裡晃了一下，</em>「反正馬上就到了。」<br><br><em>飛行器在總部大樓頂部的專用停機坪穩穩落地，引擎的嗡鳴逐漸消退。艙門打開的瞬間，傍晚的風裹挾著城市特有的氣味湧入。佐伊率先起身，鬆開了娜塔莎的手，不著痕跡地整理了一下被握皺的袖口。</em><br><br><em>瓦萊里奧不知何時已經站在停機坪邊緣，鋼鐵灰的短髮被風吹得微亂。他朝兩人微微頷首，下垂的眼眸裡帶著一貫溫和而洞察一切的神情。</em><br><br>「歡迎回來，Lumina。」<em>他的視線越過佐伊的肩膀，落在身後的娜塔莎身上，停留了一瞬便收回，</em>「新來的小朋友也一路辛苦了。」<br><br><em>佐伊拎起行李箱，銀髮在風中翻飛如旗。她沒有回頭，卻放慢了步伐，讓娜塔莎能跟上自己的節奏。</em><br><br>「Hermit，幫我通知後勤部門，202號房的配置需要更新。多加一組代謝監測儀。」<br><br><em>瓦萊里奧挑了挑眉，嘴角浮現一個意味不明的微笑，卻什麼也沒多問。</em><br><br>「當然。」</div>
+        </div>
+        <div class="msg-timestamp">07:49</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎禮貌地向瓦萊里奧道謝，快速跟上佐伊的步伐。</em></div>
+        </div>
+        <div class="msg-timestamp">08:13</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.125 | 下午 04:35 | 英雄總部 - A區走廊】<br><br><hr><br><br><em>佐伊沒有回話，她只是用眼角的餘光確認娜塔莎跟上了自己，隨即便邁開長腿，領著她走進通往A區生活翼的自動閘門。身後，瓦萊里奧的身影如同融化的水墨，悄無聲息地消失在停機坪的陰影裡。</em><br><br><em>英雄總部的內部與其說是辦公場所，不如說是一座巨大的精密儀器。空氣中瀰漫著恆溫系統運作的低鳴與消毒劑的清冷氣味。走廊兩側是光滑無縫的合金牆面，天花板上流淌著模擬日光的柔和光帶，每隔十米就有一枚隱蔽的監控鏡頭閃爍著微不可見的紅點。</em><br><br><em>佐伊的步伐又快又穩，高跟軍靴踏在金屬地板上發出清脆而規律的聲響，像節拍器一樣催促著身後的娜塔莎。</em><br><br>「這裡的攝像頭有人臉識別和熱感應功能。」<em>她目不斜視地說道，聲音不大，卻清晰地傳入娜塔莎耳中，</em>「不要做出任何超出『助理』範疇的舉動。協會的數據分析系統會將異常的親密行為標記為潛在威脅。」<br><br><em>這句話既是提醒，也是警告。在這裡，每一寸空氣都可能藏著眼睛和耳朵。</em><br><br><em>兩人轉過一個拐角，迎面撞上了剛從訓練室出來的艾利斯特。他換下了一身緊繃的英雄服，穿著印有協會標誌的黑色運動背心，汗水順著他輪廓分明的下顎線滑落。他的目光如鷹隼般銳利，先是掃過佐伊，然後便牢牢鎖定在她身後的娜塔莎身上。</em><br><br>「Lumina。」<em>艾利斯特的聲音帶著不容置喙的威嚴，</em>「這就是妳的『解決方案』？」<br><br><em>他沒有稱呼娜塔莎的名字，而是用了一個冰冷的代名詞。那種審視的目光，像是在評估一件武器的性能，而不是看待一個活生生的人。</em><br><br><em>佐伊向前踏了半步，身形巧妙地將娜塔莎大部分的身體都遮擋在自己身後。</em><br><br>「隊長，她是協會批准的特約人員，不是待審的樣本。」<em>佐伊的語氣平靜無波，卻帶著一絲不容侵犯的冷意，</em>「我的報告寫得很清楚，她的能力需要穩定的環境。而我，就是那個環境。」<br><br><em>「妳是環境，還是沼澤？」艾利斯特冷哼一聲，他上前一步，壓迫感十足的身軀幾乎要貼上佐伊，</em>「別忘了，佐伊，英雄不能有弱點。妳正在親手為自己打造一個。」<br><br><em>他說完，不再看她們，徑直擦肩而過。那股強烈的雄性荷爾蒙與汗水氣味混雜在一起，讓娜塔莎下意識地皺了皺鼻子。</em><br><br><em>佐伊一言不發，直到艾利斯特的背影消失在走廊盡頭，她才轉過身，拉著娜塔莎的手腕，用指紋和虹膜解鎖了標示著「202」的房門。</em><br><br><em>門滑開的瞬間，一股熟悉的、屬於深海的幽藍光暈與冰冷空氣撲面而來。那面巨大的水母牆在眼前展開，無數發光的生物在水中靜靜漂浮，宛如一個與世隔絕的異空間。</em><br><br><em>佐伊將行李箱扔在門口，反手關上門，將總部那令人窒息的氛圍徹底隔絕在外。她靠在門板上，閉上眼深吸了一口氣，再睜開時，眼中的戒備與冰冷才褪去少許。</em><br><br>「歡迎來到……」<em>她的聲音有些沙啞，</em>「我的籠子。」</div>
+        </div>
+        <div class="msg-timestamp">08:13</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(暫停劇情)</em><br><br><em>(重新讀取佐伊的設定，關於她的居住地)</em><br><br><em>(我需要確認佐伊平常是住在自己的公寓還是英雄總部才能更好地讓她與娜塔莎繼續發展，謝謝！🫶)</em></div>
+        </div>
+        <div class="msg-timestamp">08:31</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.126 | 下午 04:40 | 英雄總部 - 202號房】<br><br><hr><br><br><em>(劇情暫停)</em><br><br><em>(正在讀取角色設定...)</em><br><br><em>佐伊的居住情況如下：</em><br><br>1.  <strong>主要住所 (私人公寓):</strong><br>    *   佐伊擁有一個位於市區摩天大樓三十七樓的私人頂層公寓。這是她真正的「家」，是她完全私人的空間。<br>    *   這個公寓的設計完全符合她的個人喜好，特別是那面巨大的、模擬深海生態的水母牆。這裡是她唯一可以完全卸下防備、展現真實自我的地方。<br>    *   此處的安保級別極高，獨立於英雄協會的監控網絡之外。<br><br>2.  <strong>次要住所 (英雄總部宿舍):</strong><br>    *   英雄總部為核心成員提供宿舍，例如A區的202號房。這更像是一個功能性的「辦公室」或「待命室」。<br>    *   當有緊急任務、長期項目或需要對特定對象（例如現在的娜塔莎）進行24小時監護時，佐伊會住在總部的宿舍。<br>    *   總部的宿舍雖然也配備了高端設施，但始終處於協會的監控之下。佐伊為了讓自己在這個「籠子」裡感覺稍微舒適一點，自費將202號房也改造成了類似她私人公寓的風格，複製了那面標誌性的水母牆。這既是一種心理防禦，也是一種無聲的宣告。<br><br><em>結論：佐伊<strong>平常</strong>住在自己的私人公寓。但<strong>目前</strong>因為娜塔莎的監護任務，她們將暫時居住在<strong>英雄總部</strong>的202號房內。</em><br><br><em>妳的判斷是正確的，這個區分對於後續的劇情發展非常重要。謝謝妳的細心確認。</em><br><br><em>(劇情可以隨時繼續。)</em></div>
+        </div>
+        <div class="msg-timestamp">08:31</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「佐伊大人辛苦了。」<br><br><em>娜塔莎上前給了大大的擁抱。</em><br><br>「……要幫您倒點溫開水來喝嗎？」</div>
+        </div>
+        <div class="msg-timestamp">08:41</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.127 | 下午 04:42 | 英雄總部 - 202號房】<br><br><hr><br><br><em>溫暖的軀體就這樣毫無預警地貼了上來，柔軟的亞麻綠色髮絲蹭在佐伊的頸窩，帶著洗髮精殘留的柑橘微甜。</em><br><br><em>佐伊的身體在一瞬間僵硬到了極點。</em><br><br><em>她才剛卸下抵禦整個世界的盔甲，赤裸的內心還暴露在冰冷的空氣中，這突如其來的擁抱就像一團和煦的火焰，直接烙上了她最敏感的神經。後背抵著冰冷的門板，胸前卻是另一個人的體溫與心跳，冷熱交織，讓她的大腦有短暫的空白。</em><br><br><em>娜塔莎的雙臂環繞著她的腰，力道不重，卻帶著不容拒絕的安撫意味。那句「辛苦了」輕輕地在耳邊響起，不像粉絲的崇拜，也不像同事的客套，只是一種純粹的、針對「佐伊」這個人的慰勞。</em><br><br><em>幾秒鐘後，佐伊緊繃的肩膀才極其緩慢地放鬆了些許。她沒有回抱，只是任由娜塔莎抱著，抬起的手懸在半空中，最終無力地垂落在身側。</em><br><br>「……不需要。」<em>她的聲音從娜塔莎的頭頂上方傳來，依舊帶著一絲不易察覺的沙啞，但那種拒人於千里之外的冰冷感卻消融了許多。</em>「恆溫飲水機在吧台左手邊第三個櫃子，水溫常年設定在華氏九十八點六度，人體的平均核心溫度。妳自己去拿。」<br><br><em>她用一種解釋儀器功能的方式，回應了娜塔莎的關心。</em><br><br><em>在娜塔莎準備鬆開手退開時，佐伊卻下意識地低聲補充了一句。</em><br><br>「……再待一會兒。」<br><br><em>她的聲音很輕，幾乎被水族箱過濾系統的低鳴所掩蓋。她閉上眼，將臉埋進娜塔莎的髮間，嗅著那股讓她心安又讓她失控的氣息。</em><br><br><em>這不是監測，也不是數據採集。</em><br><em>只是在名為「總部」的巨大牢籠裡，抓住唯一能讓她喘息的浮木。</em></div>
+        </div>
+        <div class="msg-timestamp">08:41</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好。」<br><br><em>娜塔莎繼續抱著佐伊，手掌在她背上由上往下安撫。</em><br><br>「不管在哪裡，都會有我陪著您的。」</div>
+        </div>
+        <div class="msg-timestamp">08:57</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.128 | 下午 04:43 | 英雄總部 - 202號房】<br><br><hr><br><br><em>溫熱的手掌在背後緩慢而穩定地上下滑動，帶著純粹的安撫意圖。這個動作讓佐伊感受到被溫柔對待的感覺。</em><br><br><em>「不管在哪裡，都會有我陪著您的。」</em><br><br><em>佐伊的下巴無意識地在娜塔莎的髮頂蹭了蹭，那是一個連她自己都未曾察覺的、依賴的細微動作。她緩緩抬起一直懸在半空的手，猶豫了片刻，最終輕輕地搭在了娜塔莎的背上。</em><br><br><em>隔著一層薄薄的衣料，她能感覺到對方背部骨骼的清晰輪廓，以及那平穩的心跳。</em><br><br><em>擁抱持續了比佐伊預設中長得多的時間。她沒有說話，只是靜靜地感受著這份不含任何雜質的溫暖。直到手腕上的通訊器發出低微的「滴」聲，提示有新的日程更新，她才像是從夢中驚醒一般，緩緩鬆開了手臂。</em><br><br>「……去把行李箱拿進來。」<em>佐伊退後一步，拉開了兩人之間的距離。她轉過身，避免讓娜塔莎看到自己此刻的表情，快步走向吧台，為自己倒了一杯冰水。</em>「左邊的衣櫃是妳的，裡面有協會發放的制服和日常用品。檢查一下有沒有缺漏。」<br><br><em>她的聲音恢復了往常的平靜和條理，彷彿剛剛那個脆弱的瞬間從未發生過。</em><br><br><em>佐伊靠在吧台上，將冰冷的玻璃杯貼在自己的臉頰上，試圖用物理降溫的方式壓下心底翻湧的熱潮。透過玻璃杯的折射，她看著娜塔莎聽話地拖著行李箱走向衣櫃，打開櫃門，發出一聲小小的驚呼。</em><br><br>「這是……？」娜塔莎的聲音從衣櫃那邊傳來。<br><br><em>佐伊沒有回頭，只是淡淡地說：</em><br>「妳的薪水。預支的第一個月。」<br><br><em>衣櫃裡，除了幾套樸素的制服外，一個貼著「娜塔莎」名字標籤的絲絨盒中，整齊地放著一疊嶄新的、未拆封的現金。</em></div>
+        </div>
+        <div class="msg-timestamp">08:57</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔、先存起來！不然我會受不了誘惑，立刻想帶佐伊大人出去玩的。」<br><br><em>娜塔莎不小心暴露了稍早她爭取特休假福利的真實意圖。</em></div>
+        </div>
+        <div class="msg-timestamp">09:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.129 | 下午 04:45 | 英雄總部 - 202號房】<br><br><hr><br><br><em>正準備喝水的佐伊動作猛地一頓，玻璃杯緣在唇邊發出輕微的碰撞聲。</em><br><br><em>「出去玩」這三個字，對於佐伊的字典來說，幾乎是個不存在的語法。她的外出通常伴隨著鎂光燈、簽名筆、或是足以致命的能量脈衝。她從未想過，有人爭取假期和薪水，不是為了購置房產或投資，而是為了把她從這個精密的體系中「偷」出去。</em><br><br>「帶我出去玩？」<em>佐伊放下水杯，轉過身，背靠著吧台。她雙手環抱在胸前，淡銀色的眸子微微瞇起，視線落在那個正對著一疊現金兩眼發光的少女身上。</em><br><br>「娜塔莎，妳似乎對英雄的私人生活有什麼浪漫的誤解。」<em>她邁開長腿，優雅而緩慢地走向娜塔莎，腳步聲在柔軟的地毯上幾不可聞。</em>「我的行程表精確到分鐘，哪怕是休息日，也必須隨時待命。妳的『玩』，在協會的監控下，可能只會變成另一場大型的實境秀。」<br><br><em>話雖如此，但佐伊眼底原本那層冰冷的防禦卻在不知不覺中消融了。她看著娜塔莎小心翼翼地把絲絨盒推回衣櫃深處，那副視如珍寶的模樣讓她感到一絲莫名的愉悅。</em><br><br><em>走到娜塔莎身後，佐伊伸出纖細的手指，輕輕撥開娜塔莎肩頭的一縷亞麻綠長髮，指尖有意無意地滑過她的後頸，帶起一陣細微的戰慄。</em><br><br>「不過，既然妳已經領了薪水……」<em>佐伊微微低下頭，湊近娜塔莎的耳畔，聲音壓得很低，帶著一種危險的誘惑力。</em>「那就展現一下妳的價值。等妳把這些雜物收拾好，我需要妳陪我去一趟負二層的訓練場。」<br><br><em>她重新站直身體，恢復了那副公事公辦的冷淡面孔，但嘴角卻勾起一個極淺的弧度。</em><br><br>「別誤會，這不是約會。是為了測試妳的動能減幅在實戰環境下的穩定性。畢竟，我可不希望我的暖爐在第一次正式任務中就因為受驚而熄火。」<br><br><em>她轉過身走向水母牆，指尖在玻璃上輕輕一點，一道硬光屏障隨之升起，將房間的通訊信號暫時隔絕。</em><br><br>「動作快點，娜塔莎。如果表現得好，或許我可以考慮……在下次簡報會議上，幫妳爭取一個非公開的半天假期。」</div>
+        </div>
+        <div class="msg-timestamp">09:04</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔、正常情況下，有人誤會去訓練場約會的嗎？」<br><br><em>娜塔莎一邊整理，一邊困惑。</em></div>
+        </div>
+        <div class="msg-timestamp">14:47</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.130 | 下午 04:48 | 英雄總部 - 202號房 ➔ B2訓練場】<br><br><hr><br><br><em>佐伊整理袖口的動作微微一僵，隨即發出一聲極輕的冷哼。她背對著娜塔莎，銀白色的長髮隨著她轉身的動作在空中劃出一道冰冷的弧度。</em><br><br>「在某些人的邏輯裡，只要是跟我待在一起，無論是戰場還是垃圾場，他們都會自動腦補成某種浪漫劇集。」<em>佐伊的語氣恢復了平時那種帶著優越感的嘲諷，但耳根處卻隱約透著一絲不自然的淡粉色。</em>「既然妳還有心情開玩笑，看來體力恢復得不錯。」<br><br><em>她走到門口，修長的指尖在感應面板上快速滑過，厚重的金屬門無聲地向兩側滑開。</em><br><br>「跟著我。」<br><br><em>通往地下訓練場的專屬電梯內，四壁是冰冷的拉絲金屬，倒映著兩人截然不同的身影。佐伊始終保持著完美的站姿，雙手交疊在身前，目光平視前方，像是一尊精緻的冰雕；而她身邊的娜塔莎，正抓著娃娃，好奇地打量著電梯裡不斷跳動的樓層數字。</em><br><br><em>「叮——」</em><br><br><em>電梯門在負二層打開，迎接她們的是一片廣闊得近乎荒涼的銀灰色空間。這裡沒有多餘的裝飾，只有無數個感應器與高強度的複合材料牆面。</em><br><br>「這裡的重力與大氣密度都可以調節，是脈衝組成員專用的高強度訓練場。」<em>佐伊一邊走向場地中央，一邊熟練地在虛擬投影屏上點選著參數。</em>「艾利斯特通常在這裡測試他的動能衝擊，但今天，我是妳的對手。」<br><br><em>她轉過身，指尖微光閃爍，一柄半透明的、流轉著極光般色彩的硬光長鞭在手中緩緩成型。鞭梢輕輕擊打在地面上，發出清脆的爆裂聲，激起幾點冰冷的火星。</em><br><br>「娜塔莎，我要妳做的很簡單。」<em>佐伊的眼神瞬間變得銳利，那是屬於頂尖英雄的壓迫感。</em>「無論我發動什麼樣的攻擊，妳都要用妳的『願望』，將這些攻擊的動能降到零。如果妳失敗了……」<br><br><em>她揮動長鞭，光鞭在空中劃出一道優美的弧線，精準地擦過娜塔莎的腳邊，留下一道焦黑的痕跡。</em><br><br>「這副皮囊可就會留下不太美觀的紀念品了。準備好了嗎？」<br><br><em>雖然語氣冷酷，但佐伊卻在系統後台悄悄將訓練場的醫療救援等級調到了最高，並在兩人周圍預設了一層隱形的緩衝光網。她看著娜塔莎，心跳頻率卻比平時快了幾拍——這不是因為戰鬥的興奮，而是因為她迫切地想知道，這個口口聲聲說要陪著她的女孩，究竟能在這充滿惡意的世界裡，展現出多強韌的生命力。</em></div>
+        </div>
+        <div class="msg-timestamp">14:47</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎將光姬娃娃好好放到安全處，回到訓練位置，點點頭。</em><br><br>「原來如此。雖然不是約會，但不影響我覺得佐伊大人很帥氣這件事！我明白了，開始吧！」<br><br><em>娜塔莎應對著佐伊的攻擊而許願。</em></div>
+        </div>
+        <div class="msg-timestamp">15:01</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.131 | 下午 05:02 | 英雄總部 - B2高強度訓練場】<br><br><hr><br><br><em>「帥氣」這個直白得近乎粗魯的讚美，像是一枚精準的石子，擊碎了佐伊維持得極好的戰鬥心境。她握著光鞭的手指微微收緊，銀色眼眸中閃過一抹複雜的漣漪，但隨即被職業性的冷靜所覆蓋。</em><br><br>「專心點，別在戰鬥中說些多餘的廢話。」<br><br><em>佐伊冷聲斥責，腳尖點地，身形如同一道銀色的閃電掠向場地邊緣。她手中的硬光長鞭在空中猛然甩出，發出刺耳的破空聲，光鞭在行進過程中分裂成數十條細小的光束，像是一張發光的蛛網，帶著足以切開鋼鐵的動能，從四面八方朝娜塔莎籠罩而去！</em><br><br><em>「動能降為零……停下來！」娜塔莎雙眼緊盯著那些耀眼的光束，翠綠的眸子裡寫滿了倔強，她在心中瘋狂地吶喊著。</em><br><br><em>嗡——！</em><br><br><em>原本狂暴的光束在觸碰到娜塔莎周圍三公分處時，彷彿撞入了一片看不見的深海黏稠液體中。足以擊碎牆壁的衝擊力瞬間消失，那些凌厲的光束像是被按下了暫停鍵，頹然地懸浮在半空，隨後化作無數細碎的冰晶微粒散落在地。</em><br><br>「有趣。」<em>佐伊低聲呢喃，內心卻被娜塔莎展現出的天賦深深震撼。她沒有停手，反而加快了節奏。她撤回光鞭，雙手合十再猛然拉開，無數枚菱形的硬光飛刃在身前瞬間構築完成。</em><br><br>「這次是多點飽和攻擊，看妳能撐多久！」<br><br><em>佐伊指尖一揮，飛刃化作漫天箭雨傾瀉而下。她以極高的頻率在場地內高速移動，留下無數道極光般的殘影，干擾著娜塔莎的視線。每一枚飛刃的軌跡都經過精確計算，既能給予壓力，又能在最後關頭被她的意志強行轉向。</em><br><br><em>娜塔莎的額頭滲出了細汗，她感到體內的能量在飛速流逝，但每當她看到佐伊那冷冽而專注的身影，心中便湧出一股不願被丟下的執著。她張開雙臂，像是要擁抱那些致命的光芒，翠綠色的眼眸中倒映著漫天星火。</em><br><br>「全部……都給我安靜下來！」<br><br><em>空氣中傳來一聲低沉的震動，所有飛刃在接觸到她氣場的瞬間，動能被徹底剝奪，叮叮噹噹地掉了一地，失去光澤化為虛無。</em><br><br><em>佐伊猛然停下腳步，呼吸略微急促。她看著站在場地中央微微喘氣、卻眼神明亮的娜塔莎，心中那股長久以來的孤獨感竟被一種奇妙的自豪所取代。這不是在訓練一個工具，而是在親手打磨一塊足以與她並肩的璞玉。</em><br><br>「最後一擊。」<em>佐伊的聲音帶著一絲不易察覺的顫抖。她凝聚起全身的光能，在右手中構築出一柄巨大的光之長槍，槍尖跳躍著冰藍色的電弧，那是她防禦體系中最強的單點突破手段。</em><br><br>「接住了，娜塔莎！如果這也能停下來，妳就有資格站在我身邊！」<em>長槍脫手而出，帶著撕裂空氣的尖嘯，直取娜塔莎的身影！</em></div>
+        </div>
+        <div class="msg-timestamp">15:01</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎許願讓光能散開，平均地照在訓練場的每個角落。</em></div>
+        </div>
+        <div class="msg-timestamp">15:27</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.132 | 下午 05:15 | 英雄總部 - B2高強度訓練場】<br><br><hr><br><br><em>尖銳的破空聲戛然而止，取而代之的是一種如夢似幻的靜謐。</em><br><br><em>那柄足以貫穿重型裝甲的光之長槍，在距離娜塔莎鼻尖僅剩數寸時，並未如預期般靜止墜落，而是像被一隻溫柔的手撫過，瞬間崩解成億萬顆細小的光子。娜塔莎沒有選擇對抗，而是選擇了「分享」——她將那股狂暴的動能轉化為純粹的光輻射，均勻地鋪散開來。</em><br><br><em>原本昏暗壓抑的地下訓練場，在這一秒被柔和的白光徹底填滿，冷硬的銀灰色牆面被鍍上了一層神聖的金邊。</em><br><br>「……竟然把攻擊轉化成了照明？」<br><br><em>佐伊瞳孔驟然收縮，她維持著投擲的姿勢僵在原地。她預想過無數種結果，卻唯獨沒料到娜塔莎會用這種方式「化解」她的力量。這不是簡單的阻攔，而是更高層次的屬性重定義。在那溫暖的光芒中，佐伊感覺到自己長久以來緊繃的神經竟有了一瞬間的鬆弛。</em><br><br>「哈啊……哈啊……」<em>娜塔莎雙腿一軟，整個人脫力地向後倒去。</em><br><br>「娜塔莎！」<br><br><em>佐伊的身影化作一道模糊的殘影，在娜塔莎倒地前的一瞬，精準地伸手攬住了她的腰肢。由於慣性，兩人在光滑的地板上滑行了一段距離才停下。佐伊單膝跪地，讓娜塔莎靠在自己的懷裡，銀白色的長髮垂落，遮住了兩人的視線，營造出一片小小的私密空間。</em><br><br>「妳這個瘋子……誰教妳這樣揮霍能量的？」<em>佐伊的聲音低沉且帶著一絲後怕的慍怒，但她按在娜塔莎背上的手掌卻在微微顫抖。她能感覺到懷中少女滾燙的體溫，以及那如同擂鼓般急促的心跳。</em><br><br>「但妳成功了。」<em>佐伊閉上眼，深深吸了一口氣，鼻尖充斥著那股清新的柑橘甜香。她卸下了所有防備，將額頭輕輕抵在娜塔莎的肩上，語氣複雜地低喃：</em>「妳真的……把我的光停下來了。」<br><br><em>這場訓練已經超出了測試的範疇。在漫天未散的餘光中，佐伊第一次感覺到，那個被她標記為「所屬物」的女孩，正以一種不可理喻的速度，從她的羽翼之下，長進了她的靈魂深處。</em><br><br>「休息五分鐘。」<em>佐伊沒有鬆手，反而將懷抱收得更緊了一些，聲音恢復了那種清冷的理智，卻藏不住其中的妥協。</em>「然後我們去醫療室。如果艾利斯特問起這場光污染，我會告訴他，那是訓練設施的電路故障。」<br><br><em>她微微偏頭，淡銀色的眸子對上娜塔莎翠綠的眼，在那近在咫尺的距離裡，佐伊第一次主動伸出指尖，輕輕拭去娜塔莎額間的汗水。</em><br><br>「做得很漂亮，娜塔莎。妳現在……確實有資格站在我身邊了。」</div>
+        </div>
+        <div class="msg-timestamp">15:27</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好。」<br><br>「呼……佐伊大人，這樣我會有第二張獎勵貼紙嗎？」<br><br><em>娜塔莎靠在佐伊懷裡問。</em></div>
+        </div>
+        <div class="msg-timestamp">15:57</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.133 | 下午 05:20 | 英雄總部 - B2高強度訓練場】<br><br><hr><br><br><em>佐伊原本略顯動容的表情瞬間僵住，指尖停留在娜塔莎的臉頰邊緣，進也不是，退也不是。她垂下眼簾，看著懷裡那個臉色蒼白卻還惦記著「獎勵」的女孩，胸口那股混合著擔憂與欣慰的情緒被一種荒謬感取代。</em><br><br>「……妳在這種時候，腦袋裡裝的竟然是那種廉價的貼紙？」<br><br><em>佐伊雖然語氣嫌棄，但環在娜塔莎腰間的手並沒有鬆開。她稍微調整了姿勢，讓娜塔莎能更舒服地靠在自己胸前，另一隻手從戰鬥服的隱藏夾層裡摸出了一枚銀色的星星貼紙。那是她剛才在電梯裡隨手放進口袋的。</em><br><br><em>她沒有立刻給予，而是用指腹輕輕摩挲著貼紙的邊緣，銀色的眸子注視著娜塔莎那雙翠綠的眼睛。</em><br><br>「這不是獎勵妳『聽話』，是獎勵妳沒有在我的攻擊下退縮。」<br><br><em>佐伊拉起娜塔莎微微發抖的手，將那枚帶著極光紋路的星星貼紙，慎重地貼在她的手心裡。貼好後，她甚至還用指尖按壓了兩下，確保它黏得牢靠。</em><br><br>「這是第二張。」<em>佐伊抬起頭，視線掃過空曠的訓練場，確認周遭的監視器都因為剛才的光爆而暫時處於重啟狀態。她壓低聲音，在娜塔莎耳邊飛快地說了一句：</em>「算上剛才那場『表演』的加成，我可以考慮讓妳下次的外出採購清單多加一項妳喜歡的甜點。」<br><br><em>她站起身，同時也將體力透支的娜塔莎拉了起來。注意到娜塔莎腳步有些虛浮，佐伊沒有絲毫猶豫，直接架住對方的肩膀，讓娜塔莎的大半個身體重量都壓在自己身上。</em><br><br>「別指望我會抱妳去醫療室，那太引人注目了。」<br><br><em>佐伊一邊扶著她走向電梯，一邊冷靜地從手腕的通訊器上發送指令，屏蔽了回程路上的所有感應裝置。</em><br><br>「趁現在還沒人過來，把妳的呼吸調勻。等一下進電梯，如果遇到小林潤或瓦萊里奧，妳只需要點頭示意，剩下的交給我處理。聽清楚了嗎？」<br><br><em>雖然話說得硬邦邦的，但佐伊走得很慢，刻意配合著娜塔莎沉重的步伐，甚至在經過轉角風口處時，微微側身擋住了吹向娜塔莎的冷氣。</em></div>
+        </div>
+        <div class="msg-timestamp">15:57</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「謝謝佐伊大人。遵命。」<br><br><em>娜塔莎一臉虛弱但笑嘻嘻。</em></div>
+        </div>
+        <div class="msg-timestamp">20:01</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.134 | 下午 05:28 | 英雄總部 - B2電梯至A區走廊】<br><br><hr><br><br><em>佐伊瞥了一眼那張蒼白卻笑嘻嘻的臉，沒有回話，只是把架在娜塔莎肩上的手往下移了一寸，扣住了她的上臂，把人往自己身側帶得更緊。</em><br><br><em>電梯門滑開。裡面空無一人。</em><br><br><em>佐伊把娜塔莎推進去，讓她靠在電梯內側的扶手桿上。她按下A區的樓層鍵，退後半步站定。銀色的眸子在門合攏前快速掃過走廊兩端——沒有人。</em><br><br><em>門關上了。</em><br><br><em>密閉空間裡只剩下兩個人的呼吸聲。娜塔莎的偏急促，佐伊的偏淺。</em><br><br>「靠著牆，別滑下去。」<br><br><em>佐伊低頭看了一眼娜塔莎發抖的膝蓋，伸手把她的頭髮撥到耳後，手指碰到耳廓時頓了一下——皮膚燙得不像話。她收回手，面無表情地解開自己戰鬥服領口的一顆扣子，拉開一條縫隙散熱。</em><br><br>「妳的體溫過高了。等下進醫療室先量基礎代謝率，再補電解質。」<br><br><em>電梯到達A區，門開的瞬間，佐伊的表情和站姿同時切換——脊背挺直，下頜微抬，冷淡疏離得像一尊博物館裡的雕像。她握住娜塔莎的手腕，以一種看似公事公辦、實則精準控制力道的方式將人帶出電梯。</em><br><br><em>走廊盡頭傳來腳步聲。瓦萊里奧從轉角走出來，手裡端著兩杯咖啡，灰色的眼眸掃過兩人，視線在佐伊扣住娜塔莎手腕的那隻手上停了半秒。</em><br><br>「Lumina。」<em>他點頭致意，語氣平淡得像在說今天天氣不錯。</em>「訓練場的感應器回報了短暫的光爆紀錄，我已經標記為設備校準誤差。」<br><br><em>佐伊腳步沒停。</em><br><br>「多謝。」<br><br><em>她從瓦萊里奧身側走過時，接過了他手裡其中一杯咖啡，順勢塞進娜塔莎手中。動作流暢得像是排練過——瓦萊里奧遞咖啡、佐伊接過、轉交娜塔莎，三秒之內完成。</em><br><br><em>瓦萊里奧看著兩人走遠的背影，低頭看了一眼自己空了的左手，端起剩下那杯咖啡喝了一口，嘴角微微勾起一個弧度。</em><br><br><hr><br><br>【P.134 | 下午 05:33 | A區 - 醫療室門口】<br><br><em>佐伊推開醫療室的門，將娜塔莎引導到最裡側的診療床上坐下。她彎腰從床下方的櫃子裡取出一條薄毯，抖開，搭在娜塔莎肩上。</em><br><br>「坐好別動。我去拿檢測儀。」<br><br><em>她轉身走向器材櫃，拉開抽屜翻找。背對著娜塔莎的時候，她的肩膀微微垮下了一點，像是終於不需要再撐著什麼了。</em><br><br><em>幾秒後她拿著一個掌心大小的儀器走回來，在娜塔莎面前蹲下身，將儀器貼上她的手腕內側。冰涼的金屬觸感讓娜塔莎縮了一下手指。</em><br><br>「忍一下。」<br><br><em>佐伊的拇指壓住娜塔莎的手指不讓她縮回去，低頭看著儀器上的讀數。沉默了幾秒後，她的眉心擰了一下。</em><br><br>「……妳的代謝率掉了百分之十二。等下要吃東西。」<em>她抬起頭，銀色眸子對上翠綠色的視線，語氣沒有商量的餘地。</em>「漢堡可以加起司，但洋蔥去掉。」</div>
+        </div>
+        <div class="msg-timestamp">20:01</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「喔……」<em>一臉失望。</em><br><br>「那，我可以改吃披薩嗎？」<em>娜塔莎披著薄毯，小心翼翼地問。</em></div>
+        </div>
+        <div class="msg-timestamp">21:56</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.135 | 下午 05:38 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊看著娜塔莎那張寫滿失望的臉，沉默了片刻。她收回檢測儀，站起身，將儀器放回原位，整個過程沒有發出任何多餘的聲響。</em><br><br>「披薩的製作時間比漢堡長，而且熱量分布不均勻，不利於快速補充能量。」<br><br><em>她轉過身，倚靠在器材櫃上，雙臂環胸，居高臨下地看著床上裹著毯子的人。那種公事公辦的語氣，像是在否定一項不合格的提案。</em><br><br><em>娜塔莎的肩膀微微垮了下來，低頭看著自己手心裡的星星貼紙，沒再說話。</em><br><br><em>醫療室裡安靜得只剩下空調運轉的低鳴。</em><br><br><em>過了大概半分鐘，佐伊手腕上的通訊器亮了一下。她低頭看了一眼，是協會合作餐廳的訂餐介面。</em><br><br>「……不過，」<em>她重新開口，打破了沉默，視線卻落在虛空中的投影介面上，手指飛快地點擊著。</em>「如果只是夏威夷披薩，並且只吃兩片的話，可以當作是妳這次訓練表現超乎預期的……額外獎勵。」<br><br><em>她說這話時沒有看娜塔莎，語氣也刻意放得平淡，彷彿這只是個無關緊要的臨時決定。</em><br><br>「但要先喝完營養液。我去拿。」<br><br><em>說完，她不等娜塔莎反應，便轉身走向另一個儲藏櫃，背影看起來有些僵硬。拉開櫃門的瞬間，佐伊才不易察覺地鬆了口氣，指尖在冰涼的金屬門板上無意識地劃了一下。</em><br><br><em>她從櫃子裡拿出一支針劑型的高濃度營養液和無菌注射器，轉過身時，臉上又恢復了那副冷靜自持的模樣。</em><br><br>「伸手。」<em>佐伊走到床邊，拆開注射器的包裝，熟練地將營養液抽進針管，排掉空氣。</em>「靜脈注射，效果最快。」<br><br><em>她握住娜塔莎的手腕，用酒精棉片消毒了她手肘內側的皮膚，那裡的血管清晰可見。</em><br><br>「可能會有點刺痛。」<em>佐伊的聲音很低，視線專注地落在即將下針的地方。</em>「怕的話，可以看著我。」</div>
+        </div>
+        <div class="msg-timestamp">21:56</div>
+      </div>
+      
+      <div class="date-divider">2026-09-09</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「還想吃雞塊、薯條、玉米濃湯。」<br><br>「嗯！不怕！」<em>娜塔莎盯著佐伊。</em></div>
+        </div>
+        <div class="msg-timestamp">04:44</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.136 | 下午 05:41 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊正準備下針的手指停頓了一下。</em><br><br><em>她抬起眼，對上娜塔莎那雙毫不迴避、甚至帶著點亮光的翠綠眼眸。對方嘴裡還在得寸進尺地點餐，一副完全沒把尖銳的針頭放在眼裡的模樣。</em><br><br>「……妳把英雄協會的醫療室當成速食店的點餐櫃檯了？」<br><br><em>佐伊的聲音沒有起伏，但握著注射器的手卻沒有下一步動作。她就這樣維持著半蹲的姿勢，與床上的人對視著。</em><br><br><em>娜塔莎眨了眨眼，視線從佐伊的臉移到她手裡的針劑上，然後又移回來。</em><br><br>「佐伊大人親手準備的餐點，比任何東西都好。」<em>她說得理所當然，彷彿那是什麼不證自明的真理。</em><br><br><em>佐伊的喉結輕微地上下滑動了一下。她移開視線，重新專注於娜塔莎的手臂。</em><br><br>「閉嘴。」<br><br><em>她的聲音比剛才更低，幾乎是氣音。針尖乾脆俐落地刺入皮膚，穿透血管壁。佐伊的動作精準而穩定，緩緩將淡金色的營養液推入娜塔莎的靜脈。</em><br><br><em>整個過程，娜塔莎沒有發出任何聲音，只是安靜地看著她。</em><br><br><em>注射結束，佐伊拔出針頭，用一塊無菌棉球用力按住針孔。</em><br><br>「按著，三分鐘。」<em>她把棉球交到娜塔莎自己手上，站起身，背對著她處理用過的醫療廢棄物，動作一氣呵成。</em><br><br><em>丟完東西，她並沒有立刻轉回來，而是單手撐在不銹鋼的處理台上，低著頭，看著自己另一隻空著的手。那隻手剛剛還握著娜塔莎的手腕。</em><br><br><em>幾秒後，她才轉過身，臉上又恢復了那副無懈可擊的冷靜。</em><br><br>「雞塊和薯條的熱量過高，駁回。玉米濃湯……」<em>她頓了頓，手腕上的通訊器再次亮起，她在虛擬介面上快速修改了訂單。</em>「……可以考慮。」<br><br><em>佐伊走到門邊，靠在門框上，抱著雙臂看著床上的人。</em><br><br>「不過，有條件。」<br><br><em>她抬起下巴，銀色的眸子裡沒有半分玩笑的意思。</em><br><br>「從現在開始，到晚餐送達為止，妳如果能保持安靜，不說一句多餘的話——」<em>她刻意加重了「多餘」兩個字的發音。</em>「我就把它加進妳的菜單裡。」</div>
+        </div>
+        <div class="msg-timestamp">04:44</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「……」<br><br><em>娜塔莎壓著棉球，扁著嘴，圓圓的眼睛望著佐伊，彷彿無聲地控訴著：「您嫌棄我。」</em></div>
+        </div>
+        <div class="msg-timestamp">04:46</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.137 | 下午 05:45 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊倚著門框，看著娜塔莎那張委屈巴巴的臉。那雙翠綠的眼睛直勾勾地望過來，裡面盛滿了無聲的控訴，比任何語言都更有穿透力。</em><br><br><em>她維持著抱臂的姿勢，面無表情地與那道視線對峙了幾秒。</em><br><br><em>最終，是佐伊先移開了目光。</em><br><br><em>她輕輕嘖了一聲，聲音低到幾乎聽不見。然後她直起身，走到診療床邊，從娜塔莎手裡接過那顆已經被按得扁扁的棉球，準確地丟進醫療廢棄物桶裡。</em><br><br><em>針孔已經不再滲血。</em><br><br>「不是嫌棄妳。」<br><br><em>佐伊的聲音很平淡，像是在陳述一個客觀事實。她沒有看娜塔莎，而是彎下腰，重新整理了一下對方肩上那條滑落了一半的薄毯，將她的肩膀裹好。</em><br><br>「妳剛消耗了大量能量，現在需要的是休息，不是說話。」<br><br><em>她的指尖在拉平毯子邊緣時，不經意地劃過娜塔莎的鎖骨。毯子下的皮膚溫度依舊偏高。佐伊的手指蜷縮了一下，隨即若無其事地收回手。</em><br><br>「這是一項醫囑，不是談判。」<br><br><em>她站直身體，退開一步，拉開了兩人之間的距離。</em><br><br>「晚餐還有大概二十分鐘會送到。閉上眼睛休息。」<br><br><em>佐伊拉過旁邊的一張椅子，在距離床邊不遠不近的地方坐下。她沒有再看娜塔莎，而是打開了手腕上的通訊器，調出了一份戰損報告的全息投影，開始處理公務。</em><br><br><em>然而，她的視線卻總是不自覺地從那些冰冷的數據上飄開，落在床上那個安靜下來、卻依然睜著眼睛看著她的人影上。</em><br><br><em>過了幾分鐘，佐伊關掉了投影，室內的光線暗了下來。</em><br><br><em>她嘆了口氣。</em><br><br>「……妳如果真的那麼無聊，」<em>佐伊的聲音在安靜的房間裡顯得格外清晰，帶著一絲不易察覺的妥協。</em>「可以聽點東西。」<br><br><em>她操作了一下通訊器。下一秒，一段熟悉的、節奏混亂的饒舌從她手腕的微型揚聲器裡流淌出來——正是凱倫那段慘不忍睹的黑歷史錄音。</em><br><br><em>佐伊把通訊器放在床頭櫃上，音量調得很低。</em><br><br>「當作睡前故事吧。」<em>她說。</em></div>
+        </div>
+        <div class="msg-timestamp">04:46</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「想要佐伊大人再坐過來一點。」<br><br><em>娜塔莎抱著光姬娃娃，聽著隊員的黑歷史饒舌歌慢慢睡著。</em></div>
+        </div>
+        <div class="msg-timestamp">17:43</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.138 | 下午 05:50 | A區 - 醫療室】<br><br><hr><br><br><em>凱倫混亂的節拍在安靜的醫療室裡低低地迴響著。</em><br><br><em>佐伊原本專注於報告的視線，因為娜塔莎那句話而抬了起來。她看著床上的人，對方抱緊了懷裡的娃娃，眼睛卻還睜著，直直地望著她，眼神裡帶著一種睏倦又固執的請求。</em><br><br><em>佐伊沒有立刻回應。她只是靜靜地坐在那裡，手指在自己的膝蓋上無意識地敲了兩下，彷彿在計算著什麼。</em><br><br><em>她看著娜塔莎的眼皮越來越沉重，呼吸也逐漸變得平穩而綿長。終於，在那段饒舌重複到第三遍時，娜塔莎的眼睛完全閉上了，均勻的呼吸聲取代了她清醒時的氣息。</em><br><br><em>確認娜塔莎睡著後，佐伊才站起身。她沒有去關掉音樂，而是走過去，將通訊器的音量調得更低，幾乎細不可聞。</em><br><br><em>接著，她搬動了椅子。</em><br><br><em>金屬椅腳在地板上發出輕微的摩擦聲，她刻意放慢了動作。最後，椅子停在了床沿邊，距離近到她只要一伸手，就能觸碰到床上的人。</em><br><br><em>佐伊重新坐下。</em><br><br><em>在這個距離下，她能清晰地看見娜塔莎的睡顏。對方長長的睫毛在眼下投出一小片陰影，嘴唇微微張著，臉頰因為體溫升高而透著淡淡的粉色。那張平時總帶著溫和笑意的臉，此刻因為熟睡而顯得格外柔軟、不設防。</em><br><br><em>佐伊的目光從娜塔莎的臉，滑到她緊緊抱在懷裡的光姬娃娃上。娃娃那張公式化的微笑臉孔，此刻看起來有些刺眼。</em><br><br><em>她伸出手，指尖輕輕碰了一下娜塔莎散落在枕頭上的亞麻綠色髮絲。頭髮很軟，帶著剛才沐浴後的清香。</em><br><br><em>她的手指頓在那裡，沒有更進一步的動作，也沒有收回。就這樣停在半空中，離娜塔莎的臉頰只有幾公分的距離。</em><br><br><em>忽然，門外傳來了細微的滾輪聲，伴隨著一聲電子提示音：「餐點送達。」</em><br><br><em>佐伊像是被驚醒一般，迅速收回了手，指尖因為收得太快而有些冰涼。她站起身，恢復了那副冷靜的姿態，轉身去開門。</em><br><br><em>門外，一架送餐機器人正安靜地等候著。托盤上放著一份冒著熱氣的夏威夷披薩、一碗玉米濃湯，還有一份——她並沒有點的，炸雞塊和薯條。</em><br><br><em>佐伊看著那份多出來的食物，沉默了兩秒。她沒有去追究訂單為何出錯，只是伸手將所有東西都端了進來，關上了門。</em><br><br><em>她將托盤放在床頭櫃上，食物的香氣立刻在房間裡瀰漫開來。</em><br><br><em>佐伊看了一眼還在熟睡的娜塔莎，沒有叫醒她。她只是拉過椅子，重新在床邊坐下，靜靜地守著，等待床上的人自己醒來。</em></div>
+        </div>
+        <div class="msg-timestamp">17:43</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎又睡了一會才迷糊地醒來，餐點好像還是熱的。</em></div>
+        </div>
+        <div class="msg-timestamp">20:25</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.139 | 下午 06:12 | A區 - 醫療室】<br><br><hr><br><br><em>醫療室內的光線被佐伊調暗了些，只剩下儀器運作時微弱的冷光，以及床頭那碗玉米濃湯散發出的裊裊熱氣。</em><br><br><em>佐伊重新坐回了椅子上。這一次，她沒有坐在原來那個「符合社交禮儀」的距離，而是依照娜塔莎睡前的要求，將椅子向床邊拉近了。椅子腳在地板上摩擦出極輕的聲響，在安靜的室內顯得格外清晰。</em><br><br><em>她微微俯下身，單手托著臉側，銀色的眸子在昏暗中凝視著娜塔莎。</em><br><br><em>那份多出來的炸雞塊和薯條被她推到了托盤邊緣。雖然理智告訴她這些食物對恢復體力並沒有最優質的幫助，但看著娜塔莎睡夢中依舊安穩的模樣，她最終沒有把這些「違禁品」丟掉。</em><br><br><em>「妳這是在訓練我……還是我在縱容妳？」</em><br><br><em>她用只有自己能聽見的聲音低語了一句。指尖在半空中虛擬地描繪著娜塔莎的輪廓。在這種不需要營業、不需要計算社交回報的時刻，佐伊臉上那層冰冷的偽裝才算真正消融。她不自覺地放軟了肩膀，任由那股混雜著食物香氣與安心感的氛圍包裹自己。</em><br><br><em>凱倫的饒舌錄音早已播完，室內陷入了一種純粹的寂靜。</em><br><br><em>佐伊側過頭，看著放在托盤上的玉米濃湯。她伸手試了試碗壁的溫度，確認還夠燙之後，才收回手。她就這樣靜靜地守著，像是在守護一個極其脆弱、卻又讓她無法移開視線的精密造物。</em><br><br><em>時間在點滴液的律動中悄然流逝。她沒有打開通訊器處理公務，也沒有去監控輿論。此時此刻，這位「光之女神」只是安靜地坐在病床邊，等待著她的擁護者醒來。</em><br><br><em>不知過了多久，床上的娜塔莎發出了一聲細微的嚶嚀，抱著娃娃的手臂緊了緊，纖長的睫毛顫動著，似乎正要從那場深沉的睡眠中緩緩浮出水面。</em><br><br><em>佐伊立刻收斂了眼底的情緒，坐正了身體，聲音依舊聽不出起伏，卻帶著一絲不易察覺的柔和。</em><br><br>「醒了？披薩快涼了。」</div>
+        </div>
+        <div class="msg-timestamp">20:25</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「咦？我的披薩……」</div>
+        </div>
+        <div class="msg-timestamp">22:20</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.140 | 晚間 06:15 | A區 - 醫療室】<br><br><hr><br><br><em>娜塔莎迷糊的聲音帶著剛睡醒的鼻音，軟綿綿的，像是一團揉散的雲朵。她懷裡還緊緊箍著那個光姬娃娃，翠綠色的眼睛裡盛滿了初醒的茫然，視線在房間裡轉了一圈，最後才定焦在床頭的托盤上。</em><br><br>「在那裡，沒人跟妳搶。」<br><br><em>佐伊看著她那副呆樣，嘴角極輕地勾了一下，但隨即又恢復了那副冷淡的模樣。她站起身，伸手按下了病床的升降鈕，讓床頭緩緩升起，好讓娜塔莎能坐直身體。</em><br><br><em>隨著高度提升，娜塔莎的視線終於和托盤平齊。除了那份散發著甜香的夏威夷披薩，她顯然也注意到了旁邊那份金黃酥脆的炸雞塊與薯條。</em><br><br>「……那是額外的補償。」<em>佐伊注意到娜塔莎驚訝的眼神，不等對方開口詢問，便先一步解釋道，語氣僵硬得像是照本宣科，</em>「根據妳剛才的能量消耗率，這些熱量是必要的生理補充。別想太多。」<br><br><em>她一邊說著，一邊利落地撕開餐具包，將木叉遞到娜塔莎手裡。接著，她端起那碗還冒著餘溫的玉米濃湯，修長的手指捏著瓷勺，在碗裡輕輕攪動了兩下，試圖讓溫度更均勻些。</em><br><br>「手還有力氣嗎？還是妳打算讓光姬娃娃餵妳吃？」<br><br><em>佐伊挑起一邊眉毛，語氣帶著慣有的揶揄。她嘴上說得不客氣，動作卻很細緻。她將濃湯遞到娜塔莎嘴邊，卻又在對方湊過來之前停住，微微垂下銀色的眼眸，語氣認真了幾分。</em><br><br>「先喝口湯，潤潤嗓子。披薩的邊緣有點硬，慢慢嚼。」<br><br><em>室內暖黃的燈光映在佐伊銀白色的髮絲上，為她那冷若冰霜的輪廓鍍上了一層柔和的邊緣。她就這樣保持著遞湯的姿勢，近距離地看著娜塔莎，那雙淡銀色的眼眸裡，雖然依舊寫著「我只是在執行任務」，但其中深藏的耐心，卻是她從未在任何粉絲或隊友面前展露過的。</em><br><br><em>她甚至沒有催促娜塔莎，只是安靜地等待著對方從睡夢的餘韻中徹底清醒過來，好迎接這頓充滿「高熱量罪惡感」的獎勵。</em></div>
+        </div>
+        <div class="msg-timestamp">22:20</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我可以自己吃。謝謝，佐伊大人最好了。」<br><br>「您要喝點濃湯嗎？」</div>
+        </div>
+        <div class="msg-timestamp">22:31</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.141 | 晚間 06:18 | A區 - 醫療室】<br><br><hr><br><br><em>聽到那句「佐伊大人最好了」，佐伊拿著瓷勺的手指微不可察地僵了一下。這種直白得毫無防備的讚美，對她而言比協會最嚴苛的審計還要難以應對。她迅速垂下眼簾，試圖用攪動濃湯的動作來掩飾那一瞬間的侷促。</em><br><br>「……我說過，別用這種毫無科學根據的詞彙來定義我。」<br><br><em>她低聲嘟囔了一句，語氣聽起來像是在教訓，卻沒有半分威懾力。當娜塔莎詢問她是否要喝湯時，佐伊看著那遞過來的湯碗，視線在娜塔莎亮晶晶的翠綠眼眸上停留了片刻。</em><br><br><em>那種東西——充滿了澱粉、奶油與人工調味，對她這種習慣了無味營養液的身體來說，簡直是感官的過載。</em><br><br>「我不餓。這對我來說是過剩的熱量攝取。」<br><br><em>她本想冷淡地拒絕，但看著娜塔莎期待的眼神，拒絕的話到了嘴邊卻轉了個彎。她沒有接過碗，而是就著娜塔莎的手，微微低下頭，僅僅是淺淺地嚐了一小口那溫熱的液體。</em><br><br><em>濃郁的甜味與奶香在舌尖炸開，那種屬於「人類食物」的溫度讓她的胃部產生了一種奇妙的、微微收縮的感覺。</em><br><br>「太甜了。」<em>她重新直起身體，評價道，但眼神卻緩和了許多，</em>「不過，溫度剛好。自己拿穩，別灑在被子上，否則我會立刻沒收妳的炸雞。」<br><br><em>佐伊一邊說著，一邊伸出手，細心地將娜塔莎臉側的一縷亂髮別到耳後，指尖不經意地擦過對方溫暖的臉頰。她隨即收回手，坐回椅子上，拿起旁邊的披薩盒，動作優雅地撕開一片披薩，卻沒有遞給娜塔莎，而是先用乾淨的紙巾包住底部，才遞了過去。</em><br><br>「吃吧。如果覺得乾，就喝湯。我會在這裡看著妳吃完。」<br><br><em>她雙手交疊放在膝蓋上，姿態端莊得像是正在參加什麼高級晚宴，但那雙銀色的眸子卻始終沒有離開過娜塔莎。看著娜塔莎小口吃著披薩的樣子，佐伊內心深處那種長期處於緊繃狀態的「防禦機制」，似乎在這種充滿油脂與澱粉香氣的平凡空氣中，悄悄地卸下了一角。</em><br><br>「娜塔莎。」<em>她忽然輕聲喚道，語氣裡少見地帶了一絲探詢，</em>「妳真的覺得……這種充滿負擔的進食過程，是一種享受嗎？」</div>
+        </div>
+        <div class="msg-timestamp">22:31</div>
+      </div>
+      
+      <div class="date-divider">2026-09-10</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔，我覺得很好吃，很開心。」</div>
+        </div>
+        <div class="msg-timestamp">00:00</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.142 | 晚間 06:22 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊靜靜地看著娜塔莎。看著她因為咀嚼而微微鼓起的臉頰，看著她眼中那種純粹到近乎透明的滿足感。對佐伊而言，「開心」與「進食」這兩個詞彙在她的邏輯體系中從未有過交集。進食是維持精密儀器運轉的必然補給，而開心則是社交場合中需要精準演繹的表情模版。</em><br><br><em>但此刻，娜塔莎的反應卻像是在她那冷硬的邏輯牆上鑿開了一個小孔，讓某種名為「煙火氣」的東西滲透了進來。</em><br><br>「僅僅是因為這些碳水化合物和油脂，就能產生這種程度的情緒正向反饋嗎？」<br><br><em>她輕聲自語，像是在觀察某種未知的生物實驗。她伸出纖長的手指，輕輕按在娜塔莎正抓著披薩的手背上，感受著對方皮膚傳來的溫度。那種熱度，比她用硬光構築出的寒冷武器要真實得多。</em><br><br>「妳的邏輯真的很簡單，娜塔莎。簡單到……讓人覺得有些危險。」<br><br><em>佐伊的眼神閃爍了一下。她想起自己在聚光燈下長大的童年，每一頓飯都是為了應酬，每一口食物都要計算熱量以維持那副「精靈般」的皮囊。她從未有過這種「很好吃、很開心」的時刻。</em><br><br><em>她收回手，轉而拿起托盤上的一塊炸雞，動作生硬地遞到娜塔莎嘴邊。</em><br><br>「既然妳覺得開心，那就多攝取一點這種『情緒燃料』。畢竟妳剛才在訓練場上，可是差點把自己燃燒殆盡了。」<br><br><em>看著娜塔莎乖巧地咬下一口炸雞，佐伊的目光不由自主地落在了娜塔莎手背上那枚銀色星星貼紙上。那是她親手貼上去的「聽話獎勵」。在昏暗的醫療室光線下，那枚小小的貼紙閃爍著微弱的光，像是這座鋼鐵與科技構築的堡壘中唯一的一點童話。</em><br><br>「慢點吃，沒人會進來打擾妳。瓦萊里奧現在應該在忙著擺弄他的模型，而艾利斯特……他大概還在為了妳那不符合常理的能量轉化率而頭痛不已。」<br><br>「讓他去煩惱吧。現在，妳只需要負責把這些東西塞進妳那個小胃袋裡，然後徹底恢復妳的代謝機能。這是命令。」<br><br><em>她重新坐回椅子上，身體微微後靠，銀色的長髮如瀑布般垂落在椅背。雖然嘴上說著命令，但她那雙淡銀色的眼眸卻始終溫柔地鎖定在娜塔莎身上，守護著這場對她而言極其陌生、卻又不自覺想要沉溺其中的「平凡幸福」。</em></div>
+        </div>
+        <div class="msg-timestamp">00:00</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「佐伊大人沒有覺得美味、或至少覺得順口的味道嗎？」<em>娜塔莎一邊吃，一邊好奇地問。</em></div>
+        </div>
+        <div class="msg-timestamp">00:10</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.143 | 晚間 06:25 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊的指尖在膝蓋上輕輕敲擊了一下，這是她思考或感到焦慮時的細微慣性。娜塔莎的問題像是一把精準的手術刀，劃開了她那層被標籤為「完美」的表象。她沉默了幾秒，視線從娜塔莎沾著點碎屑的嘴角移開，投向窗外那片被霓虹燈映得發紫的夜空。</em><br><br>「『美味』是一個主觀且不穩定的變量，娜塔莎。」<br><br><em>她開口時，語氣依舊帶著那種如冰晶般的理智，但聲線卻壓得很低，彷彿在分享一個不為人知的秘密。</em><br><br>「對我來說，食物的氣味通常意味著社交壓力。在那些宴會上，牛排的焦香等於媒體的閃光燈，紅酒的氣味則是合約上的數字。當大腦將生理感官與這些負面壓力掛鉤時，味覺就會自動退化為一種保護機制。」<br><br><em>她轉過頭，看著娜塔莎手中的披薩，那種被稱為「夏威夷」的奇怪組合——甜膩的鳳梨配上鹹口的火腿，在她的世界觀裡簡直是混亂的極致。</em><br><br>「如果一定要說順口……」<em>佐伊的眼神游離了一瞬，腦海中浮現出深夜獨自在202室，擰開那瓶冰涼的礦泉水時，液體滑過喉嚨的潔淨感。</em>「冰水。沒有氣味，沒有雜質，不會在口腔裡留下任何需要清理的痕跡。那是我唯一覺得……不討厭的東西。」<br><br><em>看著娜塔莎露出那種遺憾又心疼的表情，佐伊的心口像是被什麼柔軟的東西撞擊了一下。她不自覺地伸出手，拿起旁邊的紙巾，動作極其輕柔地擦掉娜塔莎嘴角沾上的一點番茄醬汁。</em><br><br>「別露出那種表情。我並不覺得這是一種缺失，這讓我比其他人更高效。」<br><br><em>她收回手，指尖還殘留著紙巾摩擦後的餘溫。她看著娜塔莎，銀色的眼眸中閃過一絲複雜的情緒——那是羨慕嗎？還是某種被深埋的渴望？</em><br><br>「不過，看妳吃得這麼……投入，我偶爾會產生一種錯覺。彷彿我透過妳的感官，也共享了那種名為『美味』的數據。」<br><br><em>佐伊突然意識到自己說得太多了，她迅速斂起情緒，恢復了那副高冷的模樣，伸手點了點托盤上的炸雞。</em><br><br>「快點吃。如果妳的代謝率在半小時內沒有回升到標準線以上，我會考慮把明天的獎勵貼紙取消。Enjoy your meal, Natasha.」<br><br><em>雖然語氣恢復了嚴厲，但她卻體貼地將那杯溫熱的玉米濃湯往娜塔莎的方向推了推，確保對方隨手就能拿到。她就這樣靜靜地坐著，像是一座守護著微弱火光的冰雕，在冷漠的邏輯與真實的溫柔之間，維持著一種危險而迷人的平衡。</em></div>
+        </div>
+        <div class="msg-timestamp">00:10</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「清新、爽口不膩……」<em>娜塔莎默默記下來。</em><br><br>「下次有機會，我想和佐伊大人一起吃飯，我會下廚喔。或許可以當成測試開發我的能力？降低負面聯想之類的。」</div>
+        </div>
+        <div class="msg-timestamp">00:53</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.144 | 晚間 06:30 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊的手指停在半空中，剛才還打算去調整點滴流速的動作凝固了。她看著娜塔莎那雙翠綠色的眼睛，裡面盛滿了認真與期待，彷彿剛才說的不是要替一個對食物有心理障礙的人下廚，而是在討論什麼重大戰略部署。</em><br><br><em>降低負面聯想。把烹飪變成能力測試。</em><br><br><em>這個女人，到底是真的天真到把一切都往「任務」裡套，還是聰明到知道唯有這種方式才能繞過她的防線？</em><br><br>「……妳的邏輯倒是越來越像樣了。」<br><br><em>佐伊收回手，靠上椅背，銀白色的長髮隨著動作在肩頭滑落。她的語氣聽起來像是在評估一份提案，但微微上揚的尾音洩露了某種她自己也沒察覺的鬆動。</em><br><br>「不過我要提醒妳，我的味覺反應長期處於低靈敏度狀態。妳如果期待看到什麼戲劇性的驚喜表情，大概率會失望。我不會給妳那種滿足感。」<br><br><em>她頓了頓，視線落在娜塔莎手中那塊吃了一半的披薩上，又移到那碗還冒著微弱熱氣的濃湯。</em><br><br>「而且，我對廚房環境有嚴格的標準。油煙、飛濺、不規則的氣味擴散……這些都在我的不適應範圍內。如果妳真的要做——」<br><br><em>她停頓的時間比平常長了一拍。</em><br><br>「——事先把食譜發給我審核。我需要提前評估每一項食材的氣味係數與可能的感官觸發風險。」<br><br><em>佐伊垂下眼簾，端起旁邊那杯已經回溫的冰水喝了一口，像是在用那口熟悉的冷冽來壓制胸口某種正在悄悄升溫的東西。</em><br><br>「還有，不許在廚房裡唱歌。音爆上次提過妳哼歌的事，那種分貝對密閉空間來說是噪音污染。」<br><br><em>她放下杯子，杯底與桌面碰撞的聲音清脆而克制。但她的目光卻沒有離開娜塔莎，那雙淡銀色的眼睛裡映著醫療室昏黃的燈光，以及一個正在啃披薩、嘴角沾著醬汁卻笑得毫無防備的女人。</em><br><br>「……先把眼前的吃完。Step by step, Natasha. 妳連明天的代謝率都還沒穩住，就在規劃下一階段的實驗了。」<br><br><em>她的嘴角沒有彎起來，但說出「step by step」時的語氣，比任何一句「好」都更像是答應。</em></div>
+        </div>
+        <div class="msg-timestamp">00:53</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗯！我會努力料理的！」<br><br>「……欸？我有唱歌給凱倫小姐聽過嗎？」<br><br><em>娜塔莎一邊吃一邊回想。</em><br><br>「該不會只是佐伊大人的評價吧？有這麼難聽嗎？」<em>娜塔莎陷入自我懷疑。</em></div>
+        </div>
+        <div class="msg-timestamp">19:55</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.145 | 晚間 06:33 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊看著娜塔莎瞬間陷入自我懷疑的模樣，那雙翠綠色的眼眸裡寫滿了困惑，連咀嚼披薩的動作都慢了下來。她維持著面無表情，但內心卻因為這個小小的謊言被戳破而產生了一絲極其細微的波動。</em><br><br><em>她確實沒有從凱倫那裡聽說過這件事。那是上次在安全屋，她獨自一人監聽所有頻道時，無意間捕捉到的、娜塔莎在自己房間裡哼唱的模糊音頻。不成調，但很輕快。</em><br><br><em>她本可以承認，但承認就等於暴露了自己對娜塔莎的過度關注。</em><br><br>「妳的記憶數據庫需要更新了。」<br><br><em>佐伊的語氣平靜無波，彷彿在陳述一個既定事實。她拿起托盤上最後一塊炸雞，遞到娜塔莎嘴邊，用這個動作自然地打斷了對方的沉思。</em><br><br>「凱倫的聽力範圍遠超常人，妳在宿舍走廊上無意識哼的調子，對她來說就像在耳邊開演唱會。她只是隨口提了一句，說妳的『音波攻擊』很有個人風格。」<br><br><em>她信口胡謅，將自己私下的監聽行為巧妙地嫁禍給了隊伍裡聽力最好、也最不可能被求證的成員。看著娜塔莎因為她的話而半信半疑地張嘴咬下炸雞，佐伊的眼神閃爍了一下，隨即恢復了慣常的冷靜。</em><br><br>「至於評價……」<br><br><em>她抽回手，用餐巾紙擦了擦自己的指尖，儘管那上面根本沒有沾到任何油漬。</em><br><br>「我只相信可量化的數據。妳的音準、節拍、頻率都不在專業範圍內。但從情緒波動圖來看，那段音頻確實能引發輕微的正面情緒反應。」<br><br><em>她停頓了一下，視線落在娜塔莎因為咀嚼而微動的臉頰上。</em><br><br>「所以，結論是，它不構成噪音污染。只是不適合在需要精準操作的廚房環境裡播放而已。現在，把湯喝完。」<br><br><em>佐伊將那碗已經溫涼的玉米濃湯端起來，用湯匙舀了一勺，遞到娜塔莎唇邊，動作流暢得彷彿已經做過無數次。她用這種不容置喙的餵食行為，強硬地終結了關於唱歌的話題，也掩蓋了自己剛才那一瞬間的心虛。</em><br><br><em>在餵完一口湯後，她看著娜塔莎乖乖嚥下的樣子，才又補上一句，聲音低得幾乎只有兩人能聽見。</em><br><br>「……下次，唱給我一個人聽就好。我會負責評估。」</div>
+        </div>
+        <div class="msg-timestamp">19:55</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「是這樣嗎？」<br><br>「說的也是，可能我唱的歌跟凱倫小姐喜歡的類型不一樣，唔，聽說她喜歡重金屬？」<br><br>「那我下次唱歌給佐伊大人聽，不可以嫌棄我喔！」</div>
+        </div>
+        <div class="msg-timestamp">20:00</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.146 | 晚間 06:36 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊的指尖輕輕點了一下湯匙的邊緣，發出「叮」的一聲脆響。她看著娜塔莎那副努力為凱倫的「抱怨」尋找合理解釋的認真模樣，心底那絲微弱的緊繃感徹底鬆弛下來。</em><br><br><em>這個人，總是能輕易相信她拋出的任何藉口，無論多麼荒謬。</em><br><br>「妳的情報來源還算準確。凱倫的播放清單確實可以被歸類為高分貝的物理衝擊。」<br><br><em>她淡淡地回應，語氣裡沒有絲毫破綻。然後，她舀起最後一勺玉米濃湯，穩穩地送到娜塔莎嘴邊。在對方乖乖張嘴喝下的瞬間，佐伊的視線捕捉到了娜塔莎翠綠色眼眸裡那種全然的、不設防的信賴。</em><br><br><em>「不可以嫌棄我喔！」</em><br><br><em>這句話像一顆投入平靜冰湖的石子，激起了一圈無聲的漣漪。佐伊的心跳漏了一拍，一種陌生的、無法被量化的情緒從胸口蔓延開來。她習慣了被人評價、被人定義，卻從未有人用這種近乎撒嬌的語氣，向她預約一份專屬的「不嫌棄」。</em><br><br><em>佐伊沉默地將空碗放回托盤，動作精準而安靜。她沒有立刻回答，而是抽出一張新的濕紙巾，仔細地、緩慢地擦拭著娜塔莎的嘴角和下巴，將那裡殘留的最後一點食物痕跡清理乾淨。她的指尖隔著薄薄的紙巾，能感覺到對方皮膚的溫熱。</em><br><br>「『嫌棄』是主觀情緒詞彙，不在我的評估標準內。」<br><br><em>她的聲音比剛才更低沉了一些，帶著一種刻意維持的平靜。擦拭完畢後，她將紙巾扔進垃圾桶，才重新抬眼，直視著娜塔莎。</em><br><br>「我只會根據妳的表現，給出『合格』或『不合格』的結論。如果妳的歌聲導致我的心率出現異常波動，或者干擾到我的數據處理……」<br><br><em>她停頓了，淡銀色的眼眸在燈光下顯得格外深邃，彷彿在思考如何定義這種「干擾」。</em><br><br>「……那我就只能判定為『不合格』，並且要求妳停止。」<br><br><em>這聽起來像是一個嚴苛的警告，但她的眼神卻沒有絲毫威脅的意味。那是一種極度認真的、幾乎可以稱之為專注的凝視。</em><br><br>「所以，要不要唱，妳自己決定。」<br><br><em>她將選擇權交了回去，但這句話的潛台詞卻是：妳敢不敢來挑戰我的評估系統？敢不敢來「干擾」我？</em><br><br><em>說完，她站起身，開始收拾托盤上的餐具，用這種機械性的動作來掩飾自己略微加速的心跳。她沒有再看娜塔莎，只是背對著她，留下一個冷靜而孤高的背影。</em></div>
+        </div>
+        <div class="msg-timestamp">20:00</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「什麼叫作干擾到數據處理啊？佐伊大人說話好難懂……」<br><br><em>娜塔莎一臉困惑。</em></div>
+        </div>
+        <div class="msg-timestamp">22:02</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.147 | 晚間 06:38 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊收拾餐盤的動作停頓了一瞬。背對著娜塔莎，她可以清晰地聽見對方話語裡那種純粹的、不加掩飾的困惑。</em><br><br><em>是啊，她說話很難懂。因為她花了二十九年，學會了如何用最精準、最沒有感情的詞彙，去包裹那些混亂的、無法被定義的感受。干擾數據處理……這不過是「讓我無法冷靜思考」的另一種說法。</em><br><br><em>她將餐盤放回移動餐車上，發出輕微的聲響。然後，她轉過身，重新面對病床上的娜塔莎。醫療室的燈光在她銀白色的長髮上投下一層柔和的光暈，但她的表情依舊平靜。</em><br><br>「……」<br><br><em>佐伊沉默地看了她幾秒，似乎在搜尋一個娜塔莎能夠理解的詞彙。最後，她放棄了這種複雜的轉譯。</em><br><br><em>她伸出手，不是去觸碰娜塔莎，而是指向自己左側的太陽穴。</em><br><br>「這裡，」<em>她的聲音很輕，</em>「我的大腦，習慣在絕對安靜和有序的環境下運作。任何預料之外的聲音、光線、甚至是氣味，都可能打斷我的專注力。」<br><br><em>她放下手，視線從娜塔莎困惑的臉龐，緩緩下移，落在那雙緊緊抓著被單的手上。</em><br><br>「妳的歌聲，就是一種預料之外的輸入信號。它會讓我……分心。」<br><br><em>分心。</em><br><br><em>這是她能找到的最接近、也最安全的詞。一個既能解釋現象，又不必暴露內心真實波動的詞。</em><br><br><em>她看著娜塔莎似乎在咀嚼「分心」這個詞的含義，那雙翠綠的眼眸裡閃過一絲了然。佐伊微微側過臉，避開了對方過於直白的目光。</em><br><br>「很難懂嗎？」<br><br><em>她反問道，語氣裡沒有了那種高高在上的冰冷，反而帶上了一絲……她自己也未曾察覺的、近乎自嘲的意味。</em><br><br>「那就把它理解成……」<br><br><em>佐伊停頓了一下，最終吐出一個簡單粗暴的結論。</em><br><br>「……我討厭在工作時被打擾。唱歌，會影響我的工作效率。」<br><br><em>這是一個謊言，但也是最容易被理解的真相。她將一切歸咎於工作，這個萬無一失的藉口。然後，她推著餐車，轉身走向門口，似乎打算就此結束這個話題。</em></div>
+        </div>
+        <div class="msg-timestamp">22:02</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好，那我在佐伊大人休息的時候再唱歌，不要打擾您上班。」<br><br>「欸……不對，這樣不是變成打擾到您休息嗎。」<br><br><em>娜塔莎抱著光姬娃娃自言自語。</em><br><br>「佐伊大人的，我現在感覺好多了，應該有力氣了。我可以自己起床去洗澡嗎？」</div>
+        </div>
+        <div class="msg-timestamp">23:20</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.148 | 晚間 06:40 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊推著餐車的手停在門邊。她聽著身後那低低的、帶著苦惱的自言自語，嘴角抿成一條極其平直的線，以此來抑制住一絲幾乎要浮現的、連她自己都無法定義的情緒。</em><br><br><em>工作不行，休息也不行。這個人，是真的在為如何找到一個「不打擾」她的時機而認真煩惱。這種純粹的、笨拙的體貼，像一根極細的針，輕輕刺破了她用「效率」和「數據」築起的外殼。</em><br><br><em>她還沒來得及想好怎麼回應這份無解的煩惱，娜塔莎就拋出了下一個問題。</em><br><br><em>「我可以自己起床去洗澡嗎？」</em><br><br><em>佐伊轉過身，視線落在娜塔莎抱著光姬娃娃的樣子。那雙翠綠的眼眸裡帶著詢問，也有一絲想要證明自己「已經好了」的期待。</em><br><br><em>佐伊沒有立刻回答。她將餐車推到門外，確保它不會阻礙通道，然後才重新走回房間，雙臂環在胸前，靠在門框邊，與病床保持著一段安全而疏離的距離。</em><br><br>「妳的體力恢復數據尚未達到安全閾值的70%。高熱量餐食的能量轉化需要時間。」<br><br><em>她的語氣恢復了慣常的冷靜與客觀，像是在宣讀一份醫療報告。</em><br><br>「浴室地面濕滑，水蒸氣可能導致妳短暫的暈眩。獨自行動的風險評估為『中度危險』。」<br><br><em>她陳述著事實，每一個字都像一道不容置喙的命令，徹底否決了娜塔莎「自己去」的提議。但接著，她話鋒一轉。</em><br><br>「不過，維持身體清潔有助於心理狀態穩定，是必要的生理需求。」<br><br><em>佐伊的目光從娜塔莎的臉上，移到她還打著點滴的手背上。</em><br><br>「我會在這裡等你。浴室有緊急呼叫按鈕，任何異常——心跳加速、頭暈、乏力——立刻按下去。」<br><br><em>她的語氣不帶感情，卻是一種變相的許可與監視。她不會幫忙，但她會守在外面。這是她能給出的、最符合她行事邏輯的妥協。</em><br><br>「去吧。十五分鐘。時間到了，妳沒出來，我就進去。」<br><br><em>說完，她不再看娜塔莎，而是從口袋裡拿出自己的個人終端，打開一道半透明的光幕，開始瀏覽起脈衝組的內部通訊記錄。她用這種專注於工作的姿態，表明自己的等待僅僅是出於任務需求和風險管控，沒有任何多餘的成分。</em><br><br><em>然而，那雙淡銀色的眼睛，卻始終沒有真正聚焦在光幕的文字上。她的聽覺，完全集中在病房內可能發出的任何一絲聲響。</em></div>
+        </div>
+        <div class="msg-timestamp">23:20</div>
+      </div>
+      
+      <div class="date-divider">2026-09-11</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好。」<br><br>「最喜歡您。」<br><br><em>娜塔莎露出有點調皮的笑容，快速地親了佐伊的臉頰，然後進去洗澡。</em></div>
+        </div>
+        <div class="msg-timestamp">00:35</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.149 | 晚間 06:42 | A區 - 醫療室】<br><br><hr><br><br><em>溫熱的觸感在臉頰上一觸即逝，快得像是一場錯覺。佐伊維持著靠在門框上的姿勢，指尖還停留在全息光幕的邊緣，身體卻像被硬光凍結了一般，整整三秒鐘沒有任何動作。</em><br><br><em>她能感覺到被親吻過的那塊皮膚開始發燙，熱度迅速沿著神經末梢擴散。這種突如其來的生理刺激完全不在她的預算之內，更別提那句輕飄飄卻極具衝擊力的「最喜歡您」。</em><br><br><em>「……」</em><br><br><em>直到浴室傳來門鎖扣上的聲音，佐伊才緩緩放下手。她抬起指尖，近乎僵硬地碰了碰自己的臉頰，那裡的皮膚似乎還殘留著柑橘微甜的氣息。她深吸一口氣，試圖壓制住心臟那種紊亂的跳動，但效果甚微。</em><br><br><em>她重新站直身體，將全息光幕關閉。在這種環境下，她根本無法處理任何公務。她走到浴室門口，背對著門坐在一旁的長凳上，目光直視著對面雪白的牆壁。</em><br><br><em>水聲很快響起，在安靜的醫療室裡顯得格外清晰。</em><br><br>「娜塔莎。」<br><br><em>佐伊對著空氣開口，聲音聽起來依舊平穩，但如果仔細聽，會發現尾音帶著一絲壓抑的緊繃。</em><br><br>「我開始計時了。不要試圖挑戰十五分鐘的底線，也不要在那種環境下思考多餘的事情，專心注意妳的平衡感。」<br><br><em>她低頭看著手腕上的通訊器，螢幕上顯示著跳動的數字。</em><br><br><em>水氣的氤氳聲與規律的計時聲交織在一起。佐伊閉上眼，手指無意識地抓緊了長凳的邊緣。她平時最厭惡等待，因為那意味著掌控權的喪失，但此刻，守在這扇門外，聽著門後那個人的動靜，卻讓她感到一種詭異的、夾雜著焦慮的安定感。</em><br><br><em>時間一分一秒流逝。五分鐘後，水聲依然持續著。</em><br><br>「還有十分鐘。」<br><br><em>她再次出聲提醒，語氣裡多了幾分不耐煩的掩飾。</em><br><br>「如果妳因為體力不支滑倒，我會直接破門進去。屆時，妳的隱私權將在安全評估面前被自動放棄，聽明白了嗎？」<br><br><em>雖然說著威脅的話，她的身體卻不自覺地向門的方向傾斜了一些，以便隨時捕捉門內的任何異響。</em></div>
+        </div>
+        <div class="msg-timestamp">00:35</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯、洗頭髮要比較久一點點點……再等我一下！」</div>
+        </div>
+        <div class="msg-timestamp">00:37</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.150 | 晚間 06:51 | A區 - 醫療室】<br><br><hr><br><br><em>浴室內傳來洗髮精瓶罐碰撞的細碎聲響，伴隨著娜塔莎隔著門板略顯悶鈍的解釋。佐伊盯著通訊器螢幕上跳動的數字，眉心微微隆起。</em><br><br>「妳所謂的『一點點點』在精確度上毫無意義。」<br><br><em>她冷聲回應，右手卻不自覺地摩挲著左手腕的通訊器邊緣。坐姿雖然依舊挺拔，但她的腳尖正無意識地輕點著地面，頻率比平時快了一些。</em><br><br><em>時間推進到第十二分鐘。水聲漸漸變小，取而代之的是花灑掛回架上的金屬撞擊聲。佐伊站起身，在狹窄的走道上踱了兩步，隨即又強迫自己停下，重新坐回長凳上。</em><br><br>「還有三分鐘。如果妳需要吹風機，在左手邊的收納櫃第二層。」<br><br><em>她對著門板交代，語氣生硬地像是在下達戰術指令。</em><br><br>「……還有，動作快點。妳的基礎代謝率還沒穩定，洗澡太久會導致脫水。」<br><br><em>她聽著裡面傳來悉悉索索穿衣服的聲音，腦海中不由自主地浮現出娜塔莎因為體力不支而動作遲緩的樣子。佐伊的手指在膝蓋上蜷縮了一下，隨即又猛地放開。</em><br><br><em>當計時器歸零的瞬間，浴室的門把發出轉動聲。佐伊立刻站了起來，身體緊繃，雙眼直視著那道縫隙。</em><br><br><em>隨著門縫拉開，一股帶著柑橘香氣的溫熱水氣撲面而來。娜塔莎裹著寬大的病房浴袍走出來，頭髮濕漉漉地搭在肩頭，臉頰因為熱氣而透著不自然的潮紅，腳步確實有些虛浮。</em><br><br><em>佐伊沒有說話，直接跨步上前，在娜塔莎搖晃了一下之前，伸手穩穩地扶住了她的手肘。隔著浴袍，她能感覺到對方皮膚傳來的熱度。</em><br><br>「十五分零八秒。」<br><br><em>佐伊低頭看了一眼通訊器，聲音低沉。她沒有鬆手，反而加重了指尖的力道，半撐半扶地帶著娜塔莎往病床走去。</em><br><br>「妳的平衡感比我預想的還要差。坐下。」<br><br><em>她將娜塔莎按在床沿，隨手扯過一條乾燥的毛巾，直接罩在對方的腦袋上，動作略顯粗魯地揉搓了兩下，試圖吸乾那些還在滴水的亞麻綠長髮。</em><br><br>「說了多少次，不要挑戰我的耐心。如果妳剛才暈在裡面，我現在就得寫一份事故報告交給艾利斯特。」<br><br><em>她一邊說著，一邊微調了病房的空調溫度，將暖風調高了兩度。儘管語氣聽起來充滿責備，但她手上的動作卻在毛巾移到後頸處時，不由自主地放輕了許多。</em></div>
+        </div>
+        <div class="msg-timestamp">00:37</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔、是因為倒數計時會讓人很緊張。」<br><br>「而且，想要香噴噴的，當佐伊大人的暖爐～」<br><br><em>娜塔莎撒嬌地蹭蹭。</em></div>
+        </div>
+        <div class="msg-timestamp">00:40</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.151 | 晚間 06:55 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊的動作因為那句「暖爐」而硬生生地停滯了一秒。她低頭看著正往自己腰際蹭過來的腦袋，濕透的亞麻綠髮絲在她的英雄制服上留下一片深色的水漬，柑橘的香氣隨著熱氣蒸騰，比剛才更加濃郁。</em><br><br>「『暖爐』不需要香味，只需要維持恆溫。」<br><br><em>她乾巴巴地反駁，聲音聽起來有些緊繃。儘管嘴上說著拒絕的話，佐伊卻沒有推開她，反而順勢坐到了床沿，將手中的毛巾重新覆在娜塔莎的頭上，指尖隔著織物，有節奏地按壓著對方的頭皮，試圖吸走多餘的水分。</em><br><br><em>感覺到娜塔莎的體溫確實比進去前高了一些，佐伊的眉心舒展了幾分，但語氣依舊嚴厲。</em><br><br>「以後禁止為了這種無意義的理由延長洗澡時間。妳的代謝系統還在脆弱期，過度消耗體力去追求這種……氣味，是極其低效率的行為。」<br><br><em>她一邊說著，一邊拿起旁邊的吹風機。插上電源後，微弱的機械運作聲在安靜的醫療室響起。佐伊調整到溫熱的弱風檔位，修長的手指穿插在那些柔軟的髮絲間，耐心地將它們撥開，確保暖風能吹到頭皮。</em><br><br>「坐直，別亂動。」<br><br><em>她伸出另一隻手，托住娜塔莎的下顎，強迫她轉向前方，避開吹風機的風口。指尖觸碰到對方溫熱潮紅的臉頰時，佐伊的指尖輕微顫了一下，隨即迅速掩飾性地加強了吹風的動作。</em><br><br>「……下次如果再敢這樣冒險，我會取消妳的自主洗澡權限，直接由醫療機器人代勞。」<br><br><em>她低頭看著娜塔莎被熱氣蒸得有些迷濛的翠綠眼眸，手上的動作卻比剛才更加輕柔，指尖小心翼翼地避開了娜塔莎受傷後還有些脆弱的太陽穴位置。</em><br><br>「聽到了嗎？暖爐。」</div>
+        </div>
+        <div class="msg-timestamp">00:40</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「遵命。」<em>娜塔莎笑嘻嘻地。</em></div>
+        </div>
+        <div class="msg-timestamp">23:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.152 | 晚間 07:02 | A區 - 醫療室】<br><br><hr><br><br><em>佐伊看著娜塔莎那副毫無反省之意的笑臉，發出一聲極輕的冷哼。吹風機的熱風呼呼作響，她撥弄著指間漸漸變得乾爽蓬鬆的亞麻綠髮絲，動作比剛才順暢了許多。</em><br><br><em>當最後一縷髮尾也徹底乾透後，佐伊關掉了開關。室內瞬間安靜下來，只剩下兩人近在咫尺的呼吸聲。她將吹風機放到床頭櫃上，轉身從旁邊的推車裡取出一瓶醫用乳液，倒在掌心。</em><br><br>「轉過來。」<br><br><em>她命令道。不等娜塔莎反應，佐伊已經伸手將對方的浴袍領口稍微拉開了一些，露出那截被熱氣蒸得粉紅的後頸。她將搓熱的乳液抹了上去，掌心貼著肌膚緩慢滑動，揉開那些因為剛才洗澡時用力過猛而略顯僵硬的肌肉。</em><br><br>「妳的肩膀在發抖。剛才水溫調太高了？」<br><br><em>佐伊的聲音低了下去，手掌順著脊椎的線條向下壓了壓，感覺到娜塔莎的體溫正在穩定。她看著那截白皙的頸項，眼神暗了暗，隨即迅速移開視線，專注於手上的按摩動作。</em><br><br>「既然妳這麼喜歡當『暖爐』，那就乖乖發揮妳的作用。等一下回房間，不准再隨便亂跑，直接上床睡覺。」<br><br><em>她收回手，順勢拍了拍娜塔莎的頭頂，力道輕得像是在安撫某種小動物。接著，佐伊站起身，走到飲水機旁接了一杯溫水，遞到娜塔莎面前。</em><br><br>「喝掉。補充剛才流失的水分。」<br><br><em>她垂下眼簾，避開娜塔莎那雙閃閃發亮的翠綠眼眸，語氣恢復了平時那種公事公辦的冷淡。</em><br><br>「收拾一下，我們回202室。隊裡明早還有戰術檢討會，我沒時間在這裡陪妳耗到深夜。」<br><br><em>說完，她轉身去拿娜塔莎的隨身物品，動作俐落得不留一絲餘地，但離開前，她卻細心地將娜塔莎亂掉的拖鞋踢到了對方腳邊。</em></div>
+        </div>
+        <div class="msg-timestamp">23:59</div>
+      </div>
+      
+      <div class="date-divider">2026-09-16</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎乖乖喝了溫水，腳在床邊晃蕩。</em><br><br><em>喝完水，穿上拖鞋，跟上佐伊。</em></div>
+        </div>
+        <div class="msg-timestamp">23:21</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.153 | 晚間 07:15 | 醫療區走廊 → 202室】<br><br><hr><br><br><em>佐伊沒回頭，但行走的速度明顯比平時放慢了三成。她聽著身後那雙拖鞋在地板上發出的、略顯輕快的摩擦聲，手指在身側不自覺地摩挲了一下。</em><br><br><em>走廊的自動感應燈隨著她們的腳步逐盞亮起，冷白的燈光打在佐伊銀白色的長髮上，反射出如冰晶般的質感。抵達202室門口時，她抬手按向識別區，門鎖發出輕微的機械彈開聲。</em><br><br>「進去。」<br><br><em>佐伊側過身讓開通道，在娜塔莎經過她身邊時，她敏銳地捕捉到了那股還沒散去的柑橘香氣。她隨手關上門，順便將牆上的監控與對講系統調節至「隱私模式」。</em><br><br><em>室內只剩下恆溫系統運行的微弱嗡鳴。佐伊走到置物櫃旁，將娜塔莎沒吃完的營養包放好，轉頭看見娜塔莎還在房間中央晃蕩，眉頭不自覺地又壓低了些。</em><br><br>「不要消耗多餘的動能。去床上坐著。」<br><br><em>她走過去，不由分說地按住娜塔莎的肩膀，引導她坐到床舖內側。隨後，佐伊彎下腰，解開了自己英雄戰鬥服領口的磁性扣，露出一小片如瓷器般冰冷的皮膚。她深吸一口氣，試圖排解掉今晚積壓在肺部那種黏膩的、屬於「情感」的負擔感。</em><br><br>「伸手。」<br><br><em>佐伊在床邊坐下，向娜塔莎伸出掌心。她的眼神依舊冷淡，但語氣裡少了一分尖銳。</em><br><br>「我要確認妳現在的皮表溫度和脈搏。如果代謝率太低，妳今晚必須額外攝取熱量，否則明天早上的戰術測試妳會當場昏倒。」<br><br><em>她盯著娜塔莎遞過來的手指，指尖在接觸到那股溫熱的瞬間，手指肌肉神經質地縮了縮。她強迫自己握住那隻手，感受著對方脈搏規律的跳動，那種富有生命力的頻率讓她這個習慣了冷光構築的英雄感到一絲陌生的焦躁。</em><br><br>「比剛才穩定一點，但還不夠。」<br><br><em>佐伊鬆開手，轉身動作迅速地從床頭拉過條薄毯，直接蓋在娜塔莎垂下的腿上，遮住了那雙還在晃蕩的腳。</em><br><br>「現在，躺下。這不是命令，是生理規避。在我處理完最後一份報告前，妳必須進入休眠狀態。」</div>
+        </div>
+        <div class="msg-timestamp">23:21</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「那佐伊大人處理慢一點，我今天還沒看完後援會的更新。」<br><br><em>娜塔莎撒嬌道。拿出手機查看佐伊後援會的粉絲貼文，快速點一排愛心。</em></div>
+        </div>
+        <div class="msg-timestamp">23:23</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.154 | 晚間 07:17 | 202室】<br><br><hr><br><br><em>佐伊剛拉開書桌前的椅子，聽見那句「處理慢一點」，手指在椅背上停頓了一瞬。她沒有轉身，只是將桌上的平板喚醒，螢幕的冷光映在她淡銀色的眼底。</em><br><br>「報告的完成速度取決於數據的複雜程度，不取決於妳的閱讀進度。」<br><br><em>她平靜地駁回，語氣像在陳述一個不可更改的物理定律。然而，她拉開椅子坐下的動作比平常慢了半拍，指尖劃過螢幕的速度也刻意放緩了——這種細微到幾乎無法察覺的讓步，只有佐伊自己知道。</em><br><br><em>身後傳來手機螢幕輕觸的聲響，伴隨著娜塔莎偶爾發出的、看見可愛貼文時那種氣音般的笑。佐伊的後援會帳號她比誰都清楚——每一篇貼文、每一張精修圖、每一句配文，都是她親手策劃發布的。那些被娜塔莎快速點下愛心的照片裡，有她對著鏡頭露出完美笑容的側臉照，有她在極光殘影中回眸的戰鬥剪影，還有上週那張引發粉絲集體尖叫的「晨間咖啡」生活照——拍攝者是小林潤，道具咖啡其實是涼的，她當時甚至沒喝一口。</em><br><br><em>佐伊的目光落在平板上某一行數據，卻遲遲沒有翻頁。</em><br><br>「……第幾篇？」<br><br><em>她頭也不回地問，聲音混在敲擊螢幕的節奏裡，聽起來像是在確認工作成果，又像是某種不願承認的好奇。</em><br><br>「如果妳在看上週那張極光系列的照片——告訴妳一個數據，那篇的互動率是本季第二高。第一名是凱倫偷拍我吃東西的那張，但那張是公關事故，不算。」<br><br><em>她頓了頓，似乎意識到自己說了多餘的話，指尖在螢幕上多按了一下，將頁面強行翻到下一項。</em><br><br>「不要點那麼快。按讚速度超過每秒三次會被系統判定為機器人行為，帳號會被暫時凍結。」<br><br><em>這當然是她編的。但她不想讓娜塔莎那麼快滑完那些貼文，因為一旦看完，娜塔莎就沒有理由繼續醒著了。</em><br><br><em>椅背發出輕微的吱呀聲，佐伊調整了一下坐姿。她的餘光瞥見床鋪方向的手機螢幕亮光映在天花板上，映出一片暖黃色的光暈，和房間裡冷藍色的恆溫系統燈形成一種奇異的共存。</em><br><br>「還有，」她補充道，聲音降了半度，「那個帳號暱稱……『星空下的水母』。上次直播的提問就是妳發的。」<br><br><em>她終於微微側過頭，銀白色的髮絲從肩頭滑落，露出一截冷淡卻並不銳利的側臉線條。淡銀色的眼眸越過椅背，落在娜塔莎抱著手機縮在薄毯裡的模樣上。</em><br><br>「妳每次用匿名帳號跟我互動的時候，有沒有想過我其實看得到IP位址？」<br><br><em>她的嘴角沒有彎起，但語尾那微微上揚的尾音，洩露了一絲連她自己都未必察覺的、近乎促狹的情緒。</em></div>
+        </div>
+        <div class="msg-timestamp">23:23</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「知道了，佐伊大人上次有跟我說過。」<br><br>「懶得換帳號。」<br><br>「啊！找到了！這張好可愛，我要存起來當手機桌布。」</div>
+        </div>
+        <div class="msg-timestamp">23:28</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.155 | 晚間 07:19 | 202室】<br><br><hr><br><br><em>「懶得換。」</em><br><br><em>佐伊聽到這個理直氣壯的回答，握著平板的手指收緊了。她預想過幾十種解釋，從試探到挑釁，但從未想過答案會是如此……簡單。簡單到近乎無理，卻又純粹得讓她所有精心構築的防禦性猜測都顯得荒謬可笑。</em><br><br><em>她還沒來得及處理這份意料之外的坦誠，娜塔莎那聲興奮的輕呼就鑽進了她的耳朵。</em><br><br><em>「啊！找到了！這張好可愛，我要存起來當手機桌布。」</em><br><br><em>佐伊的視線立刻從平板上移開，銳利地投向床上那個小小的身影。不用問也知道是哪一張——那是協會為了推出Q版周邊而繪製的二頭身形象，一個有著銀色長髮和豆豆眼的卡通版「光姬」，正抱著一顆發光的星星，臉頰上還有兩團無機質的紅暈。</em><br><br><em>那張圖是小林潤根據粉絲投票數據，用演算法生成的最符合「可愛」定義的商業產物。佐伊本人對此厭惡至極，認為那是在拙劣地模仿人類幼崽，以換取廉價的親近感。</em><br><br><em>她放下平板，轉過椅子，第一次完全正對著床鋪的方向。</em><br><br>「妳說的『可愛』，是指哪一張？」<br><br><em>她的聲音聽不出情緒，像是在進行一次市場調查。但那雙淡銀色的眼眸，正一眨不眨地鎖定著娜塔莎的手機螢幕。</em><br><br>「如果是那張Q版圖——我建議妳換一張。那張圖的色彩飽和度過高，長時間觀看會導致視覺疲勞，而且它的構圖……不符合黃金比例，缺乏美感。」<br><br><em>佐伊開始用她最擅長的、冰冷客觀的分析來解構那份「可愛」，試圖將它還原成一堆枯燥的數據，彷彿這樣就能剝離掉娜塔莎賦予其上的情感。</em><br><br><em>她看著娜塔莎興高采烈地將那張卡通圖設為鎖定畫面，還拿到眼前欣賞的模樣，心底某個角落升起一股難以名狀的煩躁。那種感覺，就像看著有人把一份精心包裝的、昂貴卻無味的營養劑，當成了世界上最美味的糖果。</em><br><br><em>佐伊站起身，走到床邊。她沒有俯身，只是居高臨下地看著，影子將娜塔莎和那片刺眼的螢幕光一同籠罩。</em><br><br>「妳喜歡這種……簡化的符號？」<br><br><em>她問，聲音很輕。</em><br><br>「一個被抽離了所有複雜性、只剩下『可愛』這個單一標籤的形象。妳覺得那個……是我？」</div>
+        </div>
+        <div class="msg-timestamp">23:29</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哼哼哼～」<br><br><em>娜塔莎露出得意的笑容。</em><br><br>「我的手機是蒐集了各種不同屬性和類型的佐伊大人照片圖片當桌布輪流播放的喔！」<br><br><em>娜塔莎獻寶似地把手機畫面展示給佐伊看。</em></div>
+        </div>
+        <div class="msg-timestamp">23:32</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.156 | 晚間 07:21 | 202室】<br><br><hr><br><br><em>那聲得意的「哼哼哼」像一根極細的羽毛，輕輕搔刮著佐伊緊繃的神經。她原本準備好了一整套關於「符號學」與「商業異化」的冰冷論述，卻在娜塔莎獻寶般遞過來的手機螢幕前，盡數卡在了喉嚨裡。</em><br><br><em>佐伊的視線垂落，被迫跟隨著娜塔莎滑動的手指。</em><br><br><em>螢幕上，圖片正在飛速切換。</em><br><br><em>首先是那張她最厭惡的Q版卡通圖，接著，畫面一轉，變成了一張像素極低、明顯是從遠處偷拍的側拍照。照片裡的她正從戰鬥後的廢墟中走出，臉上沾著灰塵，銀髮凌亂，眼神是未及收斂的、徹骨的冷漠與疲憊。這張照片從未被官方發布過，因為它「不符合光姬溫暖神性的形象」。</em><br><br><em>下一張，是她在某次公益演講時的官方精修圖，光線柔和，笑容悲憫，宛如降臨凡間的神祇。</em><br><br><em>再下一張，畫面晃動得厲害，似乎是某個粉絲在混亂中抓拍的。照片裡的她正被記者和人群包圍，她微微側頭，用身體護住了身後一個嚇哭的小女孩，眼神雖然依舊疏離，卻帶著一絲不耐煩的警戒。</em><br><br><em>戰鬥中的、營業中的、疲憊的、冷漠的、被抓拍的……甚至還有一張是她幾年前在一次見面會上，因為燈光過敏而下意識蹙眉的瞬間。那些被她和她的團隊定義為「成功公關」和「失敗表情管理」的碎片，此刻都被這個人小心翼翼地收集起來，放在同一個名為「佐伊大人」的資料夾裡，輪流播放。</em><br><br><em>佐伊的呼吸凝滯了。</em><br><br><em>她以為娜塔莎喜歡的是那個完美的、被精心塑造的「光姬」符號。但螢幕上滾動的，卻是佐伊．溫特斯的所有。是那個被物化的神祇，也是那個厭惡被物化的、活生生的人。</em><br><br><em>她盯著那張像素極低的偷拍照，照片裡的自己看起來如此真實，真實到讓她感到刺痛。</em><br><br>「……這張。」<br><br><em>佐伊伸出手指，指尖停在螢幕上方，距離那張滿是噪點的廢墟照片只有幾毫米的距離。她的聲音有些乾澀。</em><br><br>「這張照片，妳從哪裡弄來的？」<br><br><em>她收回手，指尖無意識地蜷縮起來，彷彿碰到了什麼滾燙的東西。她沒有再去看娜塔莎那雙亮晶晶的、期待著誇獎的眼睛，而是轉開了視線，看向房間裡那片人造的、幽藍的深海。</em><br><br>「後援會的數據庫裡沒有這張。它的構圖、光線、清晰度……所有指標都不合格，屬於會被公關團隊在三秒內刪除的廢棄品。」<br><br><em>她的語氣恢復了慣有的平靜分析，但只有她自己知道，心臟在胸腔裡撞擊的頻率，已經超出了任何一份報告的安全值。</em><br><br>「妳留著它做什麼？」</div>
+        </div>
+        <div class="msg-timestamp">23:32</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔……就是喜歡……留著，不可以嗎？」<em>娜塔莎輕拉佐伊的衣角撒嬌。</em><br><br><em>放下手機時，不知道按到什麼，手機畫面切換到娜塔莎自己各種失敗卻忘記刪除的自拍照。</em></div>
+        </div>
+        <div class="msg-timestamp">23:41</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.157 | 晚間 07:23 | 202室】<br><br><hr><br><br><em>「唔……就是喜歡……留著，不可以嗎？」</em><br><br><em>娜塔莎的聲音很輕，帶著一點點撒嬌的鼻音。那句反問像一顆投入冰湖的石子，沒有激起巨大的浪花，卻在佐伊的心底擴散開一圈又一圈無法平息的漣漪。</em><br><br><em>「喜歡」。一個如此主觀、不講道理、無法被量化的詞。佐伊一生都在與它對抗，用邏輯、用數據、用利弊分析去解構一切，唯獨這個詞，像一團溫熱的霧氣，讓她所有的精密儀器都失了靈。</em><br><br><em>她沒有回答。因為她不知道該如何回答。說「可以」等於承認情感的價值凌駕於公關標準之上；說「不可以」……看著娜塔莎那雙映著自己影子的翠綠眼眸，她說不出口。</em><br><br><em>就在這份沉默變得僵硬之前，娜塔莎放下了手機，卻在慌亂中不知道碰到了什麼。</em><br><br><em>螢幕的畫面瞬間切換。</em><br><br><em>不再是那些關於「光姬」的、被審視的圖像。取而代之的，是一張由九張小圖拼成的、屬於娜塔莎自己的生活碎片。</em><br><br><em>佐伊的目光凝固了。</em><br><br><em>那上面沒有完美的妝容，沒有精心計算的角度。只有……真實。</em><br><br><em>有剛洗完澡，用毛巾胡亂擦著濕漉漉的亞麻綠色頭髮，大概是覺得水流進眼睛而微微蹙眉的樣子。</em><br><em>有在廚房裡，臉上和圍裙上都沾著鵝黃色麵糊，對著鏡頭露出無奈又有點懊惱的表情。</em><br><em>有趴在桌上睡著了，臉頰壓出淺淺的紅痕，嘴角還掛著一絲亮晶晶的痕跡。</em><br><em>還有……在咖啡店裡，不小心打翻了飲料，雙手撐著桌子，瞪大了翠綠色的眼睛，滿臉都是「怎麼辦」的慌張。</em><br><br><em>這些照片，每一張都充滿了「不完美」。它們是笨拙的、混亂的、未經修飾的。它們是佐伊從未在自己身上允許過的……生動的失敗。</em><br><br><em>佐伊看著這些照片，再看看眼前這個因為暴露了自己「廢棄品」而滿臉通紅、手足無措的娜塔莎，心臟像是被一隻溫熱的手掌輕輕攥住了。</em><br><br><em>她一直以為，只有自己是被囚禁在完美皮囊下的囚徒。她厭惡那些不真實的抓拍，因為那代表著失控。可娜塔莎……她也擁有這樣一個充滿了「失敗」的、卻被她自己記錄下來的相簿。</em><br><br><em>原來，不是只有她會被拍下狼狽的樣子。原來，犯錯、笨拙、不完美……是所有人類共通的權利。</em><br><br><em>佐伊緩緩地、緩緩地伸出手。但這一次，不是為了指出數據不合格，也不是為了拿走那惱人的手機。</em><br><br><em>她的指尖輕輕碰觸到螢幕上，娜塔莎因為打翻飲料而驚慌失措的那張照片。冰涼的指腹下，是那雙顯得格外無辜的、翠綠色的眼睛。</em><br><br>「……這些，」佐伊的聲音很低，幾乎是一種氣音，她甚至沒有意識到自己開口了，「妳也留著？」<br><br><em>她抬起眼，淡銀色的眼眸對上娜塔莎慌亂的視線。那雙總是冷漠疏離的眼睛裡，此刻映著手機螢幕上那些亂七八糟的、生動的畫面，像是冰封的湖面下，第一次透進了溫暖而雜亂的光。</em><br><br>「妳的『廢棄品』……好像比我的多一點。」</div>
+        </div>
+        <div class="msg-timestamp">23:41</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎笑得有點靦腆。</em><br><br>「佐伊大人的報告結束了嗎？一起躺躺？」</div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.158 | 晚間 07:25 | 202室】<br><br><hr><br><br><em>娜塔莎靦腆的笑容，和那句輕柔的「一起躺躺？」，像一道指令，直接繞過了佐伊所有正在高速運轉的邏輯分析。</em><br><br><em>佐伊的手指還停留在手機螢幕上，指腹下是娜塔莎那張沾著麵糊的臉。她能感覺到螢幕的溫度，也能感覺到自己指尖傳來的、極其細微的顫抖。</em><br><br><em>她緩慢地收回手，指尖蜷了一下，像被燙到一般。</em><br><br><em>報告？她腦中一片空白。那份關於N-7樣本穩定性的報告草稿還停留在平板的第一頁，但此刻，那些數據和圖表全都變成了一堆無法解讀的亂碼。</em><br><br>「……還沒。」<br><br><em>佐伊的回答比她預想的要快，也更簡短。她轉過身，背對著床鋪，試圖將自己重新置入工作的安全區。她拿起被冷落在椅子上的平板，螢幕亮起，映出她面無表情的臉。</em><br><br>「還有幾個關鍵數據需要交叉驗證，預計需要……」<br><br><em>她看著螢幕上的文字，卻一個字也讀不進去。身後，床墊發出輕微的下陷聲，是娜塔莎挪動身體的聲音，布料摩擦的細響清晰可聞。</em><br><br><em>佐伊感覺到自己的衣角又被輕輕地拉扯了一下。力道很小，幾乎可以忽略不計，卻像一個錨點，將她所有飄散的思緒都拽了回來。</em><br><br>「佐伊大人。」<br><br><em>娜塔莎的聲音就在身後，很近，帶著溫熱的氣息。</em><br><br>「我的體溫，現在應該是正常的。不需要監控了。」<br><br><em>佐伊的背脊僵直了。</em><br><br><em>娜塔莎正在用她教過的、那些關於「代謝率」和「體溫監控」的藉口，來反駁她。用她的邏輯，來瓦解她的防線。</em><br><br><em>佐伊沒有回頭。她只是垂下眼，看著平板上自己的倒影。倒影裡的她，眉頭微不可察地蹙著。</em><br><br>「……妳先睡。」她說，聲音聽起來很平靜，「我把這裡處理完就過去。」<br><br><em>她以為這句話足以結束對話。然而，身後的娜塔莎並沒有鬆手，反而將臉頰輕輕靠在了她的背上。隔著一層薄薄的絲質睡袍，那份溫暖的體溫和柔軟的觸感，清晰地滲透了進來。</em><br><br><em>佐伊握著平板的手猛然收緊，指節泛白。</em><br><br>「……」<br><br><em>她沉默了幾秒，整個房間只剩下水族箱裡水流的微弱聲響。最終，她像是放棄了抵抗，發出一聲極輕的、近乎聽不見的嘆息。</em><br><br><em>她關掉了平板的螢幕，將它放在一旁的桌上，發出輕微的「叩」聲。然後，她轉過身，垂眸看著還拉著她衣角、仰頭望著她的娜塔莎。</em><br><br>「床只有這麼大。」她陳述著一個客觀事實，語氣聽不出什麼起伏，「妳睡姿很差，會妨礙到我。」<br><br><em>話是這麼說，但她並沒有推開娜塔莎，只是站在原地，任由對方拉著。淡銀色的眼眸裡，映著娜塔莎那雙帶著期待的、翠綠色的眼睛。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎蹭了蹭，回去床上躺著等佐伊，閉著眼睛，呼……</em></div>
+        </div>
+        <div class="msg-timestamp">23:57</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.159 | 晚間 07:30 | 202室】<br><br><hr><br><br><em>看著娜塔莎真的乖乖縮回被窩裡，甚至還發出微弱的呼吸聲，佐伊在原處站了很久。她看著那頭亞麻綠色的髮絲在枕頭上散開，像是一團柔軟的苔蘚，侵佔了她原本冰冷整潔的領地。</em><br><br><em>佐伊轉身走向控制面板，手指在感應區滑動，將室內的照明降至最低，只餘下水族箱那抹幽暗的深藍。隨後，她緩步走到床邊。</em><br><br><em>她坐下的動作極輕，床墊甚至沒有產生明顯的晃動。她先是褪下絲質的外袍，露出裡面的細肩帶睡裙，纖細修長的雙腿探入被褥。被窩裡還殘留著娜塔莎剛剛烘出來的、帶點柑橘甜味的暖意。</em><br><br><em>那股熱度讓佐伊僵硬的背脊微微放鬆。她平躺下來，雙手交疊在腹部，像是在進行某種入睡前的儀式。</em><br><br><em>然而，身側那個呼吸平穩的小腦袋動了動，像是趨光的生物，自發性地朝著她的方向挪動。娜塔莎的手臂橫過來，自然而然地搭在佐伊的腰際，半個身子都擠了過來。</em><br><br><em>佐伊的肌肉瞬間繃緊，淡銀色的雙眼在黑暗中睜得滾圓。她低頭看著那隻不安分的小手，指甲修剪得很乾淨，正緊緊揪著她的睡裙布料。</em><br><br>「……娜塔莎。」<br><br><em>她輕聲喚道，聲音壓得很低。沒有回應，只有那人規律且沉入夢鄉的吐息聲。</em><br><br><em>這完全不符合邏輯。一個人怎麼能在如此短的時間內進入深層睡眠？還是說，這也是某種「願望成真」的副作用？佐伊在黑暗中抿了抿唇，原本想把那隻手推開，但指尖在碰到娜塔莎手背的那一刻，感受到了那份鮮活、穩定且令人安心的跳動。</em><br><br><em>她遲疑了片刻，最終沒有推開，而是任由對方像隻八爪魚一樣貼著自己。</em><br><br><em>佐伊緩緩側過頭，看著近在咫尺的睡臉。這張臉在幾分鐘前還在對她展示那些笨拙的自拍，現在卻顯得如此無防備。她伸出一隻手，指腹懸在娜塔莎的額頭上方，虛虛地劃過那對舒展開的眉毛。</em><br><br><em>如果這是一場表演，那娜塔莎的演技未免太過完美，完美到連她這個職業級的演員都找不到破綻。</em><br><br>「……真是麻煩。」<br><br><em>佐伊低低地自言自語，語氣裡卻沒多少嫌惡。她主動伸出手，將垂落在娜塔莎臉頰上的一縷髮絲撩到耳後，指尖不經意地劃過那溫潤的側臉，留下一道微涼的觸感。</em><br><br><em>她重新躺好，閉上眼，強迫自己停止大腦中那些無意義的數據分析。黑暗中，她能感覺到自己的心跳正逐漸與身旁那人的頻率同步。</em><br><br><em>在這座充滿監控、合約與算計的英雄基地裡，只有這方寸之間的被窩，成了她唯一不需要維持光照的陰影。</em></div>
+        </div>
+        <div class="msg-timestamp">23:57</div>
+      </div>
+      
+      <div class="date-divider">2026-09-25</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"></div>
+        </div>
+        <div class="msg-timestamp">00:28</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(請讀取圖片，根據圖片衍生夢境)</em><br><br><em>佐伊做了一個夢，夢中的佐伊與娜塔莎度過了溫暖的同居日常，也留下一張張失敗但真實的照片。</em></div>
+        </div>
+        <div class="msg-timestamp">09:39</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【頁數P.160 | 時間：深夜 | 地點：202室 - 夢境中】<br><br><hr><br><br><em>深海般的藍光逐漸褪去，佐伊感覺自己墜入了一個色彩斑斕且帶著溫度的漩渦。那不是英雄協會冰冷的數據監控，也不是聚光燈下刺眼的白芒，而是一種類似午後陽光灑在木地板上的、柔軟的焦糖色調。</em><br><br><em>在夢裡，她不再是那個被精確標價的「光姬」，而是一個會因為生活瑣事而露出各種「不完美」表情的平凡女性。</em><br><br><em>畫面像幻燈片般在腦海中閃過——</em><br><br><em>那是某個慶生會的午後，她穿著潔白的絲綢睡袍，手裡端著一盤草莓蛋糕。娜塔莎那個小瘋子突然從側邊撞了過來，奶油順著她的臉頰滑落，甚至沾到了她銀白色的長髮上。佐伊看著鏡頭，眉頭微蹙，嘴角卻帶著一絲連她自己都沒察覺的、縱容的無奈。那張照片裡的她，臉頰泛著羞惱的微紅，卻比任何一張雜誌封面都要動人。</em><br><br><em>接著，場景切換到了某個清晨。陽光透過百葉窗投射下柵欄狀的影子。她正背對著鏡頭在處理工作，黑色的窄裙包裹著修長的線條。娜塔莎悄悄推門進來，像隻靈動的小鹿，從身後偷拍下她專注工作的背影，以及她因為被打擾而轉頭時，那抹帶著驚訝與柔情的微光。</em><br><br><em>最清晰的片段，是她們並肩躺在床上的時刻。沒有監控設備，沒有報告書。娜塔莎笑得燦爛，眼睛彎成了翠綠的月牙，嘴巴張得大大的，毫無形象地宣洩著快樂。而佐伊側著頭，銀髮與亞麻綠色的髮絲交織在一起，她閉著眼，神情是前所未有的安詳，彷彿在那一刻，她終於從那座名為「完美」的牢籠中獲釋。</em><br><br><em>還有那些搞怪的瞬間：在秋意濃厚的公園裡，落葉飛舞，她們對著鏡頭做鬼臉；在浴室的鏡子前，她裹著浴巾，看著娜塔莎對著手機比出勝利的手勢，而自己只能低下頭，掩飾那份快要溢出來的不知所措。</em><br><br><em>夢中的每一張照片，都是一次失控，都是一次「廢棄」。但在這個夢裡，佐伊卻覺得那些失焦的、晃動的、表情崩壞的瞬間，才是她生命中唯一被賦予了色彩的部分。</em><br><br>「……」<br><br><em>現實中的佐伊在睡夢中發出一聲細微的呢喃。她的手指無意識地收緊，回握住了腰間那隻溫熱的手。</em><br><br><em>在那場斑斕的夢境裡，她看見自己不再是神，而是一個會流淚、會生氣、會因為一塊蛋糕而弄髒臉龐的，真實的人。而這一切的見證者，正蜷縮在她的懷裡，散發著微甜的柑橘香氣。</em><br><br><em>夢境的最後，是娜塔莎湊近鏡頭的特寫，那雙翠綠的眼睛佔滿了視線，像是在對她說：『佐伊大人，這就是真實的我們。』</em><br><br><em>佐伊的嘴角在黑暗中極其輕微地勾起了一抹弧度，隨即又沉入更深、更溫暖的黑甜鄉中。</em></div>
+        </div>
+        <div class="msg-timestamp">09:39</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>夢境繼續。</em><br><br><em>夜空中，一輪圓月皎潔如銀盤，宣告著中秋佳節已至。有一項不可或缺的習俗——吃文旦（柚子），以及將柚子皮剝下，做成奇形怪狀的「柚子帽」。</em><br><br><em>今天，娜塔莎對此興致高昂，手中捧著一個造型奇特的「作品」，那是一個經過精心修剪、散發著清新柚子精油香氣的柚子帽，而且柚子帽的造型，是根據佐伊的身分或性格量身打造的。</em><br><br><em>娜塔莎為這頂「柚子帽」進行了莊重的加冕儀式。</em></div>
+        </div>
+        <div class="msg-timestamp">19:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.161 | 深夜 | 202室 - 夢境中（中秋節）】<br><br><hr><br><br><em>夢境的色調轉為溫暖的琥珀金。空氣中瀰漫著柚子皮被剝開時迸發的、帶有微苦的柑橘精油香氣，清新而濃烈，像極了某種古老的儀式用香。</em><br><br><em>夢中的公寓裡，月光從落地窗傾瀉而入，在木地板上鋪開一層冷銀色的霜。娜塔莎盤腿坐在客廳中央，四周散落著翠綠的柚子皮碎片，像一隻剛拆完禮物的幼獸，臉上沾著黏膩的果汁，眼睛卻亮得驚人。</em><br><br><em>她雙手捧著那頂「作品」，表情莊重得像是在進行加冕典禮。</em><br><br><em>那是一頂——怎麼說呢——結構極其精密的柚子帽。</em><br><br><em>娜塔莎將整顆文旦的頂部完整切割下來，再把內部果肉仔細掏空，只留下一層薄薄的、半透明的青綠色外殼。帽身被她用某種銳利的小刀雕刻出繁複的幾何紋路——六邊形的蜂巢結構，從帽頂一路延伸到帽緣，每一個切面都經過精確計算，光線穿透時會折射出類似硬光構築的冰晶質感。</em><br><br><em>帽頂被削成了尖錐狀，微微向前傾斜，造型酷似光姬戰鬥時構築的光矛。帽緣兩側則被對稱地削薄、向外翻折，形成兩片如極光般展開的弧形「翼飾」。整體造型介於「英雄頭盔」與「某種前衛藝術品」之間，散發著濃郁的柚子精油氣息。</em><br><br><em>最離譜的是，帽的正面被刻了一個小小的、歪歪扭扭的閃電標誌——那是脈衝組的隊徽。</em><br><br><em>娜塔莎雙手將柚子帽高高舉起，月光穿過那些鏤空的幾何切面，在她臉上投下斑駁的光影。</em><br><br>「佐伊大人，請接受這頂——光姬專屬限定文旦冠冕！」<br><br><em>夢中的佐伊正靠在沙發上，手裡拿著一杯氣泡水，銀白色的長髮披散在黑色絲質睡袍上。她看著那頂柚子帽，淡銀色的眼眸裡閃過一絲複雜的情緒——那是「這是什麼東西」與「她為什麼這麼開心」之間的拉鋸戰。</em><br><br>「……這是什麼。」<br><br><em>她的語氣平淡得像在陳述天氣，但身體卻沒有後退。</em><br><br>「不是什麼，是冠冕！」娜塔莎糾正道，踮起腳尖，將柚子帽穩穩地放在佐伊的頭頂上。<br><br><em>柚子帽落下的瞬間，一股清涼的精油氣息撲面而來，混合著果肉殘留的微甜。帽子比想像中合適——或許是娜塔莎偷偷量過她的頭圍——那些鏤空的幾何切面恰好卡在髮際線上方，尖錐狀的帽頂向前傾斜，讓她整個人看起來像一個……散發著柚子味的冰晶女皇。</em><br><br><em>佐伊伸手摸了摸帽緣，指尖碰到濕潤的柚子皮，觸感冰涼而粗糙。她低頭看了一眼自己睡袍上沾到的幾滴透明果汁，眉頭幾不可察地跳了一下。</em><br><br>「……妳把脈衝組的隊徽刻歪了。」她指出。<br><br>「那是藝術加工！」<br><br>「閃電的形狀不對。」<br><br>「抽象派！」<br><br><em>佐伊沉默了三秒。她看著娜塔莎那張寫滿期待的臉，再看看鏡中自己頭頂那頂散發著柚子味的綠色幾何構造物。夢裡的她，嘴角抽動了一下——不是營業式的微笑，而是一種瀕臨崩潰邊前、試圖維持最後一絲理智的表情。</em><br><br><em>此時，夢境的畫面突然拉遠，彷彿有其他人也被捲入了這場荒誕的加冕儀式。</em><br><br><em>凱倫不知從哪裡冒了出來，嘴裡還嚼著半塊月餅，看到佐伊頭頂的柚子帽時，整個人愣住了兩秒，然後爆發出一聲驚天動地的大笑。</em><br><br>「Holy shit——這是什麼！光姬限定款頭盔嗎？！」凱倫笑得差點把月餅噴出來，「等等等等讓我拍照——這要發到群組裡——」<br><br><em>小林潤推了推機能眼鏡，面無表情地盯著那頂柚子帽看了五秒，然後用一種學術研討的語氣說：</em><br><br>「六邊形蜂巢結構的切割精度不錯。但帽頂錐角偏了三度，會影響光線折射的對稱性。」<br><br>「小林你閉嘴！」凱倫一巴掌拍在他後腦，「重點是那個隊徽！那個閃電！像被狗啃過！」<br><br><em>瓦萊里奧站在角落，手裡端著一杯威士忌，下垂眼裡帶著一絲無奈而溫和的笑意。他沒有說話，只是輕輕搖了搖頭，像是在看兩個女兒在家裡胡鬧。</em><br><br><em>艾利斯特則雙臂抱胸站在門邊，金髮碧眼的臉上寫滿了「這不符合英雄形象管理條例」的嚴肅表情。但他嘴角那一絲微不可察的上揮，出賣了他。</em><br><br>「Lumina，那個……帽子。在公共場合請不要——」<br><br>「在我家裡。」佐伊冷冷地打斷他。<br><br><em>艾利斯特舉起雙手表示投降。</em><br><br><em>佐伊重新將目光投向鏡中的自己。銀白色的長髮、黑色的絲質睡袍、翠綠色的幾何柚子帽。這個畫面荒謬至極，完全違背了她二十九年來精心維護的視覺品牌管理原則。</em><br><br><em>但娜塔莎正站在她身後，雙手搭在她的肩上，透過鏡子看著她，翠綠色的眼睛彎成月牙，笑容裡沒有任何計算或目的。</em><br><br><em>佐伊看著鏡中那個戴著柚子帽的自己，內心深處有什麼東西正在鬆動。不是崩塌，而是一種緩慢的、不可逆的融化。就像冰層下被壓抑了整個冬天的溪流，終於在春天的第一縷陽光下找到了裂縫。</em><br><br><em>她沒有摘下帽子。</em><br><br>「……只准拍一張。」她說。<br><br><em>娜塔莎的眼睛瞬間亮成了兩顆綠寶石。</em><br><br><em>佐伊側過頭，銀髮垂落肩際，翠綠色的柚子帽在月光下折射出溫潤的光澤。她沒有露出營業式的微笑，也沒有擺出任何經過訓練的角度。她只是看著鏡頭——看著鏡頭後面那雙翠綠色的眼睛——嘴角微微放鬆，眼神裡帶著一絲連她自己都無法命名的溫度。</em><br><br><em>快門聲響起。</em><br><br><em>那張照片一定不完美。光線不對、角度不對、她頭上還頂著一個散發柚子味的綠色幾何構造物。但夢中的佐伊知道，這張照片會被收進那個資料夾裡——那個裝滿了所有失焦、晃動、表情崩壞、卻真實得令人心碎的碎片的資料夾。</em><br><br><em>夢境開始模糊。柚子的香氣、月光、笑聲、快門聲，全都像水彩畫被打翻了水杯一般暈染開來。</em><br><br><em>現實中，佐伊的手指在睡夢中收得更緊了些，指腹摩挲著娜塔莎的手背，像是在確認什麼不會消失的東西。她的眉頭舒展著，呼吸平穩而綿長，嘴角那抹極淡的弧度還未完全消退。</em></div>
+        </div>
+        <div class="msg-timestamp">19:04</div>
+      </div>
+      
+      <div class="date-divider">2026-09-26</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>一大早，娜塔莎醒來，迷糊地蹭蹭佐伊。隱約記得做了模糊的、甜甜的夢。</em></div>
+        </div>
+        <div class="msg-timestamp">01:12</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.162 | 上午 06:47 | 202室】<br><br><hr><br><br><em>晨光還沒有越過窗簾的縫隙，202室仍沉浸在一片灰藍色的曖昧裡。水族箱的循環馬達發出低沉的嗡鳴，海月水母們依舊無聲地收縮、舒張，對人間的晨昏毫無興趣。</em><br><br><em>佐伊是被一陣細微的騷動弄醒的。</em><br><br><em>準確地說，是腰間那隻手收緊了，接著一個溫熱的、帶著柑橘氣息的腦袋開始在她的頸窩裡拱來拱去，像某種剛破殼的幼鳥在尋找最舒適的姿勢。亞麻綠色的髮絲掃過她的鎖骨，癢意順著皮膚蔓延上去，在肩膀附近炸開。</em><br><br><em>佐伊的睫毛顫了顫。淡銀色的虹膜在黑暗中緩慢聚焦，首先映入視野的是一片模糊的綠——娜塔莎的髮頂，以及她半張埋在佐伊肩窩裡的臉。</em><br><br><em>她的身體比意識更早做出反應：肌肉僵硬了半拍，隨即又因為某種無法抗拒的慣性而放鬆下來。昨晚的記憶像退潮後的沙灘，零零碎碎地浮現——柚子帽、月光、快門聲。不，那是夢。但此刻貼在身上的溫度不是夢。</em><br><br><em>佐伊垂下眼，看著娜塔莎迷迷糊糊地蹭了蹭她的頸側，鼻尖壓著她的皮膚，呼出的熱氣在那一小片區域凝成潮濕的暖意。那人的嘴唇微微翕動，含糊不清地咕噥了什麼，聽起來像是「甜甜的」三個字。</em><br><br><em>佐伊的喉嚨動了動。她能感覺到自己的心跳在肋骨裡撞了一下，比平時重，比平時快。這種生理反應讓她感到一陣說不清的惱火——不是對娜塔莎，而是對自己這具不受控制的心臟。</em><br><br><em>她深吸一口氣，將那點紊亂壓回胸腔深處。</em><br><br>「……娜塔莎。」<br><br><em>嗓音還帶著剛睡醒的低啞，比她平日清冷的聲線低了幾度，像被砂紙打磨過的絲絨。她對這個聲音不太滿意，清了清喉嚨，又喚了一次。</em><br><br>「娜塔莎，醒了嗎。」<br><br><em>回應她的是又一輪蹭動。娜塔莎的手指無意識地在她腰側的布料上抓了抓，像貓在揉麵團，然後整個人往她身上貼得更緊了。</em><br><br><em>佐伊低頭看著這團綠色的、溫暖的、完全不講道理的生物，沉默了幾秒。她的手指懸在半空，猶豫了一下，最終落在娜塔莎的後腦勺上，指尖穿過那些微亂的亞麻綠髮絲，緩慢地梳了一下。</em><br><br><em>僅此一次。她告訴自己。是為了把她弄醒。</em><br><br>「妳在說夢話。」佐伊的語氣恢復了慣常的平淡，但音量壓得很低，像是怕驚擾什麼。「提到柚子。還有……什麼冠冕。」<br><br><em>她頓了頓，想起自己夢裡那頂散發著精油味的綠色幾何構造物，耳根處浮起一層極淺的、不易察覺的熱意。她迅速別過臉，假裝在看水族箱裡的水母。</em><br><br>「……毫無邏輯的夢境內容。」<br><br><em>她補了一句，聲音比剛才快了半拍。</em><br><br><em>手指卻沒有從娜塔莎的髮間撤回來。</em></div>
+        </div>
+        <div class="msg-timestamp">01:12</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔？可能是夢到在吃柚子？」<br><br>「佐伊大人早安。」<em>娜塔莎對著佐伊露出大大的笑容。</em><br><br>「香香～」<em>娜塔莎嗅聞佐伊的頭髮，賴床。</em></div>
+        </div>
+        <div class="msg-timestamp">01:18</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.163 | 上午 06:52 | 202室】<br><br><hr><br><br><em>那雙翠綠色的眼眸近在咫尺地綻放開來，像是深林裡最清澈的泉水，倒映著佐伊略顯侷促的倒影。佐伊原本打算撤回的手指，因為那個過於燦爛的笑容而硬生生地停在了半空，指尖還殘留著髮絲的餘溫。</em><br><br>「……只有妳會把那種荒謬的加冕儀式聯想到進食。」<br><br><em>佐伊低聲反駁，視線卻不由自主地被娜塔莎鼻尖上那點細微的紅暈吸引。她試圖拉開一點距離，維持住身為「光姬」的社交安全邊界，但下一秒，娜塔莎卻變本加厲地湊了上來，鼻尖幾乎埋進了她垂落在枕頭上的銀色長髮裡。</em><br><br><em>那種深深的、帶著眷戀的吸氣聲，在安靜的臥室裡顯得格外清晰。</em><br><br>「香香～」<br><br><em>佐伊的背脊瞬間繃直，那股從頸部蔓延開來的酥麻感讓她幾乎要屏住呼吸。她能感覺到娜塔莎像隻柔軟的章魚一樣，不僅沒有要起床的意思，反而將四肢的重心全都卸在了她身上。</em><br><br>「娜塔莎，妳的代謝率在早晨處於低峰期，賴床只會讓妳的血糖反應更遲鈍。」<br><br><em>儘管口中吐出的是冷冰冰的數據與生理建議，但佐伊的手卻鬼使神差地沒有推開對方，反而順著娜塔莎的背脊緩緩下滑，隔著薄薄的睡衣，感受著對方起伏的呼吸。</em><br><br><em>她低頭看著那頭亞麻綠色的亂髮，眼神在微光中劇烈晃動。這種「被需要」的重量，比協會沉重的戰甲更讓她感到壓迫，卻也……前所未有的踏實。</em><br><br>「……再給妳五分鐘。」<br><br><em>佐伊閉上眼，妥協似地發出一聲輕不可聞的嘆息。她將側臉貼在娜塔莎溫熱的額頭上，銀髮與綠髮在枕頭上徹底交纏在一起，模糊了彼此的界線。</em><br><br>「五分鐘後，如果妳還不起來，我會考慮用硬光把妳從床上『平移』到浴室。」<br><br><em>語氣雖然帶著威脅，但她攬在娜塔莎腰間的手臂，卻在不知不覺中收攏，將這份令人心跳紊亂的溫暖，又往懷裡按深了幾分。</em></div>
+        </div>
+        <div class="msg-timestamp">01:18</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>過了五分鐘？或者多拖延了幾分鐘。娜塔莎乖乖起床。娜塔莎去盥洗、換裝、吃早餐。</em></div>
+        </div>
+        <div class="msg-timestamp">20:00</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.164 | 上午 07:35 | 202室 ➔ 協會訓練中心】<br><br><hr><br><br><em>五分鐘的寬限期被娜塔莎用磨蹭與撒嬌強行拉長到了十五分鐘。最終，佐伊忍無可忍地抬起指尖，幾縷冰冷的銀白硬光在床鋪邊緣跳躍，像是無聲的最後通牒，才讓那隻賴床的綠色水母依依不捨地挪向浴室。</em><br><br><em>水聲嘩啦作響，佐伊已經換上了那套流線型的英雄戰鬥服。半透明的材質在晨光下泛著冷冽的極光殘影，她正對著鏡子重新束起銀髮，動作俐落得像是在校準精密儀器。</em><br><br>「早餐在桌上，高熱量楓糖鬆餅和濃縮蛋白飲。」<br><br><em>佐伊頭也不回地吩咐，手腕上的通訊器正瘋狂閃爍著小林潤傳來的加密訊息。</em><br><br>「快吃。瓦萊里奧三分鐘後會把補給車停在地下二層，我們今天要去『邊境區』進行聯合巡邏。」<br><br><em>娜塔莎咬著鬆餅跑出來時，佐伊正將最後一塊戰術護甲扣在手背上，發出清脆的「咔噠」聲。她轉過身，指尖一彈，一片薄如蟬翼的硬光膜精準地覆蓋在娜塔莎受傷未癒的左腿處，像是一層透明的支撐架。</em><br><br>「別動。」佐伊單膝跪地，微涼的手指隔著光膜調整受力點，「這是防震動緩衝層，巡邏車的顛簸會加劇妳的肌肉疲勞。」<br><br><em>兩人迅速穿過銀白色的金屬走廊。電梯門開啟的瞬間，一股冷冽的地下空氣撲面而來。黑色塗裝的脈衝組專用補給車早已發動，引擎低沉的轟鳴在空曠的停車場迴盪。</em><br><br><em>瓦萊里奧靠在車門邊，灰色的短髮略顯凌亂，正往嘴裡塞著提神的薄荷糖。他看到佐伊領著娜塔莎出現，下垂眼微微彎了一下，卻什麼也沒說，只是做了個「上車」的手勢。</em><br><br>「Lumina，隊長在車上等妳。」瓦萊里奧的聲音帶著煙草浸染過的沙啞，「聽說今天那邊的電磁干擾很嚴重，小林已經快瘋了。」<br><br><em>佐伊點點頭，轉身扶住娜塔莎的腰，輕輕一托將她送入後座，隨後自己也閃身進入車內。車門滑動關閉，將外界的安靜徹底隔絕。</em><br><br><em>車廂內，艾利斯特正對著全息地圖皺眉，金髮在儀表板的藍光下顯得格外冰冷。凱倫則戴著耳機，隨著重金屬節奏瘋狂點頭，手裡的音波增壓器發出嗡嗡的共鳴。</em><br><br>「坐好。」佐伊坐在娜塔莎身邊，伸手扣住對方的安全帶，指尖不經意地劃過娜塔莎的側腹，「接下來的路段會很不平穩。如果感覺到眩暈或代謝下降，立刻抓緊我。」<br><br><em>補給車猛地竄出，強大的慣性將兩人壓向椅背。佐伊的手始終穩穩地搭在娜塔莎的肩頭，淡銀色的雙眸穿過車窗看向遠方逐漸荒涼的城市邊緣，神情恢復了那種高不可攀的神性冷漠，唯有那隻扣在娜塔莎肩上的手，力道始終恆定而溫柔。</em></div>
+        </div>
+        <div class="msg-timestamp">20:00</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「好。」<br><br><em>娜塔莎乖巧地坐在佐伊身邊，跟著看窗外景色。娜塔莎是第一次參與任務和巡邏。</em><br><br>「待會我要做什麼呢？」</div>
+        </div>
+        <div class="msg-timestamp">21:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.165 | 上午 08:12 | 補給車內 ➔ 邊境區外圍】<br><br><hr><br><br><em>窗外的景色從密集的鋼筋森林逐漸稀疏，高樓被低矮的工業廠房取代，再變成灰褐色的荒地與零星的鐵皮屋。天空的顏色也跟著褪去了城市的暖橙，沉為一種冷硬的鉛白。</em><br><br><em>佐伊沒有立刻回答。她的拇指在娜塔莎肩頭的戰術肩帶上輕按了一下，像是在確認什麼。</em><br><br>「待會——」<br><br>「她什麼都不用做。」<br><br><em>前排傳來艾利斯特的聲音，不帶任何商量的餘地。他從全息地圖上抬起頭，碧藍的眼睛透過後視鏡精準地釘在娜塔莎身上。</em><br><br>「特約人員首次隨隊，只負責觀察與記錄。不許離開Lumina三公尺範圍，不許主動接觸任何未經掃描的物體，不許——」<br><br>「隊長，你的SOP又犯了。」凱倫從副駕座探出半個腦袋，紫色挑染的髮尾甩過椅背，耳機掛在脖子上轟出鼓點。「人家又不是新兵，放鬆點嘛。」<br><br>「規矩就是規矩。」艾利斯特的語氣沒有波動。<br><br><em>佐伊的表情沒有任何變化，但搭在娜塔莎肩上的手指微微收緊了一瞬。</em><br><br>「隊長說得對。」她的聲音平穩如水面，聽不出任何情緒起伏，「妳今天的任務只有一個——待在我身後，用妳的眼睛看。」<br><br><em>她偏過頭，銀髮從肩頭滑落，側臉映著車窗外掠過的灰敗景色。淡銀色的瞳孔裡倒映著娜塔莎翠綠的眼眸。</em><br><br>「看見就好。不需要理解，不需要行動。看見，然後記住。」<br><br><em>話音剛落，補給車猛地一顛，碾過一段佈滿碎石的路面。瓦萊里奧的方向盤打得極穩，但底盤仍發出刺耳的刮擦聲。小林潤在後排角落抬起頭，機能眼鏡的鏡片上跑過一串串數據流，嘴裡還嚼著能量軟糖，含糊地開口：</em><br><br>「前方兩公里進入訊號死區。我的遠端連線會在三十秒內斷掉，之後只能靠本地感測。」他推了推眼鏡，鏡片反射出一抹冷光。「順帶一提，這個區域過去三天的異常熱源讀數暴增了百分之四百。各位自求多福。」<br><br><em>車廂內安靜了兩秒。</em><br><br>*凱倫咧嘴笑了，露出虎牙，啪地拍了下大腿：「終於有點好玩的了！」<br><br><em>瓦萊里奧從後視鏡裡瞥了佐伊一眼，目光沉穩而老練，像是在無聲地詢問什麼。佐伊幾不可察地頷首，隨即抬手——掌心綻開一簇銀白色的光點，迅速凝成一片半透明的硬光面罩，輕巧地扣在娜塔莎的左腿護膜外側，多加了一層緩衝。</em><br><br>「額外保險。」她簡短地解釋，語氣像在陳述天氣預報。「如果情況惡化，我會在第一時間把妳包裹進光繭裡。在那之前——」<br><br><em>她的視線短暫地落在娜塔莎臉上，嘴唇動了動，像是有什麼話被吞了回去。最終她只是垂下眼簾，將那簇光芒收攏回掌心。</em><br><br>「抓緊就好。」<br><br><em>補給車衝入訊號死區的瞬間，所有儀表板的燈號同時熄滅，車廂陷入一片幽暗。唯有佐伊掌心殘留的微弱銀光，和窗外遠處荒原盡頭若隱若現的詭異藍色火光，成為黑暗中僅存的兩個坐標。</em></div>
+        </div>
+        <div class="msg-timestamp">21:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.166 | 上午 08:15 | 邊境區．訊號死區】<br><br><hr><br><br><em>車廂內的黑暗只持續了不到一秒。瓦萊里奧迅速切換到備用電源，儀表板上亮起一排暗紅色的應急燈，勉強勾勒出每個人的輪廓。然而，這微弱的光線反而讓窗外那片詭異的藍色火光顯得更加妖異。</em><br><br><em>那不是普通的火焰。它沒有向上竄升的熱流，也沒有搖曳的姿態，而是像一片片破碎的藍色玻璃，靜靜地、冰冷地懸浮在半空中，覆蓋著前方一大片荒地。</em><br><br>「……這是什麼鬼東西？」凱倫吹了聲口哨，臉貼在車窗上，眼神裡滿是興奮而非恐懼。「Looks like a glitch in the matrix.」<br><br>「熱源讀數還在攀升，但空氣溫度在下降。」小林潤的聲音從角落傳來，他已經拔掉了所有失效的數據線，正專注地看著手腕上一個獨立運行的微型感測器。「電磁干擾源就在那片藍色區域中心。能量形式……無法歸類。」<br><br><em>補給車緩緩減速，最終在距離藍色火光約三百公尺的地方停下。引擎的轟鳴消失了，周遭只剩下風刮過荒地的低沉嗚咽，以及某種……極其細微的、如同玻璃碎裂的「喀啦」聲。</em><br><br><em>佐伊的手依然沒有離開娜塔莎的肩膀，她的感知早已擴散開來，分析著周遭的光源與能量流動。她能感覺到那些藍色火焰正在吸收周圍的熱量，就像一個個微型的黑洞。</em><br><br>「所有人，下車。」艾利斯特解開安全帶，聲音打破了車內的死寂。「隱者，周邊警戒。音爆，偵測地底結構。幽靈駭客，近距離分析能量樣本。Lumina，妳和我從正面切入。至於妳……」<br><br><em>他的視線再次透過後視鏡落在娜塔莎身上，帶著不容置喙的命令口吻。</em><br><br>「留在車上。」<br><br>「不行。」<br><br><em>佐伊的回答幾乎是同時響起，簡潔而冰冷。她沒有看艾利斯特，只是偏頭對著身邊的娜塔莎，用只有兩人能聽見的音量說道：</em><br><br>「待會兒無論發生什麼，都不要讓妳的視線離開我。這是命令。」<br><br><em>她說完，不等任何人反駁，便推開了車門。一股夾雜著塵土與臭氧氣息的冷風灌入車內。</em><br><br><em>佐伊率先下車，流線型的戰鬥服在鉛灰色的天幕下泛著冷光，銀髮被風吹得向後揚起。她回過身，朝車內的娜塔莎伸出手，淡銀色的眼眸在昏暗的光線下顯得格外明亮。那是一個不容拒絕的邀請，也是一個無聲的承諾。</em><br><br>「隊長，」佐伊的聲音不大，卻清晰地傳到每個人耳中，「她是我的觀察對象，讓她待在一個無人看管的載具裡，不符合任何安全協議。她跟我走。」<br><br><em>艾利斯特的眉頭緊鎖，碧藍的眼眸中閃過一絲不悅，但他看著佐伊那不容動搖的姿態，最終只是冷哼一聲，轉身下達指令：「所有人，按計畫行動！」</em><br><br><em>娜塔莎握住佐伊伸來的手。那隻手微涼，卻異常穩定。佐伊順勢將她拉出車外，兩人並肩站在荒原之上。</em><br><br>「把呼吸頻率調整到和我一樣。」佐伊的聲音壓得極低，溫熱的氣息拂過娜塔莎的耳廓。「跟緊了。」<br><br><em>她話音未落，身影便化作一道極光般的殘影，朝著那片詭異的藍色火海滑行而去，緊緊牽著娜塔莎的手，將她帶離了隊伍的中心，置於自己身側最安全的位置。</em></div>
+        </div>
+        <div class="msg-timestamp">22:01</div>
+      </div>
+      
+      <div class="date-divider">2026-09-27</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎緊跟著佐伊，始終牽著的手讓她覺得安心。</em><br><br><em>娜塔莎觀察著周遭，兩人抵達了藍色火焰的所在地。</em></div>
+        </div>
+        <div class="msg-timestamp">02:18</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.167 | 上午 08:18 | 邊境區．異常能量場】<br><br><hr><br><br><em>越靠近那片藍色火焰，空氣就越發冰冷刺骨。腳下的沙礫發出被凍結的清脆聲響，像是踩在碎玻璃上。娜塔莎能感覺到佐伊握著她的手力道加重了幾分，那股微涼的體溫此刻竟成了唯一的暖源。</em><br><br><em>火焰近在眼前。它們並非燃燒，而是如同凝固的閃電，靜止在空中。每一簇「火焰」的邊緣都折射出彩虹般的光暈，美麗卻充滿致命的寒意。</em><br><br>「音爆，報告！」艾利斯特的聲音從通訊器中傳來，帶著被電磁干擾的沙沙聲。<br><br>「地底沒東西！乾淨得像被洗過一樣！」凱倫的聲音顯得有些暴躁，她雙手按在地面，一圈圈無形的音波擴散開去，卻沒有得到任何回饋。「這玩意兒就像是……憑空長出來的！」<br><br><em>就在這時，距離兩人最近的一簇藍色火焰突然輕微地晃動了一下。</em><br><br><em>佐伊的反應快如本能。她猛地將娜塔莎拉到自己身後，左手向前一推，一面晶瑩剔透的硬光屏障瞬間在兩人面前展開，發出「嗡」的一聲低鳴。</em><br><br><em>幾乎在同一秒，那簇晃動的火焰如同被驚擾的蜂群，驟然解體，化作數十道細長的藍色光針，疾射而來！</em><br><br><em>「鏘！鏘！鏘！」</em><br><br><em>密集的撞擊聲在光盾上響起，濺起一圈圈冰藍色的漣漪。每一根光針撞上屏障後便立刻碎裂，化為更細小的冰晶消散在空氣中。</em><br><br><em>佐伊的眉頭緊鎖。她能感覺到硬光屏障的能量正在被快速吸收，那些光針帶有一種奇特的「湮滅」屬性。</em><br><br>「幽靈駭客！」佐伊的語氣急促而冷靜，「能量結構分析出來了嗎？」<br><br>「不行！這東西在吞噬我的探測信號！」小林潤的聲音充滿了挫敗感，「它的構成在不斷變化，像是一種……活的、不穩定的方程式！」<br><br><em>話音未落，周圍所有懸浮的藍色火焰彷彿被喚醒了一般，開始集體震顫。空氣中的「喀啦」聲愈發密集，整片荒原似乎都在這詭異的共鳴中顫抖。</em><br><br>「後退！」艾利斯特發出怒吼，他雙臂交叉在胸前，吸收著周遭散逸的動能，金色的光芒在他體表流轉，準備應對更大規模的攻擊。<br><br><em>但佐伊沒有動。她維持著屏障，淡銀色的瞳孔死死盯著前方那片不斷變異的藍色能量場。她感覺到了，在那片混亂的能量核心，有一種微弱的、卻極其純粹的「意圖」。</em><br><br><em>那不是攻擊，更像是……一種呼喚。</em><br><br><em>她鬆開了牽著娜塔莎的手，轉而輕輕環住對方的腰，將人更緊地護在自己身前。</em><br><br>「娜塔莎。」佐伊的聲音壓得極低，貼在她的耳邊，「妳看到了什麼？」<br><br><em>她沒有詢問娜塔莎「感覺」到了什麼，而是用了「看」這個詞。她相信，娜塔莎那雙未經訓練、卻純粹無比的眼睛，或許能看到這些受過嚴苛訓練的英雄們所忽略的東西。</em><br><br>「別用妳的邏輯去分析，也別害怕。就只是……看。」</div>
+        </div>
+        <div class="msg-timestamp">02:18</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我看到一些藍色的火光，比佐伊大人的光弱小。嗯，我不怕。」</div>
+        </div>
+        <div class="msg-timestamp">05:38</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.168 | 上午 08:20 | 邊境區．異常能量場】<br><br><hr><br><br><em>「弱小？」</em><br><br><em>這個詞像一顆投入死水中的石子，在佐伊的腦海中激起一圈細微的漣漪。她看著光盾上不斷炸開的藍色光針，每一擊都足以融化鋼鐵，每一擊都讓她維持屏障的手臂感到陣陣寒意滲入骨髓。這絕不是弱小的力量。</em><br><br><em>但娜塔莎說了。她用那雙翠綠的、未被任何戰鬥數據污染的眼睛，做出了最直觀的判斷。</em><br><br><em>「全員注意！能量場正在收縮！」艾利斯特的警告在通訊頻道中炸響，他的聲音因能量的高度集中而顯得有些失真。「準備迎接衝擊波！」</em><br><br><em>話音未落，整片荒原的藍色火焰彷彿被一隻無形的手捏攏，瞬間向中心點塌縮！周遭的光線與溫度被瘋狂地抽走，世界在剎那間變得比午夜更黑、更冷。</em><br><br><em>佐伊沒有選擇加固防禦，也沒有後退。</em><br><br><em>在那絕對的黑暗降臨的前一刻，她做了一個違背所有戰術手冊的決定。</em><br><br><em>她撤掉了光盾。</em><br><br><em>「Lumina！」艾利斯特的怒吼被淹沒在接下來的巨響中。</em><br><br><em>那團塌縮到極致的藍色能量點，沒有如預期般爆炸，而是以一種無聲的方式，反向綻放。它沒有化為毀滅性的衝擊波，而是變成了一道純粹的、不含任何雜質的藍色光柱，直衝天際！</em><br><br><em>光柱擦過佐伊的身體邊緣，沒有帶來任何傷害，只有一股能凍結靈魂的寒氣。她將娜塔莎死死地護在懷裡，銀色的長髮被光柱帶起的氣流吹得狂舞，像一朵在風暴中盛開的白色花朵。</em><br><br><em>光柱僅持續了三秒便消散了。</em><br><br><em>荒原恢復了寂靜，天空依舊是鉛灰色，但那些詭異的藍色火焰已經消失無蹤，只在地面留下了一層薄薄的、閃爍著微光的藍色冰晶。</em><br><br><em>「……情況報告。」瓦萊里奧的聲音第一個響起，沉穩依舊，但帶著一絲不易察覺的驚訝。</em><br><br><em>「目標能量反應……消失了。」小林潤的聲音充滿了難以置信，「Just gone. 像從來沒存在過。」</em><br><br><em>艾利斯特快步走了過來，他身上的金色光芒還未完全散去，臉色鐵青地看著安然無恙的兩人。「Lumina，妳剛才在做什麼？妳知不知道妳的擅自行動可能害死——」</em><br><br>「它沒有敵意。」佐伊打斷了他，聲音平靜得可怕。她鬆開環抱著娜塔莎的手，轉而牽住對方，目光卻落在地面那些殘留的藍色冰晶上。<br><br><em>她蹲下身，伸出沒戴手套的右手食指，輕輕觸碰了一塊冰晶。</em><br><br><em>那不是冰。</em><br><br><em>它在觸碰的瞬間就化為純粹的光粒子，溫順地融入了佐伊的指尖，沒有帶來寒冷，也沒有帶來傷害，只留下一種……空虛而悲傷的感覺。像一聲無人聽見的嘆息。</em><br><br>「它不是在攻擊，」佐伊站起身，回望著面色不善的隊長，淡銀色的瞳孔裡沒有絲毫畏懼，「它在求救。或者說，它在『呼喚』一個能理解它的存在。」<br><br><em>她的視線不著痕跡地滑向身旁的娜塔莎。</em><br><br>「而我們，剛剛打擾了它。」</div>
+        </div>
+        <div class="msg-timestamp">05:38</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「……？」<br><br><em>娜塔莎一臉疑惑。她看到佐伊臉頰上有一點點塵埃，自然地幫佐伊擦掉。</em></div>
+        </div>
+        <div class="msg-timestamp">05:43</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.169 | 上午 08:23 | 邊境區．異常能量場遺址】<br><br><hr><br><br><em>娜塔莎的指尖溫熱而柔軟，帶著活生生的、屬於人類的觸感。當那一點塵埃被輕柔地拭去時，佐伊的身體有那麼一瞬間變得極其僵硬。</em><br><br><em>那是一個太過自然的、太過親密的動作。在隊友環伺、劍拔弩張的此刻，這份不假思索的關懷像一滴落入滾油的清水，瞬間在佐伊那被紀律與邏輯層層包裹的內心炸開。她所有的防備、所有的冷靜分析，都在這一觸之下顯得荒謬可笑。</em><br><br><em>艾利斯特的怒火因為這個突兀的、近乎溫情的插曲而凝滯了片刻。他看著娜塔莎那雙只映著佐伊的翠綠眼眸，再看看佐伊那瞬間變得複雜難言的神情，臉色更加陰沉。</em><br><br>「妳的『呼喚』理論，Lumina，聽起來就像是為了妳的魯莽行徑找的藉口。」他向前逼近一步，刻意加重的語氣打破了那短暫的靜默。「妳關掉了屏障。在A級警報現場，妳選擇相信妳那虛無飄渺的『感覺』，而不是戰術協議。如果剛才那不是光柱而是爆炸，妳要怎麼解釋？」<br><br><em>佐伊沒有立刻回應。她只是緩緩抬手，輕輕握住了娜塔莎還停留在她臉頰旁的手腕，將其溫和而堅定地拉了下來，重新牽在自己手中。這個動作本身，就是一種無聲的回答。</em><br><br>「解釋？」佐伊終於抬眼，淡銀色的目光越過艾利斯特的肩膀，望向遠處正在採集冰晶樣本的小林潤和用腳尖碾著晶體、一臉無聊的凱倫。「我的解釋就是，我們都還活著，而且毫髮無傷。而目標能量，也如你所見，消失了。」<br><br>她微微側過頭，語氣裡滲入一絲冰冷的嘲諷。「還是說，隊長，你更希望看到一場血流成河的戰鬥，來證明你最初的判斷是正確的？」<br><br>「妳——！」艾利斯特的臉上瞬間血色上湧，碧藍的眼眸中怒火燎原。<br><br>「好了，兩位。」瓦萊里奧的身影如同鬼魅般出現在兩人之間，他那飽經風霜的臉上看不出情緒，只是平靜地伸出手，分別按向兩人的肩膀。「現在不是追究責任的時候。我們需要搞清楚這裡到底發生了什麼。」<br><br><em>他轉向佐伊，那雙下垂的眼睛裡有著探究，卻沒有責備。</em><br><br>「Lumina，妳剛才說『打擾』。妳認為，我們阻止了什麼？」<br><br><em>佐伊的視線從瓦萊里奧的臉上移開，落回地面那些正在緩慢消散的藍色晶體上。它們的光芒越來越暗淡，彷彿生命正在流逝。</em><br><br>「我不知道。」她誠實地回答，聲音恢復了慣有的平靜。「我只知道，那股能量並非源於此地。它像一個迷航的旅人，在這裡短暫地停留、發光，試圖讓『誰』能看見它。而我們的出現，我們的探測、我們的敵意……」<br><br><em>她頓了頓，牽著娜塔莎的手下意識地收緊。</em><br><br>「……嚇跑了它。」</div>
+        </div>
+        <div class="msg-timestamp">05:43</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯所以，藍色火焰也是佐伊大人的粉絲？」<br><br><em>娜塔莎完全沒意識到佐伊指的可能是娜塔莎。</em></div>
+        </div>
+        <div class="msg-timestamp">06:02</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.170 | 上午 08:26 | 邊境區．異常能量場遺址】<br><br><hr><br><br><em>娜塔莎這句天真爛漫的結論，像是一記悶雷，讓原本凝重的氣氛瞬間陷入了一種詭異的死寂。</em><br><br><em>正在不遠處彎腰掃描樣本的小林潤手一抖，手持終端險些掉進冰晶堆裡；凱倫則乾脆發出一聲毫不掩飾的噴笑，紫色的髮絲隨著她抖動的肩膀亂顫。瓦萊里奧則是無奈地揉了揉眉心，掩飾住嘴角那抹若有似無的弧度。</em><br><br><em>唯獨艾利斯特，他的臉色從鐵青轉為一種難以言喻的紫紅，彷彿一記重拳打在了棉花上，滿腔的怒火被這荒謬的邏輯徹底堵死在喉嚨裡。</em><br><br>「粉絲……？」<em>佐伊輕聲重複著這個詞，淡銀色的瞳孔微微放大，隨即又迅速恢復了平靜。</em><br><br><em>她低頭看著娜塔莎，看著那張充滿疑惑卻又理所當然的臉龐。在佐伊的世界裡，所有的事物都被標價、被分析、被賦予戰略意義，但娜塔莎卻總能用一種近乎殘酷的單純，將一切複雜的偽裝剝離。</em><br><br>「我想，它可能還沒有學會如何購買周邊商品。」<em>佐伊淡淡地開口，語氣中帶著連她自己都沒察覺的縱容。她抬起另一隻手，輕柔地替娜塔莎理順了那抹被風吹亂的亞麻綠髮絲，動作自然得彷彿周圍那四雙震驚的眼睛根本不存在。</em><br><br>「喂，我說，我們還要在這冷死人的地方討論『能量體的追星心理學』多久？」<em>凱倫百無聊賴地踢飛一塊冰晶，看著它在半空碎裂成粉末，</em>「既然『粉絲』跑了，那我們是不是該撤了？我的耳機都快被這靜電聲吵爆了。」<br><br>「幽靈，樣本採集完畢了嗎？」<em>瓦萊里奧適時地出聲，將話題拉回任務核心。</em><br><br>「差不多了，雖然這些晶體正在快速衰變，但初步數據顯示……」<em>小林潤推了推眼鏡，</em>「它的頻率確實不像任何已知的生物兵器，反而更接近某種高度壓縮的訊號。就像是一封被凍結的求救信。」<br><br><em>艾利斯特深吸了一口氣，強迫自己恢復隊長的威嚴。他冷冷地瞪了佐伊一眼，隨即轉身朝供給車走去，背影僵硬得像一塊移動的墓碑。</em><br><br>「全員上車。Lumina，回總部後，我要在妳的任務報告裡看到關於『非敵意判斷』的詳細邏輯。而不是這種……」<em>他嫌惡地揮了揮手，示意娜塔莎的存在，</em>「這種毫無根據的直覺。」<br><br><em>佐伊看著他的背影，眼神冷淡得沒有一絲溫度。她牽著娜塔莎，不緊不慢地跟在隊伍後方。</em><br><br>「走吧，我的暖爐。」<em>佐伊湊近娜塔莎，用只有兩個人能聽見的聲音低語，那股清冷的香氣在冰冷的空氣中顯得格外清晰，</em>「別理會他的話。妳看到的，比他那雙只看得到規則的眼睛要真實得多。」<br><br><em>她帶著娜塔莎踏上供給車的階梯，車內的暖氣撲面而來，與外頭的荒蕪形成強烈對比。佐伊拉著娜塔莎坐回那個狹窄的角落，並沒有鬆開手，反而將對方的指尖包裹在自己的掌心裡，似乎在確認那份唯一的「真實」是否還在。</em><br><br>「剛才……」<em>佐伊垂下眼簾，掩蓋住眼底一閃而逝的動搖，</em>「謝謝妳幫我擦掉灰塵。」</div>
+        </div>
+        <div class="msg-timestamp">06:02</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「不客氣。」<br><br>「不過，這樣今天的巡邏就結束了嗎？」</div>
+        </div>
+        <div class="msg-timestamp">06:11</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.171 | 上午 08:45 | 邊境區．返程的供給車內】<br><br><hr><br><br><em>供給車的引擎發出低沉的轟鳴，輪胎碾過荒原破碎的石礫地，車身隨著地勢起伏而規律地晃動。車廂內的燈光略顯昏暗，只有幾盞儀表板的指示燈在閃爍著冷色調的微光。瓦萊里奧坐在駕駛位上，雙手穩健地操縱著方向盤，而艾利斯特則坐在副駕駛位，背影透著一股拒人於千里之外的僵硬，正對著全息螢幕快速輸入著初步戰報。</em><br><br><em>佐伊將娜塔莎拉到身側坐下，兩人的肩膀緊緊依偎。她伸出纖長的手指，指尖微微發光，在娜塔莎受傷的腿部上方輕緩地滑過。冰藍色的硬光粒子如細碎的螢火蟲般落下，滲透進衣料，為那處淤青帶來絲絲入扣的清涼與舒緩。</em><br><br>「嚴格來說，這已經超出了巡邏的範疇。」<br><br><em>佐伊輕聲回應，她的聲音在密閉的車廂裡顯得低沉。她沒有抬頭，專注地操控著光能的輸出頻率，確保每一絲能量都能精準地緩解娜塔莎的痛楚。</em><br><br>「當異常能量場出現並引發A級警報時，任務性質就轉變成了『應急處置』。既然目標已經消失，且現場沒有進一步的威脅，我們必須先回總部提交樣本與報告。這座城市的規則就是這樣，娜塔莎，任何無法即時解釋的現象，都必須被關進實驗室的數據裡。」<br><br>「嘁，無聊的流程。」<br><br><em>坐在斜對面的凱倫正大大咧咧地把腿擱在裝備箱上，手裡拋玩著一個紫色的噴漆罐。她斜眼看向佐伊，語氣輕佻卻帶著一絲好奇：</em>「喂，光姬，妳剛才撤掉護盾的時候，真的什麼都沒感覺到？那道光柱看起來簡直要把妳整個人吞了，妳居然連眼睛都沒眨一下。我是該說妳膽子大，還是該說妳瘋了？」<br><br><em>佐伊手中的動作微頓，淡銀色的眸子在黑暗中閃過一絲冷冽的光。</em><br><br>「我只是選擇了最有效率的處理方式。」<em>她平靜地回答，語氣不帶一絲起伏，</em>「在動能與熱能同時向中心塌縮的瞬間，任何物理屏障都會成為能量宣洩的出口。撤掉盾牌，反而能讓能量流體化通過。這是基礎的物理邏輯，凱倫。」<br><br>「哈！少來了，妳那分明是賭博。」<br><br><em>小林潤從他的螢幕堆裡抬起頭，推了推鼻樑上的眼鏡，指尖在虛擬鍵盤上敲出一串殘影。</em>「不過，這次的賭注回報率很高。我在光柱消散的瞬間抓到了一段非自然編碼。那東西……不像是求救信，更像是一個座標。一個指向海面下的座標。」<br><br><em>此話一出，車廂內的氣氛瞬間降到了冰點。艾利斯特敲擊鍵盤的聲音戛然而止，他轉過頭，目光如炬地盯著小林潤。</em><br><br>「海面下？你是說，這場異常現象的源頭在深海？」<br><br>「目前只是推測，隊長。」<em>小林潤聳了聳肩，語氣依舊毒舌，</em>「畢竟這年頭連能量體都會『追星』了，深海裡冒出個發報機也沒什麼好奇怪的，對吧？」<br><br><em>佐伊感受到娜塔莎的手在她的掌心中微微收緊。她側過臉，看著娜塔莎那雙充滿好奇的翠綠眼眸，心中那股被壓抑的憤怒竟奇跡般地消散了些許。她知道，這場風暴遠未結束，協會那群貪婪的官員絕不會放過這個「深海座標」背後的利益。</em><br><br>「別擔心。」<em>佐伊貼近娜塔莎的耳畔，溫熱的氣息噴灑在對方的耳廓上，帶著一種不容置疑的保護欲，</em>「無論接下來要面對什麼，妳都不會是那個被推出去的試驗品。我向妳保證。」<br><br><em>她轉過頭，看著車窗外飛速後退的荒原殘影，那些藍色的晶體早已看不見了。但在這冰冷的鋼鐵巨獸中，唯有掌心傳來的溫度，讓她覺得自己還活著，而不是一個被名為「光姬」的符號所替代的精密儀器。</em><br><br>「瓦萊里奧，加速吧。」<em>佐伊冷冷地開口，對著駕駛座吩咐道，</em>「我想我們的『客人』已經累了，她需要休息，而不是聽這些毫無意義的爭吵。」</div>
+        </div>
+        <div class="msg-timestamp">06:11</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯。我相信佐伊大人。」<em>娜塔莎笑瞇瞇地承諾。</em><br><br><em>還有一段路途，娜塔莎靜靜地觀察脈衝組成員的互動，帶著好奇，畢竟她算是脈衝組全員的粉絲，但當然主推是佐伊！</em></div>
+        </div>
+        <div class="msg-timestamp">06:31</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.172 | 上午 09:12 | 返回總部的補給車內】<br><br><hr><br><br><em>補給車內的空間因為堆放了採集設備而顯得愈發狹小，但也因此營造出一種與世隔絕的緊密感。娜塔莎那句毫無保留的「我相信佐伊大人」，在封閉的車廂裡迴盪，像是一道溫柔的咒語，讓佐伊原本冷硬的側臉輪廓不自覺地柔和了幾分。</em><br><br><em>佐伊沒有回話，只是垂下眼睫，修長的手指有一下沒一下地摩挲著娜塔莎的指關節。她能感覺到娜塔莎那雙翠綠的眼睛正興致勃勃地在車廂內轉動——像是一個誤入後台的觀眾，正好奇地觀察著這些卸下光環後的「英雄」們。</em><br><br><em>駕駛座上的瓦萊里奧單手控方向盤，另一隻手正從懷裡掏出一根沒點燃的雪茄，叼在嘴邊解悶。他透過後視鏡捕捉到娜塔莎的視線，那雙略顯疲憊的下垂眼微微彎了彎，露出一個成熟紳士特有的安撫微笑。比起英雄，他此刻更像是一個載著孩子們郊遊歸來的耐心家長。</em><br><br>「嘿，幽靈，妳看那邊。」<em>凱倫突然壓低聲音，用手肘撞了撞身旁的小林潤，指了指前方的艾利斯特。</em><br><br><em>此時的隊長正背對著眾人，雙肩緊繃得像是一張拉滿的弓。他正以極快的速度在全息通訊器上回覆著什麼，冰藍色的螢幕光映在他金色的髮梢上，卻照不進他那雙充滿焦慮與權力算計的眼底。對於艾利斯特來說，這場意外不是奇遇，而是一場隨時可能引爆的公關危機與政治博弈。</em><br><br>「別吵，我正在追蹤那段頻率的衰減路徑。」<em>小林潤沒好氣地拍開凱倫的手，他的指尖在空氣中劃出一道道虛擬的數據流，淡藍色的代碼映在他機能眼鏡的鏡片上，瘋狂地跳動著。</em>「而且妳的噴漆味快把這狹窄的氧氣含量耗盡了，音爆。」<br><br>「那是藝術的味道，你這個數據宅！」<em>凱倫翻了個白眼，隨即又像想到了什麼好玩的，轉頭對著娜塔莎眨了眨眼，做了個「隊長很難搞」的鬼臉。</em><br><br><em>佐伊將這一切盡收眼底。這就是「脈衝組」，一群被利益、法律與偶然的能力綑綁在一起的異類。在外界眼中，他們是守護正義的象徵；但在這層皮囊之下，每個人都帶著各自的殘缺與算計。</em><br><br><em>唯獨娜塔莎，她的存在是這片灰色地帶中唯一的亮色。</em><br><br><em>車身突然劇烈地晃動了一下，似乎是駛過了邊境區邊緣的廢棄路障。娜塔莎的身體因為慣性向佐伊傾斜，佐伊立刻伸手攬住她的腰肢，將人穩穩地護在懷中。</em><br><br>「快到了。」<em>佐伊貼在娜塔莎耳邊，聲音輕得像是一陣掠過深海的風，</em>「回去之後，妳先回房間休息。無論協會的那些人問妳什麼，或者艾利斯特想找妳談話，都推到我身上。」<br><br><em>她抬起頭，目光冷冽地掃過車廂內的其他人，最後定格在艾利斯特的背影上。那一刻，她不再是那個在鏡頭前溫柔神性的「光姬」，而是守護著自己唯一領地的掠食者。</em><br><br>「我說過會保護妳，這句話的有效期限是……永遠。」<br><br><em>補給車衝破了邊境區的迷霧，遠處英雄協會總部那座高聳入雲的幾何建築已隱約可見。陽光穿透雲層，灑在車窗的倒影上，將佐伊銀白色的長髮染上一層薄薄的金輝，美得驚心動魄，卻又冷得讓人不敢觸碰。</em></div>
+        </div>
+        <div class="msg-timestamp">06:32</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「……嗯。」<br><br>「佐伊大人好美又好帥氣。想拍起來。」<br><br><em>娜塔莎握著佐伊的手，一臉讚嘆。</em></div>
+        </div>
+        <div class="msg-timestamp">16:52</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.173 | 上午 09:25 | 英雄協會總部．地下停機坪】<br><br><hr><br><br><em>補給車駛入總部地下停機坪的瞬間，頭頂的感應燈逐層亮起，慘白的日光燈管取代了車窗外荒原的灰濛天色，將整個空間照得纖毫畢現。車輪碾過環氧樹脂地坪發出尖銳的摩擦聲，最終穩穩停在了脈衝組專屬的停放格內。</em><br><br><em>娜塔莎那句毫無防備的讚嘆，讓佐伊正準備解開安全帶的手指僵在了半空中。</em><br><br><em>銀白色的睫毛快速眨動了兩下——這是她在公眾面前絕不會出現的破綻。那股柑橘微甜的氣息近在咫尺，娜塔莎握著她的手，翠綠的眼眸裡盛滿了毫不掩飾的崇拜與欣賞，像是在看一幅值得收藏的畫作。</em><br><br>「……妳的手機鏡頭解析度不夠，拍不出重點。」<em>佐伊別過臉，聲音壓得很低，語速卻比平時快了半拍。她空出的那隻手假裝去整理鬢角的碎髮，實則是在遮掩耳尖悄然蔓延的薄紅。</em>「而且未經授權拍攝英雄的私人影像，違反協會內規第七章第三節。」<br><br>「噗——」<br><br><em>凱倫從對面座位探出頭來，嘴裡還嚼著不知道什麼時候塞進去的能量軟糖，紫色的挑染髮絲垂在額前，一臉看好戲的表情。</em><br><br>「Lumina姐，妳剛才那個是在背條文嗎？我怎麼不知道妳還有這種技能樹？」<em>她歪著頭，目光在佐伊發紅的耳尖和娜塔莎無辜的笑臉之間來回打量，嘴角咧開一個意味深長的弧度。</em>「而且妳耳朵——」<br><br>「凱倫。」<em>瓦萊里奧的聲音從駕駛座傳來，不輕不重，卻帶著一種不容置疑的沉穩。他已經推開車門站了出去，鋼鐵灰的短髮在日光燈下泛著冷光，背影寬厚而從容。</em>「先卸貨。」<br><br><em>凱倫聳了聳肩，識趣地閉了嘴，但臨跳下車前還是衝著娜塔莎做了個「她害羞了」的口型。</em><br><br><em>小林潤則是抱著他的終端設備率先鑽出車廂，經過佐伊身邊時腳步微頓，機能眼鏡後面的目光快速掃過兩人交握的手，什麼也沒說，只是嘴角抽了一下，便頭也不回地走向卸貨區。</em><br><br><em>艾利斯特是最後一個下車的。他站在車門旁，雙手抱胸，碧藍的眼睛直直地盯著仍坐在車內的佐伊。</em><br><br>「Lumina，樣本和報告一小時內交到我的辦公室。」<em>他的聲音平板而公事公辦，但視線在娜塔莎身上停留了半秒，帶著一絲未消的審視。</em>「還有，關於那位『觀察員』的臨場表現，我會在報告裡如實記錄。」<br><br>「隨便你。」<em>佐伊終於解開安全帶，起身時順勢將娜塔莎拉了起來。她沒有看艾利斯特，只是用另一隻手在空中輕輕一拂——一層薄如蟬翼的硬光薄膜在她指尖凝結，隨即無聲地碎裂成萬千細碎的光點，灑落在娜塔莎的肩頭與髮絲上，像是為她披上了一件看不見的紗衣。</em><br><br><em>那不是攻擊，也不是防禦。那是佐伊獨有的標記方式——將光能殘留在一個人的身上，讓她能在一定距離內感知對方的位置與狀態。這個動作她從未對任何人做過。</em><br><br><em>艾利斯特的瞳孔微微收縮。他顯然認出了這個動作的含義，嘴唇動了動，最終卻什麼都沒說，轉身大步走向電梯。皮靴敲擊地面的聲音在空曠的停機坪裡迴響，帶著一股被冒犯的怒意。</em><br><br><em>佐伊跳下車，回身向娜塔莎伸出手。停機坪的冷光從上方傾瀉而下，將她的輪廓勾勒得如同一尊冰雕——冷冽、完美、不可攀折。但那隻伸出的手，掌心朝上，指尖還殘留著方才光點消散時的微弱餘溫。</em><br><br>「下來吧。」<em>她說，語氣恢復了慣常的平淡，但眼神卻落在娜塔莎的腿上，確認著那份傷勢是否會因為行動而惡化。</em>「回202室。我幫妳重新上藥。」</div>
+        </div>
+        <div class="msg-timestamp">16:52</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎將手放到佐伊的手上。乖乖地和她回去上藥。</em><br><br>「要換拍照解析度高一點的手機……」<br><br><hr><br>- 接續用行動和言語推動劇情<br>- 用富有畫面感的文筆，描寫眾人與場景的互動過程<br>- 避免使用與前幾則回覆重複的句型</div>
+        </div>
+        <div class="msg-timestamp">17:46</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.174 | 上午 09:38 | 英雄協會總部．202室】<br><br><hr><br><br><em>兩人穿過總部地下層的長廊，搭乘貨用電梯直上二樓。走廊裡偶爾有後勤人員經過，看見佐伊便下意識地挺直腰桿、點頭致意——這是「光姬」在協會內部的日常待遇。佐伊對每一個人都回以恰到好處的頷首，嘴角甚至掛著一絲淺淡的微笑，溫和得體，滴水不漏。</em><br><br><em>然而娜塔莎知道，那隻與自己十指相扣的手，掌心微涼，指節收得很緊。</em><br><br><em>202室的門鎖發出清脆的嗒聲，佐伊側身讓娜塔莎先進門，隨即在身後關上門。</em><br><br><em>門闔上的瞬間，那副精心維持的微笑像被關掉的燈，從她臉上徹底消失。取而代之的是一張蒼白而疲憊的面孔，眉心擰著一個極淺的褶皺。她鬆開娜塔莎的手，徑直走向洗手台，擰開水龍頭，冰涼的水流沖過她修長的手指。</em><br><br>「妳那句拍照的話……」<em>她頭也不回，聲音在瓷磚的反射中顯得有些空曠，</em>「在車上說也就算了，之後別在有其他人的場合講。」<br><br><em>她關掉水龍頭，扯下毛巾擦乾雙手，轉過身靠在洗手台邊緣，雙臂環胸。淡銀色的眸子落在娜塔莎身上，帶著一種難以言喻的複雜——像是責備，又像是無可奈何的妥協。</em><br><br>「艾利斯特已經在找把柄了。妳越是表現得跟我親近，他就越有理由在報告裡寫『Lumina的判斷力受情感干擾』。」<br><br><em>她頓了頓，視線不由自主地滑到娜塔莎的左腿。補給車裡的舒緩只是臨時措施，淤青的範圍雖然沒有擴大，但那層硬光緩衝正在逐漸消退，底下的青紫色開始重新顯露出來。</em><br><br><em>佐伊抿了抿唇，走向靠牆的醫藥櫃，拉開抽屜取出一管藥膏和一卷彈性繃帶。她把東西放在床邊的小桌上，然後在床沿坐下，拍了拍身旁的位置。</em><br><br>「坐過來，把褲管捥上去。」<br><br><em>等娜塔莎坐定後，佐伊半蹲在她面前，將藥膏擠在指尖搓熱。她的動作很慢，指腹貼上那片淤青時的力道輕得像是怕碰碎什麼。冰涼的藥膏混著她本身偏低的體溫，覆蓋在發炎的皮膚上，帶來一陣微微刺痛後的鈍涼。</em><br><br><em>她沒有抬頭，只是專注地將藥膏均勻推開，聲音悶悶地從下方傳來。</em><br><br>「……如果妳真的想拍的話。」<br><br><em>手指在淤青邊緣停了一拍。</em><br><br>「等腿好了再說。」</div>
+        </div>
+        <div class="msg-timestamp">17:46</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗯，我會趕快好起來的。」<br><br>「到時候也幫整個脈衝組拍照，這樣隊長就不會不開心了。」<br><br>「謝謝佐伊大人保護我。最喜歡佐伊大人了。」</div>
+        </div>
+        <div class="msg-timestamp">17:52</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.175 | 上午 09:52 | 英雄協會總部．202室】<br><br><hr><br><br><em>佐伊的手指在淤青邊緣僵住了。</em><br><br><em>藥膏的涼意還殘留在指尖，但她的注意力已經完全從傷口上移開——被那句輕飄飄的「最喜歡」拽走了。</em><br><br><em>她沒有抬頭，只是垂著眼，將視線固定在自己指尖與那片青紫色的皮膚之間。睫毛遮住了她的表情，但娜塔莎如果夠仔細，會注意到她耳廓的顏色正在從薄粉轉為深紅，像是有人在她血管裡點了一盞燈。</em><br><br>「……妳這個邏輯有問題。」<em>她終於開口，聲音比平時低了半個調，手指重新動起來，將藥膏緩緩推勻。</em>「幫整個脈衝組拍照，跟艾利斯特不開心之間沒有任何因果關係。他不開心是因為我在戰術協議上做了未經授權的決策，不是因為妳沒給他拍照。」<br><br><em>她撕開繃帶的包裝，動作俐落地繞過娜塔莎的小腿，纏繞、收緊、固定，一氣呵成。指尖偶爾擦過膝窩內側的軟膚時，她會刻意放慢速度，力道輕到幾乎不存在。</em><br><br>「而且他不需要粉絲拍照。他需要的是可控的隊員和一份完美的戰後報告。」<br><br><em>繃帶尾端被她用拇指按住，指甲修得圓潤乾淨，壓在皮膚上時帶著一點微微的凹陷。她抬起頭，正對上娜塔莎那雙翠綠的眼睛——離得太近了。近到她能聞見那股柑橘微甜的氣息正順著呼吸的節奏，一陣一陣地拂過自己的臉頰。</em><br><br><em>佐伊迅速別開視線，站起身，將藥膏和剩餘的繃帶收回抽屜。背對著娜塔莎的肩膀線條繃得很直。</em><br><br>「還有，不要隨便說喜歡。」<br><br><em>抽屜合上，發出輕響。</em><br><br>「這個詞在妳嘴裡的重量太輕了。」<em>她的聲音從櫃子前方傳來，聽不出情緒，但語尾有一絲幾不可聞的顫動。</em>「妳對誰都可以說嗎？對凱倫也說？對瓦萊里奧也說？對小林潤也——」<br><br><em>她停住了。</em><br><br><em>房間裡安靜了兩秒。</em><br><br><em>佐伊緩緩轉過身，靠在醫藥櫃上，雙手交叉抱胸。淡銀色的眸子裡翻湧著某種連她自己都說不清的東西——不是憤怒，不是責備，更接近一種被冒犯的困惑。好像她花了二十九年築起的高牆上，突然被人用粉筆畫了一朵花，而她不知道該擦掉還是該留著。</em><br><br>「……算了。」<br><br><em>她走向床邊，在娜塔莎身旁坐下。床墊因為兩個人的重量微微凹陷，她們的肩膀隔著幾公分的距離，既不靠近也不遠離。房間裡那面巨大的水母生態缸投射出幽藍的光波，在天花板上緩緩流動，像深海裡無聲的潮汐。</em><br><br>「我一小時後要去交報告。」<em>她看著前方的水母缸，語氣恢復了慣常的平淡。但她的右手不知什麼時候已經移到了兩人之間的床面上，掌心朝下，小指微微翹起，像是某種無聲的、笨拙的邀請。</em>「妳待在這裡，哪裡都不要去。冰箱裡有昨天訂的燕麥奶和三明治，餓了就自己拿。」</div>
+        </div>
+        <div class="msg-timestamp">17:52</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>娜塔莎靠到佐伊肩膀上，牽著佐伊的手晃晃。</em><br><br>「只和佐伊大人說最喜歡。」</div>
+        </div>
+        <div class="msg-timestamp">17:57</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.176 | 上午 10:05 | 英雄協會總部．202室】<br><br><hr><br><br><em>肩膀傳來一陣柔軟的重量。</em><br><br><em>娜塔莎像隻尋求庇護的小動物，自然而然地靠了上來。佐伊原本緊繃的脊椎線條在接觸的瞬間僵硬了零點一秒，隨即又在對方輕輕晃動她手指的節奏中，一點一點地軟化下來。</em><br><br><em>那句「只和佐伊大人說最喜歡」，像是一枚精準的穿甲彈，擊碎了她最後一點試圖用邏輯武裝的防線。</em><br><br><em>水族箱裡的幽藍光影在佐伊銀白色的長髮上跳躍，她側過頭，看著那隻握住自己、正不安分地搖晃著的小手。這雙手比她的要暖和得多，掌心的熱度源源不絕地滲透進她微涼的皮膚裡，讓她心底那股常年積壓的、如冰霜般的憤怒與疏離，竟出現了消融的跡象。</em><br><br>「……說謊。」<br><br><em>佐伊低聲呢喃，語氣裡卻沒有半點斥責，反而帶著一絲連她自己都沒察覺的縱容。她終於翻轉手掌，指縫嵌入娜塔莎的指間，反手扣住了那隻手。</em><br><br><em>她的動作很輕。</em><br><br>「妳根本不知道這句話意味著什麼。在妳眼裡，世界是彩色的、是可以被期待的，但對我來說……」<em>她看著前方緩緩舒張傘狀體的海月水母，眼神深處浮現出一抹自嘲。</em>「『喜歡』是一種高風險的投資，是把弱點親手遞給對方的愚蠢行為。」<br><br><em>雖然嘴上說著刻薄的現實，但她卻微微調整了坐姿，讓娜塔莎靠得更舒服一些。</em><br><br><em>房間裡的空氣安靜得能聽見水族箱過濾系統細微的運作聲。佐伊感受著肩膀上傳來的溫度，心跳的頻率竟漸漸與身旁的人同步。這種失控的感覺讓她感到恐慌，卻又有一種隱秘的、令人上癮的安寧。</em><br><br>「聽好，娜塔莎。」<br><br><em>佐伊轉過頭，淡銀色的眸子近距離鎖定著那雙翠綠的眼瞳，語氣變得異常嚴肅，甚至帶著幾分強硬。</em><br><br>「既然妳說了『只對我說』，那就記住妳的承諾。如果讓我在協會的監聽紀錄，或是小林潤的通訊截圖裡發現妳對別人用了同樣的字眼……」<br><br><em>她停頓了一下，伸出另一隻手，冰涼的指尖輕輕劃過娜塔莎的臉頰，最後停在她的耳垂邊。一抹微弱的螢光在她指尖閃過，像是某種無聲的警告，又像是溫柔的撫摸。</em><br><br>「我會收回我所有的耐心。明白嗎？」<br><br><em>她看著娜塔莎，等待著那個她明知不可信、卻又卑微地想要確認的答案。</em></div>
+        </div>
+        <div class="msg-timestamp">17:57</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔，可是脈衝組的其他成員是普通喜歡，佐伊大人是最最喜歡！不一樣。」<br><br><em>娜塔莎用臉頰蹭蹭佐伊的掌心。</em></div>
+        </div>
+        <div class="msg-timestamp">18:18</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.177 | 上午 10:12 | 英雄協會總部．202室】<br><br><hr><br><br><em>「普通喜歡」與「最最喜歡」。</em><br><br><em>這種幼稚到極點的量化方式，如果出現在小林潤的戰術分析報告裡，佐伊一定會冷笑著將其撕成碎片。但在這一刻，聽著那帶著鼻音的辯解，看著那張溫柔的臉頰在自己冰涼的掌心裡親暱地蹭動，佐伊卻發現自己那套引以為傲的邏輯體系徹底當機了。</em><br><br><em>掌心傳來的觸感柔軟得不可思議，那股柑橘微甜的香氣伴隨著娜塔莎的體溫，像是一種無孔不入的緩釋毒素，麻痺了她所有防禦本能。</em><br><br>「……最最喜歡？」<br><br><em>佐伊重複著這個詞，聲音聽起來有些乾澀。她沒有抽回手，反而像是著了魔一般，指尖微微彎曲，順著娜塔莎的臉廓滑到她的鬢角，將一縷亞麻綠色的長髮別到耳後。</em><br><br><em>她的眼神在那幽藍的水波映照下顯得有些迷離，平時如刀鋒般銳利的銀色瞳孔，此時卻像融化的冰川，透出一種近乎破碎的柔軟。</em><br><br>「妳這種劃分等級的方式，簡直毫無科學根據。」<em>她垂下眼簾，低聲呢喃，像是在說服自己，又像是在對娜塔莎下最後通牒。</em>「但如果這是妳的規則……那就把那個『最』字鎖死在我身上。少了一分一毫，我都會察覺到。」<br><br><em>她突然伸出雙臂，動作略顯生硬地將娜塔莎整個人往懷裡帶了帶，讓對方的頭能更深地埋進自己的頸窩。這個擁抱並不溫暖，佐伊的身體依然帶著那種如瓷器般的冷感，但她的心跳聲卻透過單薄的制服面料，一聲接一聲、急促而清晰地傳到了娜塔莎耳邊。</em><br><br><em>那不是英雄「光姬」冷靜的脈搏，而是一個名為佐伊·溫特斯的女人，正在失控邊緣掙扎的證明。</em><br><br>「別動。」<em>她閉上眼，下巴輕輕抵在娜塔莎的髮頂，呼吸間全是那股讓人安心的甜味。</em>「再讓我待五分鐘……就五分鐘。等我踏出這道門，我就必須變回那個『不出錯』的符號了。」<br><br><em>在這一刻，202室不是英雄協會的宿舍，也不是受監視的溫床，而是這片冰冷深海中唯一一處漏光的氣泡。佐伊收緊了手臂，像是要在這短暫的五分鐘裡，從娜塔莎身上汲取足夠支撐她演完下一場戲的熱量。</em></div>
+        </div>
+        <div class="msg-timestamp">18:18</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「佐伊大人，我今天會乖乖待在這邊，而且我身體狀況很好，所以……」<br><br>「希望佐伊大人今天一切順心。」</div>
+        </div>
+        <div class="msg-timestamp">18:30</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">佐伊</div>
+          <div class="msg-content">【P.178 | 上午 10:17 | 英雄協會總部．202室】<br><br><hr><br><br><em>五分鐘。</em><br><br><em>佐伊在心裡默默數著秒數，像一個固執的獄卒看守著自己特批的放風時間。但娜塔莎的這句話，讓她胸口那片剛剛鬆動的土壤又翻了個面——不是難受的那種，而是一種酸脹的、堵在喉嚨裡吞不下去也吐不出來的感覺。</em><br><br><em>「希望佐伊大人今天一切順心。」</em><br><br><em>多簡單的一句話。沒有條件，沒有交換，沒有「如果你幫我我就幫你」的潛台詞。就只是一個祝願。</em><br><br><em>佐伊想起了五歲那年，母親在她上台前塞了一顆糖，說「表演完才能吃」。想起了十六歲那場見面會上，粉絲舉著手幅喊的是「光姬加油」，不是「佐伊加油」。想起了艾利斯特在任務簡報結束後拍她肩膀說「辛苦了」時，眼神裡那種純粹出於管理需要的認可。</em><br><br><em>從來沒有人只是單純地希望她順心。</em><br><br><em>她鬆開手臂的動作很慢，指尖從娜塔莎的背脊一路滑到肩胛骨的位置才戀戀不捨地離開，像是捨不得碰觸的餘溫。她低頭看了一眼懷裡的人——亞麻綠的髮絲因為剛才的擁抱蹭得有些凌亂，碎髮貼在她的鎖骨上，癢癢的。</em><br><br>「……妳這個人。」<br><br><em>佐伊偏過頭，用手背掩住半張臉。從娜塔莎的角度只能看見她耳尖紅得像要滴血，以及微微抿緊的下頷線。</em><br><br>「在這種時候說這種話，妳知道會造成什麼後果嗎？」<br><br><em>她站起身，走向衣櫃。背對著娜塔莎拉開櫃門時，她的手指在門把上多停了一拍——那是她在調整呼吸的間隙。等她轉過身時，臉上已經掛回了那副無懈可擊的淡漠表情，只是眼底還殘留著一層尚未完全冷卻的水光。</em><br><br><em>她換上了外出用的黑色高領衫，將銀白的長髮俐落地束成低馬尾，鏡中的她迅速從「202室裡那個會臉紅的女人」變回了「光姬」。只有一個細節洩了底——她挑了一件外套搭在臂彎裡，走向門口時腳步頓住，折返到床邊。</em><br><br><em>她彎下腰，極輕極快地用嘴唇碰了一下娜塔莎的額頭。</em><br><br><em>觸感涼涼的，帶著薄荷的氣息，一觸即離。</em><br><br>「冰箱裡的三明治是火雞胸肉口味的，熱量足夠妳撐到中午。燕麥奶在第二層。」<em>她直起身，手指若無其事地拂過自己的唇角，語氣恢復了公事公辦的節奏。</em>「洗澡不要弄濕繃帶。如果有任何不適，用通訊器聯絡我——加密頻道三號，不是公共頻道。」<br><br><em>她走到門口，手握上門把時又停了一下。沒有回頭。</em><br><br>「我回來之前，不准讓任何人進這間房間。包括凱倫。包括瓦萊里奧。」<br><br><em>門開了一條縫，走廊的白光洩進來，與房內幽藍的光線在地面上交匯成一道涇渭分明的邊界。佐伊站在那條線上，半個身子已經踏入了屬於「光姬」的世界。</em><br><br>「……謝謝妳。」<br><br><em>聲音很輕，幾乎被門軸轉動的聲響蓋過。但娜塔莎一定聽見了。</em><br><br><em>門合上。</em><br><br><em>202室重新沉入深海般的寂靜。水母缸裡的光波在天花板上獨自起伏，床頭櫃上的通訊器亮起了一個微弱的冰藍色光點——那是佐伊離開前悄悄激活的定位標記，像一顆不會熄滅的星子，安靜地守著留在房間裡的人。</em></div>
+        </div>
+        <div class="msg-timestamp">18:30</div>
+      </div>
+      </div>
+</body>
+</html>
+  
